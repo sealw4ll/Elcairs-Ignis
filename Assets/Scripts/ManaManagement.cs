@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ManaManagement : MonoBehaviour
 {
@@ -8,14 +9,16 @@ public class ManaManagement : MonoBehaviour
     public uint initialMana;
     public uint maxMana;
 
+    [SerializeField] private healthBar manaBar;
     void Start()
     {
-        manaCount = initialMana;
+        setMana(initialMana);
     }
     
     public void setMana(uint mana)
     {
         manaCount = Math.Clamp(mana, 0, maxMana);
+        manaBar.UpdateHealthBar(manaCount, maxMana);
     }
 
     public void increaseMana(uint count)

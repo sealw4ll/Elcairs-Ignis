@@ -30,7 +30,7 @@ public class playerScript : MonoBehaviour
     [SerializeField] private uint dashManaCost = 1;
 
     [Range(0f, 1f)] public float groundDrag = 0.5f;
-    [Range(0f, 1f)] public float dashingDrag = 0.7f;
+    [Range(0f, 1f)] public float dashingDrag = 0.9f;
      
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

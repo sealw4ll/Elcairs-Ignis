@@ -19,10 +19,18 @@ public class playerScript : MonoBehaviour
     [SerializeField] private BoxCollider2D feetCollider;
     [SerializeField] private LayerMask groundLayer;
 
+    public ManaManagement manaStore;
+
     private uint jumps;
     [SerializeField] private uint maxJumps = 2;
+    [SerializeField] private uint forceJumpMana = 1;
+
+    private bool isDashing = false;
+    [SerializeField] private float dashSpeed = 24f;
+    [SerializeField] private uint dashManaCost = 1;
 
     [Range(0f, 1f)] public float groundDrag = 0.5f;
+    [Range(0f, 1f)] public float dashingDrag = 0.7f;
      
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,6 +48,7 @@ public class playerScript : MonoBehaviour
     {
         getInput();
         HandleJump();
+        HandleDash();
 
         // reset jump count
         if (IsGrounded())
@@ -54,21 +63,41 @@ public class playerScript : MonoBehaviour
         {
             float increment = horizontalInput * acceleration;
             float newSpeed = Mathf.Clamp(rb.linearVelocity.x + increment, -maxSpeed, maxSpeed);
-            
-            rb.linearVelocity = new Vector2(newSpeed, rb.linearVelocity.y);
+
+            float oldSpeed = rb.linearVelocity.x;
+
+            rb.linearVelocity = new Vector2(
+                Mathf.Abs(oldSpeed) > Mathf.Abs(newSpeed) ? oldSpeed : newSpeed, 
+                rb.linearVelocity.y
+               );
             FaceInput();
         }
     }
 
-     private void HandleJump()
+    private void HandleDash()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) && manaStore.enoughMana(dashManaCost)) // TODO: Change this
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x + (dashSpeed * Mathf.Sign(transform.localScale.x)), rb.linearVelocity.y);
+            manaStore.decreaseMana(dashManaCost);
+            isDashing = true;
+        }
+    }
+
+    private void HandleJump()
     {
         bool grounded = IsGrounded();
 
-        if (Input.GetButtonDown("Jump") && (grounded || jumps > 0))
+        if (Input.GetButtonDown("Jump") && (grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)))
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpSpeed);
             if (!grounded)
-                jumps -= 1;
+            {
+                if (jumps <= 0)
+                    manaStore.decreaseMana(forceJumpMana);
+                else
+                    jumps -= 1;
+            }
         }
     }
 
@@ -80,8 +109,18 @@ public class playerScript : MonoBehaviour
 
     private void ApplyFiction()
     {
-        if (IsGrounded() && horizontalInput == 0 && rb.linearVelocity.y <= 0)
-            rb.linearVelocity *= groundDrag; // tf
+        if (isDashing)
+        {
+            rb.linearVelocity *= dashingDrag;
+            if (Mathf.Abs(rb.linearVelocity.x) < maxSpeed)
+                isDashing = false;
+        }
+        else
+        {
+            if (IsGrounded() && horizontalInput == 0 && rb.linearVelocity.y <= 0)
+                rb.linearVelocity *= groundDrag; // tf
+        }
+
     }
 
     private bool IsGrounded()

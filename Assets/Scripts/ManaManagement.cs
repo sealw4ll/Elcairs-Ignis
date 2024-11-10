@@ -25,10 +25,15 @@ public class ManaManagement : MonoBehaviour
 
     public void decreaseMana(uint count)
     {
+        Debug.Log("Used mana");
         setMana(manaCount - count);
     }
 
-    public uint getCount(uint count) {
+    public bool enoughMana(uint count) {
+        return manaCount >= count;
+    }
+
+    public uint getCount() {
         return manaCount;
     }
 }

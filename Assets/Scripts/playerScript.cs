@@ -13,12 +13,12 @@ public class playerScript : MonoBehaviour
 
     public ManaManagement manaStore;
 
-    private uint jumps;
-    [SerializeField] private uint maxJumps = 2;
-    [SerializeField] private uint forceJumpMana = 1;
+    private int jumps;
+    [SerializeField] private int maxJumps = 2;
+    [SerializeField] private int forceJumpMana = 1;
 
     private bool isDashing = false;
-    [SerializeField] private uint dashManaCost = 1;
+    [SerializeField] private int dashManaCost = 1;
 
     [Range(0f, 1f)] public float groundDrag = 0.5f;
     [Range(0f, 1f)] public float dashingDrag = 0.9f;

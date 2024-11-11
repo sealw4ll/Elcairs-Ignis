@@ -7,6 +7,7 @@ public class Health : MonoBehaviour
     [SerializeField] private int maxHp;
     [SerializeField] private healthBar hpBar = null;
     [SerializeField] private damagedBehaviour damaged = null;
+    [SerializeField] private ManaManagement mana = null;
 
     private void Awake()
     {
@@ -19,9 +20,21 @@ public class Health : MonoBehaviour
 
     public void dealDmg(int dmgCount)
     {
+        int manaCount = 0;
+        int remainder = dmgCount;
+        if (mana != null)
+        {
+            manaCount = mana.getCount();
+            remainder = dmgCount - manaCount;
+            mana.decreaseMana(dmgCount);
+
+            if (remainder <= 0)
+                return;
+        }
+
         if (hp > 0)
         {
-            hp = Math.Clamp(hp - dmgCount, 0, maxHp);
+            hp = Math.Clamp(hp - remainder, 0, maxHp);
             if (hpBar != null)
             {
                 hpBar.UpdateHealthBar(hp, maxHp);

@@ -13,9 +13,9 @@ public struct Speed {
 public class ManaManagement : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private uint manaCount;
-    public uint initialMana;
-    public uint maxMana;
+    private int manaCount;
+    public int initialMana;
+    public int maxMana;
 
     [SerializeField] private healthBar manaBar;
 
@@ -28,27 +28,27 @@ public class ManaManagement : MonoBehaviour
         setMana(initialMana);
     }
     
-    public void setMana(uint mana)
+    public void setMana(int mana)
     {
         manaCount = Math.Clamp(mana, 0, maxMana);
         manaBar.UpdateHealthBar(manaCount, maxMana);
     }
 
-    public void increaseMana(uint count)
+    public void increaseMana(int count)
     {
         setMana(manaCount + count);
     }
 
-    public void decreaseMana(uint count)
+    public void decreaseMana(int count)
     {
         setMana(manaCount - count);
     }
 
-    public bool enoughMana(uint count) {
+    public bool enoughMana(int count) {
         return manaCount >= count;
     }
 
-    public uint getCount() {
+    public int getCount() {
         return manaCount;
     }
     private Speed getSpeedData()

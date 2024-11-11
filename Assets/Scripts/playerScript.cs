@@ -32,6 +32,12 @@ public class playerScript : MonoBehaviour
     [Range(0f, 1f)] public float groundDrag = 0.5f;
     [Range(0f, 1f)] public float dashingDrag = 0.9f;
      
+    private float coyoteTime = 0.1f;
+    private float coyoteTimeCounter = 0f;
+
+    private float jumpBufferTime = 0.03f;
+    private float jumpBufferTimeCounter = 0f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -53,7 +59,21 @@ public class playerScript : MonoBehaviour
         // reset jump count
         if (IsGrounded())
         {
+            coyoteTimeCounter = coyoteTime;
             jumps = maxJumps;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            jumpBufferTimeCounter = jumpBufferTime;
+        }
+        else
+        {
+            jumpBufferTimeCounter -= Time.deltaTime;
         }
     }
 
@@ -88,16 +108,32 @@ public class playerScript : MonoBehaviour
     {
         bool grounded = IsGrounded();
 
-        if (Input.GetButtonDown("Jump") && (grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)))
+        // if (Input.GetButtonDown("Jump") && (grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)))
+        // {
+        //     rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpSpeed);
+        //     if (!grounded)
+        //     {
+        //         if (jumps <= 0)
+        //             manaStore.decreaseMana(forceJumpMana);
+        //         else
+        //             jumps -= 1;
+        //     }
+        //     coyoteTimeCounter = 0f;
+        //     jumpBufferTimeCounter = 0f;
+        // }
+
+        if (jumpBufferTimeCounter > 0f && (coyoteTimeCounter > 0f || grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)))
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpSpeed);
             if (!grounded)
             {
                 if (jumps <= 0)
                     manaStore.decreaseMana(forceJumpMana);
-                else
+                else if (coyoteTimeCounter <= 0f)
                     jumps -= 1;
             }
+            coyoteTimeCounter = 0f;
+            jumpBufferTimeCounter = 0f;
         }
     }
 

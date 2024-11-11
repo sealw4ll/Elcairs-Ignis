@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Eclair's Ignis.sln"
+    "dotnet.defaultSolution": "eclair.sln"
 }

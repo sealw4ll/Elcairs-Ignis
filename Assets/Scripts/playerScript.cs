@@ -81,7 +81,6 @@ public class playerScript : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && (grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, manaStore.getJumpSpeed());
             if (!grounded)
             {
                 if (jumps <= 0)
@@ -89,6 +88,7 @@ public class playerScript : MonoBehaviour
                 else
                     jumps -= 1;
             }
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, manaStore.getJumpSpeed());
         }
     }
 

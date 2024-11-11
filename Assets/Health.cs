@@ -1,14 +1,30 @@
+using System;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private uint hp;
+    private int hp;
+    [SerializeField] private int maxHp;
+    [SerializeField] private healthBar hpBar = null;
 
-    public void dealDmg(uint dmgCount)
+    private void Awake()
+    {
+        hp = maxHp;
+        if (hpBar != null )
+        {
+            hpBar.UpdateHealthBar(hp, maxHp);
+        }
+    }
+
+    public void dealDmg(int dmgCount)
     {
         if (hp > 0)
         {
-            hp -= dmgCount;
+            hp = Math.Clamp(hp - dmgCount, 0, maxHp);
+            if (hpBar != null)
+            {
+                hpBar.UpdateHealthBar(hp, maxHp);
+            }
         }
 
         if (isDead())

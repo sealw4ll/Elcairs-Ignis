@@ -7,7 +7,6 @@ public class healthBar : MonoBehaviour
     public void UpdateHealthBar(float min, float max)
     {
         slider.value = min / max;
-        Debug.Log(slider.value);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

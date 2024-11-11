@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class AttackArea : MonoBehaviour
 {
-    public uint damage = 3;
+    public int damage = 3;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<Health>() != null)
+        Debug.Log(collision);
+        if (collision.gameObject.tag == "Enemy" && collision.GetComponent<Health>() != null)
         {
+            Debug.Log("Attacked An Enemy");
             Health targetHP = collision.GetComponent<Health>();
             targetHP.dealDmg(damage);
         }

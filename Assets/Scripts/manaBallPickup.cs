@@ -62,7 +62,6 @@ public class manaBallPickup : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision);
         if (collision.gameObject.tag == "Player")
         {
             playerEnter = true;

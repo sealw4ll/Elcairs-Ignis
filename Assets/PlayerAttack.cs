@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    private GameObject attackArea = default;
+    [SerializeField] private GameObject attackArea = default;
 
     private bool attacking = false;
 
@@ -12,7 +12,7 @@ public class PlayerAttack : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        attackArea = transform.GetChild(0).gameObject;
+        Reset();
     }
 
     // Update is called once per frame
@@ -35,6 +35,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Reset()
     {
+        Debug.Log("reseted");
         timer = 0f;
         attacking = false;
         attackArea.SetActive(false);
@@ -43,6 +44,6 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         attacking = true;
-        attackArea.SetActive(attacking);
+        attackArea.SetActive(true);
     }
 }

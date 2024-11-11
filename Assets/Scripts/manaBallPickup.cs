@@ -37,7 +37,7 @@ public class manaBallPickup : MonoBehaviour
         {
             keyHeldDown = true;
         }
-        else if (playerEnter && Input.GetKeyDown(KeyCode.E))
+        else if (playerEnter && Input.GetKeyUp(KeyCode.E))
         {
             ResetCountdown();
         }
@@ -65,7 +65,6 @@ public class manaBallPickup : MonoBehaviour
         Debug.Log(collision);
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("Player Enter");
             playerEnter = true;
         }
     }
@@ -74,7 +73,6 @@ public class manaBallPickup : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("Player Left");
             playerEnter = false;
             ResetCountdown();
         }

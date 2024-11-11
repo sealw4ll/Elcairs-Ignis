@@ -6,6 +6,7 @@ public class Health : MonoBehaviour
     private int hp;
     [SerializeField] private int maxHp;
     [SerializeField] private healthBar hpBar = null;
+    [SerializeField] private damagedBehaviour damaged = null;
 
     private void Awake()
     {
@@ -24,6 +25,10 @@ public class Health : MonoBehaviour
             if (hpBar != null)
             {
                 hpBar.UpdateHealthBar(hp, maxHp);
+            }
+            if (damaged != null)
+            {
+                damaged.playDamaged();
             }
         }
 

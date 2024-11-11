@@ -1423,7 +1423,7 @@ MonoBehaviour:
   Lookahead:
     Enabled: 1
     Time: 0.1
-    Smoothing: 4.4
+    Smoothing: 1
     IgnoreY: 1
 --- !u!114 &851812016
 MonoBehaviour:
@@ -1496,7 +1496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BoundingShape2D: {fileID: 713569864}
-  Damping: 1.01
+  Damping: 0.16
   SlowingDistance: 5
   OversizeWindow:
     Enabled: 0
@@ -1907,7 +1907,7 @@ Transform:
   m_GameObject: {fileID: 1009058573}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4725256, y: -2.15973, z: -10}
+  m_LocalPosition: {x: -2.9798102, y: -2.16189, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2346,7 +2346,7 @@ MonoBehaviour:
   forceJumpMana: 1
   dashSpeed: 24
   dashManaCost: 1
-  groundDrag: 0.5
+  groundDrag: 0.697
   dashingDrag: 0.9
 --- !u!114 &1365856529
 MonoBehaviour:
@@ -3115,7 +3115,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9625, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1365856533}

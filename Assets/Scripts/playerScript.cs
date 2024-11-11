@@ -1,8 +1,4 @@
-using Microsoft.Win32.SafeHandles;
-using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.InputSystem.XInput;
-using UnityEngine.UIElements;
 
 public class playerScript : MonoBehaviour
 {
@@ -99,6 +95,8 @@ public class playerScript : MonoBehaviour
             Debug.Log(horizontalInput);
             float newY = (verticalInput != 0) ? manaStore.getDashSpeed() * Mathf.Sign(verticalInput) : 0f;
             float newX = (horizontalInput != 0) ? manaStore.getDashSpeed() * Mathf.Sign(horizontalInput) : 0f;
+            Vector2 dirVec = new Vector2(newX, newY);
+            dirVec.Normalize();
 
             if (newX == 0 && newY == 0)
             {
@@ -108,10 +106,8 @@ public class playerScript : MonoBehaviour
                 );
             } else
             {
-                rb.linearVelocity = new Vector2(
-                    rb.linearVelocity.x + newX,
-                    rb.linearVelocity.y + newY
-                );
+                dirVec *= manaStore.getDashSpeed();
+                rb.linearVelocity = rb.linearVelocity + dirVec;
             }
 
 

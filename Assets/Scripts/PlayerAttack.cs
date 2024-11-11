@@ -35,7 +35,6 @@ public class PlayerAttack : MonoBehaviour
 
     private void Reset()
     {
-        Debug.Log("reseted");
         timer = 0f;
         attacking = false;
         attackArea.SetActive(false);

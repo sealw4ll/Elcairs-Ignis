@@ -7,6 +7,6 @@ public class damagedBehaviour : MonoBehaviour
 
     public void playDamaged()
     {
-        rb.linearVelocity = new Vector2 (-knockback * (Mathf.Sign(rb.linearVelocity.x)), rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2 (-knockback * (Mathf.Sign(transform.localScale.x)), 0);
     }
 }

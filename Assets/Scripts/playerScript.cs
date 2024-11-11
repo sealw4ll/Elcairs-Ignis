@@ -95,12 +95,26 @@ public class playerScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftShift) && manaStore.enoughMana(dashManaCost)) // TODO: Change this
         {
+            Debug.Log(verticalInput);
+            Debug.Log(horizontalInput);
             float newY = (verticalInput != 0) ? manaStore.getDashSpeed() * Mathf.Sign(verticalInput) : 0f;
+            float newX = (horizontalInput != 0) ? manaStore.getDashSpeed() * Mathf.Sign(horizontalInput) : 0f;
 
-            rb.linearVelocity = new Vector2(
-                rb.linearVelocity.x + ( manaStore.getDashSpeed() * Mathf.Sign(transform.localScale.x) ),
-                rb.linearVelocity.y + ( newY )
-            );
+            if (newX == 0 && newY == 0)
+            {
+                rb.linearVelocity = new Vector2(
+                    rb.linearVelocity.x + ( manaStore.getDashSpeed() * Mathf.Sign(transform.localScale.x)),
+                    rb.linearVelocity.y
+                );
+            } else
+            {
+                rb.linearVelocity = new Vector2(
+                    rb.linearVelocity.x + newX,
+                    rb.linearVelocity.y + newY
+                );
+            }
+
+
             activateDash();
         }
     }
@@ -133,9 +147,9 @@ public class playerScript : MonoBehaviour
         if (isDashing)
         {
             rb.linearVelocity *= dashingDrag;
-            if (Mathf.Abs(rb.linearVelocity.x) <= manaStore.getRunSpeed())
+            if (Mathf.Abs(rb.linearVelocity.x) <= manaStore.getRunSpeed() && 
+                Mathf.Abs(rb.linearVelocity.y) <= manaStore.getJumpSpeed())
             {
-                rb.linearVelocity = new Vector2(manaStore.getRunSpeed() * Mathf.Sign(rb.linearVelocity.x), rb.linearVelocity.y);
                 deactivateDash();
             }
         }

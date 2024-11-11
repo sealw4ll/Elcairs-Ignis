@@ -6,14 +6,7 @@ using UnityEngine.UIElements;
 
 public class playerScript : MonoBehaviour
 {
-    public float acceleration = 1f;
-
     private float horizontalInput;
-
-    [SerializeField] private float maxSpeed = 8f;
-    [SerializeField] private float jumpSpeed = 16f;
-
-    private bool isFacingRight = true;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private BoxCollider2D feetCollider;
@@ -26,7 +19,6 @@ public class playerScript : MonoBehaviour
     [SerializeField] private uint forceJumpMana = 1;
 
     private bool isDashing = false;
-    [SerializeField] private float dashSpeed = 24f;
     [SerializeField] private uint dashManaCost = 1;
 
     [Range(0f, 1f)] public float groundDrag = 0.5f;
@@ -59,17 +51,16 @@ public class playerScript : MonoBehaviour
 
     private void moveChar()
     {
-        if (Mathf.Abs(horizontalInput) > 0)
+        if (Mathf.Abs(horizontalInput) > 0 && !isDashing)
         {
-            float increment = horizontalInput * acceleration;
-            float newSpeed = Mathf.Clamp(rb.linearVelocity.x + increment, -maxSpeed, maxSpeed);
-
-            float oldSpeed = rb.linearVelocity.x;
+            float acc = horizontalInput * manaStore.getRunAcceleration();
+            float maxRunSpeed = manaStore.getRunSpeed();
+            float newSpeed = Mathf.Clamp(rb.linearVelocity.x + acc, -maxRunSpeed, maxRunSpeed);
 
             rb.linearVelocity = new Vector2(
-                Mathf.Abs(oldSpeed) > Mathf.Abs(newSpeed) ? oldSpeed : newSpeed, 
+                newSpeed,
                 rb.linearVelocity.y
-               );
+            );
             FaceInput();
         }
     }
@@ -78,7 +69,7 @@ public class playerScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftShift) && manaStore.enoughMana(dashManaCost)) // TODO: Change this
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x + (dashSpeed * Mathf.Sign(transform.localScale.x)), rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x + (manaStore.getDashSpeed() * Mathf.Sign(transform.localScale.x)), rb.linearVelocity.y);
             manaStore.decreaseMana(dashManaCost);
             isDashing = true;
         }
@@ -90,7 +81,7 @@ public class playerScript : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && (grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpSpeed);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, manaStore.getJumpSpeed());
             if (!grounded)
             {
                 if (jumps <= 0)
@@ -112,13 +103,16 @@ public class playerScript : MonoBehaviour
         if (isDashing)
         {
             rb.linearVelocity *= dashingDrag;
-            if (Mathf.Abs(rb.linearVelocity.x) < maxSpeed)
+            if (Mathf.Abs(rb.linearVelocity.x) < manaStore.getRunSpeed())
+            {
+                rb.linearVelocity = new Vector2(manaStore.getRunSpeed() * Mathf.Sign(rb.linearVelocity.x), rb.linearVelocity.y);
                 isDashing = false;
+            }
         }
         else
         {
             if (IsGrounded() && horizontalInput == 0 && rb.linearVelocity.y <= 0)
-                rb.linearVelocity *= groundDrag; // tf
+                rb.linearVelocity *= groundDrag;
         }
 
     }

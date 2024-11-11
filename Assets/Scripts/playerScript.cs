@@ -58,6 +58,12 @@ public class playerScript : MonoBehaviour
     {
         if (Mathf.Abs(horizontalInput) > 0 && !isDashing)
         {
+            if (Mathf.Sign(horizontalInput) != Mathf.Sign(rb.linearVelocity.x))
+            {
+                // immediately change direction
+                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            }
+
             float acc = horizontalInput * manaStore.getRunAcceleration();
             float maxRunSpeed = manaStore.getRunSpeed();
             float newSpeed = Mathf.Clamp(rb.linearVelocity.x + acc, -maxRunSpeed, maxRunSpeed);

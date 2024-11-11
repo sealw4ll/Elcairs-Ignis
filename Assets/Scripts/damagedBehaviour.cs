@@ -3,7 +3,7 @@ using UnityEngine;
 public class damagedBehaviour : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rb;
-    public float knockback = 20f;
+    public float knockback = 10f;
 
     public void playDamaged()
     {

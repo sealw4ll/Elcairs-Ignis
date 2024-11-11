@@ -41,7 +41,6 @@ public class ManaManagement : MonoBehaviour
 
     public void decreaseMana(uint count)
     {
-        Debug.Log("Used mana");
         setMana(manaCount - count);
     }
 

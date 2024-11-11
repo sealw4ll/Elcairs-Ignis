@@ -97,8 +97,6 @@ public class playerScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftShift) && manaStore.enoughMana(dashManaCost)) // TODO: Change this
         {
-            Debug.Log(verticalInput);
-            Debug.Log(horizontalInput);
             float newY = (verticalInput != 0) ? manaStore.getDashSpeed() * Mathf.Sign(verticalInput) : 0f;
             float newX = (horizontalInput != 0) ? manaStore.getDashSpeed() * Mathf.Sign(horizontalInput) : 0f;
             Vector2 dirVec = new Vector2(newX, newY);

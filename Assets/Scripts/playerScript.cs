@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem.XInput;
 using UnityEngine.UIElements;
+using UnityEngine.InputSystem;
 
 public class playerScript : MonoBehaviour
 {

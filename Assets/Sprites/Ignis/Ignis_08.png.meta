@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ignis_08_0: 1502806867691862578
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

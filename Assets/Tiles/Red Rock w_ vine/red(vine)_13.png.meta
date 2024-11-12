@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      red(vine)_13_0: -4076844272371709844
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

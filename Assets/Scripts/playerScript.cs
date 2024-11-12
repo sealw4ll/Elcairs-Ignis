@@ -5,34 +5,34 @@ using UnityEngine.InputSystem;
 
 public class playerScript : MonoBehaviour
 {
-    public float horizontalInput;
-    public float verticalInput;
+    private float horizontalInput;
+    private float verticalInput;
 
-    [SerializeField] public Rigidbody2D rb;
-    [SerializeField] public BoxCollider2D hitBoxCollider;
-    [SerializeField] public GameObject dashingHitBox;
-    [SerializeField] public BoxCollider2D feetCollider;
-    [SerializeField] public LayerMask groundLayer;
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private BoxCollider2D hitBoxCollider;
+    [SerializeField] private GameObject dashingHitBox;
+    [SerializeField] private BoxCollider2D feetCollider;
+    [SerializeField] private LayerMask groundLayer;
 
     public ManaManagement manaStore;
 
-    public int jumps;
+    private int jumps;
     [SerializeField] public int maxJumps = 2;
     [SerializeField] public int forceJumpMana = 1;
 
-    public bool isDashing = false;
+    private bool isDashing = false;
     [SerializeField] public int dashManaCost = 1;
 
     [Range(0f, 1f)] public float groundDrag = 0.5f;
     [Range(0f, 1f)] public float dashingDrag = 0.9f;
     
     public float coyoteTime = 0.1f;
-    public float coyoteTimeCounter = 0f;
+    private float coyoteTimeCounter = 0f;
 
     public float jumpBufferTime = 0.03f;
-    public float jumpBufferTimeCounter = 0f;
+    private float jumpBufferTimeCounter = 0f;
 
-    public bool damaged;
+    private bool damaged;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

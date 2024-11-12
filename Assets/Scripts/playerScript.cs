@@ -34,10 +34,13 @@ public class playerScript : MonoBehaviour
 
     private float initialGravity;
 
+    private bool damaged;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         jumps = maxJumps;
+        damaged = false;
         hitBoxCollider.enabled = true;
         dashingHitBox.enabled = false;
         initialGravity = rb.gravityScale;
@@ -52,6 +55,11 @@ public class playerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (damaged)
+        {
+            return;
+        }
+
         getInput();
         HandleJump();
         HandleDash();
@@ -175,8 +183,14 @@ public class playerScript : MonoBehaviour
         }
     }
 
+    public void toggleDamaged()
+    {
+        damaged = !damaged;
+    }
+
     void FixedUpdate()
     {
+        if (damaged)  return;
         moveChar();
         ApplyFiction();
     }

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Red Rock_20_0: -5735089786771855898
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

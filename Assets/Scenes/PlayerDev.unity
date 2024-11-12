@@ -2437,7 +2437,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 576312925}
+  player: {fileID: 576312926}
   knockback: 10
+  duration: 10
 --- !u!1 &577588966
 GameObject:
   m_ObjectHideFlags: 0

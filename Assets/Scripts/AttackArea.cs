@@ -10,7 +10,7 @@ public class AttackArea : MonoBehaviour
         if (collision.gameObject.tag == targetTag && collision.GetComponent<Health>() != null)
         {
             Health targetHP = collision.GetComponent<Health>();
-            targetHP.dealDmg(damage);
+            targetHP.dealDmg(damage, this.GetComponent<Rigidbody2D>());
         }
     }
 }

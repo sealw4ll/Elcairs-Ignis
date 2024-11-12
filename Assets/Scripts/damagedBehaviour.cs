@@ -1,15 +1,35 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class damagedBehaviour : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rb;
+    [SerializeField] playerScript player;
     public float knockback = 10f;
+    public float duration = 0.2f;
 
-    public void playDamaged()
+    public void playDamaged(Rigidbody2D rbTarget)
     {
-        // note: due to how we set velocity to 0 if we are turing, this no longer works
-        // potential fix: link damage to playerScript instead of the fuck is this
-        // god should have used classes (properly)
-        rb.linearVelocity = new Vector2 (-knockback * (Mathf.Sign(transform.localScale.x)), 0);
+        Vector2 dir = new Vector2((Mathf.Sign(transform.localScale.x)), 0);
+
+        if (rbTarget != null)
+        {
+            if (rbTarget.linearVelocity != Vector2.zero)
+                dir = rbTarget.linearVelocity * -1;
+            if (dir.x == 0)
+                dir.x = (Mathf.Sign(transform.localScale.x));
+        }
+
+        Debug.Log(dir.normalized);
+        rb.linearVelocity = dir.normalized * -knockback;
+        StartCoroutine(waiter());
+    }
+
+    IEnumerator waiter()
+    {
+        player.toggleDamaged();
+        yield return new WaitForSeconds(duration);
+        player.toggleDamaged();
     }
 }

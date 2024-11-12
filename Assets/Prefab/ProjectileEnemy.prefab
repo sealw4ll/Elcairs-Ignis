@@ -660,7 +660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b300d1e543990479b7695a3b9186e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gun: {fileID: 0}
+  gun: {fileID: 4225978690548560549}
   playerWithin: 0
 --- !u!114 &4225978690548560549
 MonoBehaviour:

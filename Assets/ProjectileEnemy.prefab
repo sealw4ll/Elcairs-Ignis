@@ -629,7 +629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fba2532caeaa3e4fac842447537c38d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 5
+  maxHp: 1
   hpBar: {fileID: 4084179530824268127}
   damaged: {fileID: 0}
   mana: {fileID: 0}

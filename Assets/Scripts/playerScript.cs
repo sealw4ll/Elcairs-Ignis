@@ -10,7 +10,7 @@ public class playerScript : MonoBehaviour
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private BoxCollider2D hitBoxCollider;
-    [SerializeField] private BoxCollider2D dashingHitBox;
+    [SerializeField] private GameObject dashingHitBox;
     [SerializeField] private BoxCollider2D feetCollider;
     [SerializeField] private LayerMask groundLayer;
 
@@ -42,7 +42,7 @@ public class playerScript : MonoBehaviour
         jumps = maxJumps;
         damaged = false;
         hitBoxCollider.enabled = true;
-        dashingHitBox.enabled = false;
+        dashingHitBox.SetActive(false);
         initialGravity = rb.gravityScale;
     }
 
@@ -111,7 +111,7 @@ public class playerScript : MonoBehaviour
     {
         manaStore.decreaseMana(dashManaCost);
         hitBoxCollider.enabled = false;
-        dashingHitBox.enabled = true;
+        dashingHitBox.SetActive(true);
         isDashing = true;
         rb.gravityScale = 0;
     }
@@ -119,7 +119,7 @@ public class playerScript : MonoBehaviour
     private void deactivateDash()
     {
         hitBoxCollider.enabled = true;
-        dashingHitBox.enabled = false;
+        dashingHitBox.SetActive(false);
         isDashing = false;
         rb.gravityScale = initialGravity;
     }

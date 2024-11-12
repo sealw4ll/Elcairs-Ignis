@@ -1,15 +1,7 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-public class healthBar : MonoBehaviour
+public class EnemyAttack : MonoBehaviour
 {
-    [SerializeField] private Slider slider;
-    public void UpdateHealthBar(float min, float max)
-    {
-        slider.value = min / max;
-        Debug.Log(slider.value);
-    }
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

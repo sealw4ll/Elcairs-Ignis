@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Floor
   - Wall
+  - Enemy
+  - PlayerFeet
+  - PlayerDashing
+  - PlayerHitBox
   layers:
   - Default
   - TransparentFX
@@ -15,7 +19,7 @@ TagManager:
   - UI
   - Player
   - Ground
-  - 
+  - Enemy
   - 
   - 
   - 

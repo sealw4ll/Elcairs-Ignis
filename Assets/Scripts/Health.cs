@@ -20,16 +20,15 @@ public class Health : MonoBehaviour
 
     public void dealDmg(int dmgCount, Rigidbody2D collided)
     {
-        int manaCount = 0;
         int remainder = dmgCount;
         if (mana != null)
         {
-            manaCount = mana.getCount();
+            int manaCount = mana.getCount();
             remainder = dmgCount - manaCount;
             mana.decreaseMana(dmgCount);
         }
 
-        if (hp > 0 && remainder <= 0)
+        if (hp > 0 && remainder > 0)
         {
             hp = Math.Clamp(hp - remainder, 0, maxHp);
             if (hpBar != null)

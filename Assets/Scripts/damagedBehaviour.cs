@@ -21,7 +21,6 @@ public class damagedBehaviour : MonoBehaviour
                 dir.x = (Mathf.Sign(transform.localScale.x));
         }
 
-        Debug.Log(dir.normalized);
         rb.linearVelocity = dir.normalized * -knockback;
         StartCoroutine(waiter());
     }

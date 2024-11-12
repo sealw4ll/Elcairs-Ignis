@@ -3,10 +3,7 @@ using UnityEngine;
 
 public class manaBallPickup : MonoBehaviour
 {
-    public Collider2D playerDetector;
-    public float timetoHold;
-    public ManaManagement playerMana;
-    public Scaler manaSpriteScaler;
+    private ManaManagement playerMana;
 
     private void Awake()
     {

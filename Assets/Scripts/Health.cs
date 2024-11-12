@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     [SerializeField] private healthBar hpBar = null;
     [SerializeField] private damagedBehaviour damaged = null;
     [SerializeField] private ManaManagement mana = null;
+    [SerializeField] private OnDeath deathManager = null;
 
     private void Awake()
     {
@@ -41,9 +42,10 @@ public class Health : MonoBehaviour
         {
             damaged.playDamaged(collided);
         }
-        if (isDead())
+
+        if (isDead() && deathManager != null)
         {
-            Debug.Log("You died bozo");
+            deathManager.killEntity();
         }
     }
 

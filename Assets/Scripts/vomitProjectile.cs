@@ -5,7 +5,9 @@ public class vomitProjectile : MonoBehaviour
     public GameObject bullet;
     public Transform bulletPos;
     public Transform centerPos;
-    public Transform rotation; 
+    public Transform rotation;
+
+    public bool started = false;
 
     private float timer;
     public float cooldown;
@@ -18,6 +20,8 @@ public class vomitProjectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!started) return;
+
         timer += Time.deltaTime;
         if (timer > cooldown)
         {

@@ -8,18 +8,19 @@ public struct Speed {
     public float runAcceleration;
     public float dashSpeed;
     public float jumpSpeed;
+    public float gravityScale;
 }
 
 public class ManaManagement : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private int manaCount;
+    public int manaCount;
     public int initialMana;
     public int maxMana;
 
     [SerializeField] private healthBar manaBar;
 
-    public Speed defaultSpeed = new Speed() { runSpeed = 8f, runAcceleration = 1f, dashSpeed = 24f, jumpSpeed = 10f };
+    public Speed defaultSpeed = new Speed() { runSpeed = 8f, runAcceleration = 1f, dashSpeed = 24f, jumpSpeed = 10f, gravityScale = 5f};
 
     public Speed[] speeds = new Speed[0];
 
@@ -78,5 +79,10 @@ public class ManaManagement : MonoBehaviour
     public float getRunAcceleration()
     {
         return getSpeedData().runAcceleration;
+    }
+
+    public float getGravityScale()
+    {
+        return getSpeedData().gravityScale;
     }
 }

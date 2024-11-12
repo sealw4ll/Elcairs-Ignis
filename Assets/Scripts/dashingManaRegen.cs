@@ -10,13 +10,11 @@ public class dashingManaRegen : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Log("hello?");
         regenCount = 1;
     }
 
     private void OnDisable()
     {
-        Debug.Log("Dsiabled");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -25,7 +23,6 @@ public class dashingManaRegen : MonoBehaviour
         {
             if (regenCount > 0)
             {
-                Debug.Log("Regen Mana");
                 manaStore.increaseMana(1);
                 regenCount--;
             }

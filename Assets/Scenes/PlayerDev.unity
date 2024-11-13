@@ -2203,10 +2203,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isComplete: 0
-  parent: {fileID: 0}
-  player: {fileID: 0}
-  playerAtkStatus: {fileID: 0}
-  dashState: {fileID: 0}
   runningThreshold: 0.1
 --- !u!114 &1720037808
 MonoBehaviour:
@@ -2221,10 +2217,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isComplete: 0
-  parent: {fileID: 0}
-  player: {fileID: 0}
-  playerAtkStatus: {fileID: 0}
-  dashState: {fileID: 0}
 --- !u!114 &1720037809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2238,9 +2230,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isComplete: 0
-  parent: {fileID: 0}
-  player: {fileID: 0}
-  playerAtkStatus: {fileID: 0}
 --- !u!114 &1720037810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2254,9 +2243,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isComplete: 0
-  parent: {fileID: 0}
-  player: {fileID: 0}
-  playerAtkStatus: {fileID: 0}
 --- !u!114 &1720037811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2270,13 +2256,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isComplete: 0
-  parent: {fileID: 0}
-  player: {fileID: 1552752497}
-  playerAtkStatus: {fileID: 1552752496}
-  idleState: {fileID: 0}
-  runState: {fileID: 0}
-  dashState: {fileID: 0}
-  attackState: {fileID: 0}
+  playerAtk: {fileID: 1552752496}
+  idleState: {fileID: 1720037809}
+  runState: {fileID: 1720037807}
+  dashState: {fileID: 1720037812}
+  attackState: {fileID: 1720037813}
 --- !u!114 &1720037812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2290,9 +2274,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isComplete: 0
-  parent: {fileID: 0}
-  player: {fileID: 1552752497}
-  playerAtkStatus: {fileID: 1552752496}
 --- !u!114 &1720037813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2306,8 +2287,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isComplete: 0
-  parent: {fileID: 0}
-  player: {fileID: 1552752497}
   playerAtkStatus: {fileID: 1552752496}
 --- !u!114 &1720037814
 MonoBehaviour:
@@ -2322,9 +2301,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isComplete: 0
-  parent: {fileID: 0}
-  player: {fileID: 1552752497}
-  playerAtkStatus: {fileID: 1552752496}
   jumpState: {fileID: 1720037808}
   dashState: {fileID: 1720037812}
 --- !u!1 &1742125613

@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6170180281575200884}
-  - component: {fileID: 1569499144508611415}
   - component: {fileID: 6185548084946252419}
+  - component: {fileID: 7968127620267494920}
   m_Layer: 6
   m_Name: AttackArea
   m_TagString: Untagged
@@ -26,16 +26,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2750308828202707159}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.56, y: -0.087, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 240675342751593393}
   m_Father: {fileID: 2054758403649210512}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1569499144508611415
-BoxCollider2D:
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &6185548084946252419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2750308828202707159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ab936839cb9dec4091325fc35aacfa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  targetTag: Enemy
+--- !u!60 &7968127620267494920
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -68,7 +82,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -1.1323917, y: 0.025645256}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -78,22 +92,15 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.4014535, y: 0.1322689}
-  m_EdgeRadius: 0
---- !u!114 &6185548084946252419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2750308828202707159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ab936839cb9dec4091325fc35aacfa8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
-  targetTag: Enemy
+  m_Points:
+    m_Paths:
+    - - {x: 0.2758311, y: 0.43547726}
+      - {x: 0.31539682, y: 0.6015876}
+      - {x: -0.2877784, y: 0.59893924}
+      - {x: -0.2585433, y: 0.46897453}
+      - {x: -0.25255114, y: 0.4423365}
+      - {x: 0.012341087, y: 0.25354302}
+  m_UseDelaunayMesh: 0
 --- !u!1 &2862986560301957498
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 240675342751593393}
   - component: {fileID: 880472074701311942}
+  - component: {fileID: 7396515730009392011}
   m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
@@ -353,8 +361,8 @@ Transform:
   m_GameObject: {fileID: 5973189392518859954}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.1351, y: 0.0221, z: 0}
-  m_LocalScale: {x: 0.3918464, y: 0.11290571, z: 1}
+  m_LocalPosition: {x: 0.009, y: 0.553, z: 0}
+  m_LocalScale: {x: 0.12405857, y: 0.47533303, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6170180281575200884}
@@ -414,6 +422,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &7396515730009392011
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5973189392518859954}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7220035802766845315
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,6 +798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b15537e3a541a3548a5368439cf64fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  atkCenter: {fileID: 6170180281575200884}
   attackArea: {fileID: 2750308828202707159}
 --- !u!114 &2520417323953276602
 MonoBehaviour:

@@ -10,13 +10,18 @@ public class Health : MonoBehaviour
     [SerializeField] private ManaManagement mana = null;
     [SerializeField] private OnDeath deathManager = null;
 
-    private void Awake()
+    public void regen()
     {
         hp = maxHp;
         if (hpBar != null )
         {
             hpBar.UpdateHealthBar(hp, maxHp);
         }
+    }
+
+    private void Awake()
+    {
+        regen();
     }
 
     public void dealDmg(int dmgCount, Rigidbody2D collided)

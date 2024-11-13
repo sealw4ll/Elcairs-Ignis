@@ -36,6 +36,10 @@ public class PlayerStateManager : MonoBehaviour
             return;
         }
 
+        // failsafe
+        if (currentState == null)
+            Set(groundState);
+
         if (currentState.isComplete)
         {
             if (player.groundSensor.isGrounded)

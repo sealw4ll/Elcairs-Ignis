@@ -8,7 +8,6 @@ public class JumpState : PlayerState
 
         if (player.groundSensor.isGrounded)
         {
-            Debug.Log("On Ground");
             isComplete = true;
             return;
         }

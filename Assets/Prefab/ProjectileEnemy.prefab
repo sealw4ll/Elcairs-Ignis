@@ -491,6 +491,7 @@ GameObject:
   - component: {fileID: 4096555586637711465}
   - component: {fileID: 4225978690548560549}
   - component: {fileID: 7004952144594691859}
+  - component: {fileID: 1415260456797757208}
   m_Layer: 8
   m_Name: ProjectileEnemy
   m_TagString: Enemy
@@ -507,7 +508,7 @@ Transform:
   m_GameObject: {fileID: 6268591712669950308}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.4037, y: 3.2742, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.40663, y: 0.38609326, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -694,6 +695,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88976e2419fa4f4aa9d7df772e387d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1415260456797757208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6268591712669950308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a2077acec5cfd42984bec504e912d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: {fileID: 1757750516522396571}
 --- !u!1 &7386429224700930551
 GameObject:
   m_ObjectHideFlags: 0

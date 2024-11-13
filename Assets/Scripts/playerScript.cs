@@ -224,7 +224,7 @@ public class playerScript : MonoBehaviour
     {
         float direction = Mathf.Sign(horizontalInput);
         Vector3 newScale = transform.localScale;
-        newScale.x = Mathf.Abs(newScale.x) * direction;
+        newScale.x = Mathf.Abs(newScale.x) * direction * -1f;
         transform.localScale = newScale;
     }
 }

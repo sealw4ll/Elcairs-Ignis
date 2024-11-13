@@ -1,18 +1,13 @@
 using UnityEngine;
-using UnityEngine.InputSystem.XInput;
-using UnityEngine.UIElements;
-using UnityEngine.InputSystem;
 
 public class playerScript : MonoBehaviour
 {
-    private float horizontalInput;
-    private float verticalInput;
+    public float horizontalInput { get; protected set; }
+    public float verticalInput { get; protected set; }
 
-    [SerializeField] private Rigidbody2D rb;
+    public Rigidbody2D rb;
     [SerializeField] private BoxCollider2D hitBoxCollider;
     [SerializeField] private GameObject dashingHitBox;
-    [SerializeField] private BoxCollider2D feetCollider;
-    [SerializeField] private LayerMask groundLayer;
 
     public ManaManagement manaStore;
 
@@ -20,19 +15,26 @@ public class playerScript : MonoBehaviour
     [SerializeField] public int maxJumps = 2;
     [SerializeField] public int forceJumpMana = 1;
 
-    private bool isDashing = false;
+    public bool isDashing { get; protected set; } = false;
     [SerializeField] public int dashManaCost = 1;
 
     [Range(0f, 1f)] public float groundDrag = 0.5f;
     [Range(0f, 1f)] public float dashingDrag = 0.9f;
-    
+
+    [SerializeField] public GroundSensor groundSensor;
+
     public float coyoteTime = 0.1f;
     private float coyoteTimeCounter = 0f;
 
     public float jumpBufferTime = 0.03f;
     private float jumpBufferTimeCounter = 0f;
 
-    private bool damaged;
+    public bool damaged { get; protected set; }
+
+    public bool isIdle()
+    {
+        return (Mathf.Abs(rb.linearVelocityX) < 0.1f && groundSensor.isGrounded);
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -68,7 +70,7 @@ public class playerScript : MonoBehaviour
         HandleDash();
 
         // reset jump count
-        if (IsGrounded())
+        if (groundSensor.isGrounded)
         {
             coyoteTimeCounter = coyoteTime;
             jumps = maxJumps;
@@ -154,7 +156,7 @@ public class playerScript : MonoBehaviour
 
     public void HandleJump()
     {
-        bool grounded = IsGrounded();
+        bool grounded = groundSensor.isGrounded;
 
         // if (Input.GetButtonDown("Jump") && (grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)))
         // {
@@ -212,22 +214,17 @@ public class playerScript : MonoBehaviour
         }
         else
         {
-            if (IsGrounded() && horizontalInput == 0 && rb.linearVelocity.y <= 0)
+            if (groundSensor.isGrounded && horizontalInput == 0 && rb.linearVelocity.y <= 0)
                 rb.linearVelocity *= groundDrag;
         }
 
-    }
-
-    public bool IsGrounded()
-    {
-        return Physics2D.OverlapAreaAll(feetCollider.bounds.min, feetCollider.bounds.max, groundLayer).Length > 0;
     }
 
     public void FaceInput()
     {
         float direction = Mathf.Sign(horizontalInput);
         Vector3 newScale = transform.localScale;
-        newScale.x = Mathf.Abs(newScale.x) * direction;
+        newScale.x = Mathf.Abs(newScale.x) * direction * -1f;
         transform.localScale = newScale;
     }
 }

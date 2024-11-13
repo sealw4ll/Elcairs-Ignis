@@ -1,0 +1,1030 @@
+fileFormatVersion: 2
+guid: 8a2f49512e2177d42a889ec6d1910f33
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4102197322186112945
+    second: Eclair-Idle-Sheet_0
+  - first:
+      213: 1216635109283952743
+    second: Eclair-Idle-Sheet_1
+  - first:
+      213: 4290695529607510050
+    second: Eclair-Idle-Sheet_2
+  - first:
+      213: 2469972423732188384
+    second: Eclair-Idle-Sheet_3
+  - first:
+      213: -7383367835599142913
+    second: Eclair-Idle-Sheet_4
+  - first:
+      213: 457767806155407339
+    second: Eclair-Idle-Sheet_5
+  - first:
+      213: -2648199795601210235
+    second: Eclair-Idle-Sheet_6
+  - first:
+      213: -7176914006669522099
+    second: Eclair-Idle-Sheet_7
+  - first:
+      213: 5070391843435966564
+    second: Eclair-Idle-Sheet_8
+  - first:
+      213: -5738376656674461760
+    second: Eclair-Idle-Sheet_9
+  - first:
+      213: 3439922015127417586
+    second: Eclair-Idle-Sheet_10
+  - first:
+      213: 1739176500429702863
+    second: Eclair-Idle-Sheet_11
+  - first:
+      213: 5705622012292030463
+    second: Eclair-Idle-Sheet_12
+  - first:
+      213: 5993268046758179494
+    second: Eclair-Idle-Sheet_13
+  - first:
+      213: -8218482645768158185
+    second: Eclair-Idle-Sheet_14
+  - first:
+      213: 8304684255588017529
+    second: Eclair-Idle-Sheet_15
+  - first:
+      213: -2195144355092801259
+    second: Eclair-Idle-Sheet_16
+  - first:
+      213: 258860687629511846
+    second: Eclair-Idle-Sheet_17
+  - first:
+      213: 9008576447964889528
+    second: Eclair-Idle-Sheet_18
+  - first:
+      213: -8878310329383321738
+    second: Eclair-Idle-Sheet_19
+  - first:
+      213: -1920811262842080585
+    second: Eclair-Idle-Sheet_20
+  - first:
+      213: -1511263958302368525
+    second: Eclair-Idle-Sheet_21
+  - first:
+      213: -965288376298179260
+    second: Eclair-Idle-Sheet_22
+  - first:
+      213: -7345447606955498090
+    second: Eclair-Idle-Sheet_23
+  - first:
+      213: 8021246663147286185
+    second: Eclair-Idle-Sheet_24
+  - first:
+      213: -2547347089233154549
+    second: Eclair-Idle-Sheet_25
+  - first:
+      213: 2092551410205471457
+    second: Eclair-Idle-Sheet_26
+  - first:
+      213: 1248182065056574347
+    second: Eclair-Idle-Sheet_27
+  - first:
+      213: 7515088700333040875
+    second: Eclair-Idle-Sheet_28
+  - first:
+      213: -4594310194726069325
+    second: Eclair-Idle-Sheet_29
+  - first:
+      213: 1343496658026316261
+    second: Eclair-Idle-Sheet_30
+  - first:
+      213: -7649285493634955001
+    second: Eclair-Idle-Sheet_31
+  - first:
+      213: -6556109350792835460
+    second: Eclair-Idle-Sheet_32
+  - first:
+      213: -5736439799208891966
+    second: Eclair-Idle-Sheet_33
+  - first:
+      213: 5231786859789505332
+    second: Eclair-Idle-Sheet_34
+  - first:
+      213: -2323231657475201410
+    second: Eclair-Idle-Sheet_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 319
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf367beabeede830800000000000000
+      internalID: 4102197322186112945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 255
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76873269f2b52e010800000000000000
+      internalID: 1216635109283952743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 319
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228bc91e9dc9b8b30800000000000000
+      internalID: 4290695529607510050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 255
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4519935da174220800000000000000
+      internalID: 2469972423732188384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 319
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff71118212098990800000000000000
+      internalID: -7383367835599142913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 255
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: befb083f4615a5600800000000000000
+      internalID: 457767806155407339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 319
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5848de01154bf3bd0800000000000000
+      internalID: -2648199795601210235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 319
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b00f06cba766c90800000000000000
+      internalID: -7176914006669522099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 319
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 460f90c7486ad5640800000000000000
+      internalID: 5070391843435966564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 191
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7668f75d03d50b0800000000000000
+      internalID: -5738376656674461760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 191
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f237b6e8de0dbf20800000000000000
+      internalID: 3439922015127417586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 191
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc6c1d500dbc22810800000000000000
+      internalID: 1739176500429702863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 255
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fffd0519df07e2f40800000000000000
+      internalID: 5705622012292030463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 255
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a278bae88d5c2350800000000000000
+      internalID: 5993268046758179494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 255
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 714c64ab39512fd80800000000000000
+      internalID: -8218482645768158185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 127
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9756a12945a204370800000000000000
+      internalID: 8304684255588017529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 127
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5195df3e6d74981e0800000000000000
+      internalID: -2195144355092801259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 127
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac68748c68a79300800000000000000
+      internalID: 258860687629511846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 191
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1c5e8cc84e40d70800000000000000
+      internalID: 9008576447964889528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 191
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ffc637bc7e9c480800000000000000
+      internalID: -8878310329383321738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 191
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b27ab55558e755e0800000000000000
+      internalID: -1920811262842080585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 63
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc598bdf69e60be0800000000000000
+      internalID: -1511263958302368525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 63
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445fee8065b9a92f0800000000000000
+      internalID: -965288376298179260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 63
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695ac2fb15abf0a90800000000000000
+      internalID: -7345447606955498090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 127
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae6eac7751315f60800000000000000
+      internalID: 8021246663147286185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 127
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ee1aa915106acd0800000000000000
+      internalID: -2547347089233154549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 127
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e23a87bb6c3a0d10800000000000000
+      internalID: 2092551410205471457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8be5ba99fe625110800000000000000
+      internalID: 1248182065056574347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be427e63b55fa4860800000000000000
+      internalID: 7515088700333040875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb9567383bbd30c0800000000000000
+      internalID: -4594310194726069325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 63
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e14592a71f05a210800000000000000
+      internalID: 1343496658026316261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 0
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70907560f5748d590800000000000000
+      internalID: -7649285493634955001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 63
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e406df7450405a0800000000000000
+      internalID: -6556109350792835460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 0
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9adb445621460b0800000000000000
+      internalID: -5736439799208891966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 63
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4335f460e6a0b9840800000000000000
+      internalID: 5231786859789505332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair-Idle-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76af35dd1932cfd0800000000000000
+      internalID: -2323231657475201410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

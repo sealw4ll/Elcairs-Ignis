@@ -10,17 +10,24 @@ public class manaBallPickup : MonoBehaviour
         playerMana = GameObject.FindGameObjectWithTag("Player").GetComponent<ManaManagement>();
     }
 
-    void deleteSelf()
+    void regenPickup()
+    {
+        // nice regen bro
+        this.gameObject.SetActive(true);
+    }
+
+    void deactivateSelf()
     {
         playerMana.increaseMana(1);
-        Destroy(gameObject);
+        this.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            deleteSelf();
+            Debug.Log("Test");
+            deactivateSelf();
         }
     }
 }

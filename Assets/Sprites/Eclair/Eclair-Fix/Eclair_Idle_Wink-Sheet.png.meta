@@ -1022,7 +1022,43 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Eclair_Idle_Wink-Sheet_0: 5625578240523288765
+      Eclair_Idle_Wink-Sheet_1: 2760039561861175484
+      Eclair_Idle_Wink-Sheet_10: 3446625737210290063
+      Eclair_Idle_Wink-Sheet_11: -2546163145308060171
+      Eclair_Idle_Wink-Sheet_12: -6603105322732415333
+      Eclair_Idle_Wink-Sheet_13: 2168571559273985729
+      Eclair_Idle_Wink-Sheet_14: 5749733552414172938
+      Eclair_Idle_Wink-Sheet_15: 2909586910747374333
+      Eclair_Idle_Wink-Sheet_16: -8536567539675923042
+      Eclair_Idle_Wink-Sheet_17: 8346307773648443011
+      Eclair_Idle_Wink-Sheet_18: 5752731242369063224
+      Eclair_Idle_Wink-Sheet_19: 9015382400548261768
+      Eclair_Idle_Wink-Sheet_2: -7854720765736449043
+      Eclair_Idle_Wink-Sheet_20: 3293578240557849182
+      Eclair_Idle_Wink-Sheet_21: -3879484275192430962
+      Eclair_Idle_Wink-Sheet_22: -9156583201422253382
+      Eclair_Idle_Wink-Sheet_23: 1811640150337726379
+      Eclair_Idle_Wink-Sheet_24: 2076390655740754245
+      Eclair_Idle_Wink-Sheet_25: 2277338223893059344
+      Eclair_Idle_Wink-Sheet_26: 5149770399701218903
+      Eclair_Idle_Wink-Sheet_27: 6593102198839483063
+      Eclair_Idle_Wink-Sheet_28: 2960541047505641732
+      Eclair_Idle_Wink-Sheet_29: -4175665924163857779
+      Eclair_Idle_Wink-Sheet_3: -849940023236880486
+      Eclair_Idle_Wink-Sheet_30: 5716560538267805512
+      Eclair_Idle_Wink-Sheet_31: -6968276113255971245
+      Eclair_Idle_Wink-Sheet_32: 14393254463572208
+      Eclair_Idle_Wink-Sheet_33: 8659422477662962775
+      Eclair_Idle_Wink-Sheet_34: 544528505565316150
+      Eclair_Idle_Wink-Sheet_35: -1427402798830775253
+      Eclair_Idle_Wink-Sheet_4: 3492062639450702748
+      Eclair_Idle_Wink-Sheet_5: 6463388161855469192
+      Eclair_Idle_Wink-Sheet_6: -785879676060462394
+      Eclair_Idle_Wink-Sheet_7: -929861961553813444
+      Eclair_Idle_Wink-Sheet_8: -8147840757469635881
+      Eclair_Idle_Wink-Sheet_9: 8877630965005352063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

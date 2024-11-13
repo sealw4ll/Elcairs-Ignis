@@ -1022,7 +1022,43 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Eclair-Idle-Sheet_0: 4102197322186112945
+      Eclair-Idle-Sheet_1: 1216635109283952743
+      Eclair-Idle-Sheet_10: 3439922015127417586
+      Eclair-Idle-Sheet_11: 1739176500429702863
+      Eclair-Idle-Sheet_12: 5705622012292030463
+      Eclair-Idle-Sheet_13: 5993268046758179494
+      Eclair-Idle-Sheet_14: -8218482645768158185
+      Eclair-Idle-Sheet_15: 8304684255588017529
+      Eclair-Idle-Sheet_16: -2195144355092801259
+      Eclair-Idle-Sheet_17: 258860687629511846
+      Eclair-Idle-Sheet_18: 9008576447964889528
+      Eclair-Idle-Sheet_19: -8878310329383321738
+      Eclair-Idle-Sheet_2: 4290695529607510050
+      Eclair-Idle-Sheet_20: -1920811262842080585
+      Eclair-Idle-Sheet_21: -1511263958302368525
+      Eclair-Idle-Sheet_22: -965288376298179260
+      Eclair-Idle-Sheet_23: -7345447606955498090
+      Eclair-Idle-Sheet_24: 8021246663147286185
+      Eclair-Idle-Sheet_25: -2547347089233154549
+      Eclair-Idle-Sheet_26: 2092551410205471457
+      Eclair-Idle-Sheet_27: 1248182065056574347
+      Eclair-Idle-Sheet_28: 7515088700333040875
+      Eclair-Idle-Sheet_29: -4594310194726069325
+      Eclair-Idle-Sheet_3: 2469972423732188384
+      Eclair-Idle-Sheet_30: 1343496658026316261
+      Eclair-Idle-Sheet_31: -7649285493634955001
+      Eclair-Idle-Sheet_32: -6556109350792835460
+      Eclair-Idle-Sheet_33: -5736439799208891966
+      Eclair-Idle-Sheet_34: 5231786859789505332
+      Eclair-Idle-Sheet_35: -2323231657475201410
+      Eclair-Idle-Sheet_4: -7383367835599142913
+      Eclair-Idle-Sheet_5: 457767806155407339
+      Eclair-Idle-Sheet_6: -2648199795601210235
+      Eclair-Idle-Sheet_7: -7176914006669522099
+      Eclair-Idle-Sheet_8: 5070391843435966564
+      Eclair-Idle-Sheet_9: -5738376656674461760
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

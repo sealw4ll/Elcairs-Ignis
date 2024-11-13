@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Eclair_Walk_R-Sheet_0: 8295752424191175953
+      Eclair_Walk_R-Sheet_1: -4853427425301261287
+      Eclair_Walk_R-Sheet_2: -2937535924408371756
+      Eclair_Walk_R-Sheet_3: -3563143926882909188
+      Eclair_Walk_R-Sheet_4: 67572635327695910
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

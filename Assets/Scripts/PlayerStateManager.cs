@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerStateManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Animator playerAnim;
     public playerScript player;
 
     public GroundState groundState;
@@ -23,7 +24,7 @@ public class PlayerStateManager : MonoBehaviour
         PlayerState[] states = GetComponents<PlayerState>();
         foreach (PlayerState state in states)
         {
-            state.SetUp(player);
+            state.SetUp(player, playerAnim);
         }
         stateMachine.Set(groundState);
     }
@@ -60,8 +61,6 @@ public class PlayerStateManager : MonoBehaviour
         {
             Debug.Log("not supposed to happen");
         }
-        // List<State> states = stateMachine.GetActiveStateBranch();
-        // Debug.Log("Active States: " + string.Join(" > ", states));
         SelectState();
         currentState.DoBranch();
     }

@@ -9,6 +9,7 @@ public class StateMachine
         if (state != newState || forceReset) {
             state?.Exit();
             state = newState;
+            state?.Initalize();
             state?.Enter();
         }
     }

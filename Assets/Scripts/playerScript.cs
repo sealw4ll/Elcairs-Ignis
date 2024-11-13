@@ -110,7 +110,6 @@ public class playerScript : MonoBehaviour
                 newSpeed,
                 rb.linearVelocity.y
             );
-            FaceInput();
         }
     }
 
@@ -221,13 +220,5 @@ public class playerScript : MonoBehaviour
                 rb.linearVelocity *= groundDrag;
         }
 
-    }
-
-    public void FaceInput()
-    {
-        float direction = Mathf.Sign(horizontalInput);
-        Vector3 newScale = transform.localScale;
-        newScale.x = Mathf.Abs(newScale.x) * direction * 1f;
-        transform.localScale = newScale;
     }
 }

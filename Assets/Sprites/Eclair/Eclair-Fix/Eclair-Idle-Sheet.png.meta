@@ -177,10 +177,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -205,7 +205,7 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -221,10 +221,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 319
-        width: 62
-        height: 65
+        x: 0
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,10 +243,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 255
-        width: 62
-        height: 66
+        x: 64
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,10 +265,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 319
-        width: 62
-        height: 65
+        x: 128
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,10 +287,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_3
       rect:
         serializedVersion: 2
-        x: 65
-        y: 255
-        width: 62
-        height: 66
+        x: 192
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,10 +309,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_4
       rect:
         serializedVersion: 2
-        x: 129
-        y: 319
-        width: 62
-        height: 65
+        x: 256
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +331,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_5
       rect:
         serializedVersion: 2
-        x: 129
-        y: 255
-        width: 62
-        height: 66
+        x: 320
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,10 +353,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_6
       rect:
         serializedVersion: 2
-        x: 194
-        y: 319
-        width: 61
-        height: 63
+        x: 0
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,10 +375,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_7
       rect:
         serializedVersion: 2
-        x: 258
-        y: 319
-        width: 61
-        height: 63
+        x: 64
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,10 +397,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_8
       rect:
         serializedVersion: 2
-        x: 322
-        y: 319
-        width: 61
-        height: 63
+        x: 128
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -419,10 +419,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_9
       rect:
         serializedVersion: 2
-        x: 1
-        y: 191
-        width: 62
-        height: 66
+        x: 192
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -441,10 +441,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_10
       rect:
         serializedVersion: 2
-        x: 65
-        y: 191
-        width: 62
-        height: 66
+        x: 256
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -463,10 +463,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_11
       rect:
         serializedVersion: 2
-        x: 129
-        y: 191
-        width: 62
-        height: 66
+        x: 320
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -485,10 +485,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_12
       rect:
         serializedVersion: 2
-        x: 194
-        y: 255
-        width: 61
-        height: 63
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -507,10 +507,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_13
       rect:
         serializedVersion: 2
-        x: 258
-        y: 255
-        width: 61
-        height: 63
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -529,10 +529,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_14
       rect:
         serializedVersion: 2
-        x: 322
-        y: 255
-        width: 61
-        height: 63
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -551,10 +551,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_15
       rect:
         serializedVersion: 2
-        x: 1
-        y: 127
-        width: 62
-        height: 66
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -573,10 +573,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_16
       rect:
         serializedVersion: 2
-        x: 65
-        y: 127
-        width: 62
-        height: 66
+        x: 256
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -595,10 +595,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_17
       rect:
         serializedVersion: 2
-        x: 129
-        y: 127
-        width: 62
-        height: 66
+        x: 320
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,10 +617,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_18
       rect:
         serializedVersion: 2
-        x: 194
-        y: 191
-        width: 61
-        height: 63
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -639,10 +639,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_19
       rect:
         serializedVersion: 2
-        x: 258
-        y: 191
-        width: 61
-        height: 63
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -661,10 +661,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_20
       rect:
         serializedVersion: 2
-        x: 322
-        y: 191
-        width: 61
-        height: 63
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -683,10 +683,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_21
       rect:
         serializedVersion: 2
-        x: 1
-        y: 63
-        width: 62
-        height: 66
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -705,10 +705,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_22
       rect:
         serializedVersion: 2
-        x: 65
-        y: 63
-        width: 62
-        height: 66
+        x: 256
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -727,10 +727,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_23
       rect:
         serializedVersion: 2
-        x: 129
-        y: 63
-        width: 62
-        height: 66
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -749,10 +749,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_24
       rect:
         serializedVersion: 2
-        x: 194
-        y: 127
-        width: 61
-        height: 63
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -771,10 +771,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_25
       rect:
         serializedVersion: 2
-        x: 258
-        y: 127
-        width: 61
-        height: 63
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -793,10 +793,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_26
       rect:
         serializedVersion: 2
-        x: 322
-        y: 127
-        width: 61
-        height: 63
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -815,10 +815,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_27
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 63
-        height: 63
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -837,10 +837,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_28
       rect:
         serializedVersion: 2
-        x: 65
-        y: 0
-        width: 63
-        height: 63
+        x: 256
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -859,10 +859,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_29
       rect:
         serializedVersion: 2
-        x: 129
-        y: 0
-        width: 63
-        height: 63
+        x: 320
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -881,10 +881,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_30
       rect:
         serializedVersion: 2
-        x: 194
-        y: 63
-        width: 61
-        height: 63
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -903,10 +903,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_31
       rect:
         serializedVersion: 2
-        x: 257
+        x: 64
         y: 0
-        width: 63
-        height: 63
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -925,10 +925,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_32
       rect:
         serializedVersion: 2
-        x: 258
-        y: 63
-        width: 61
-        height: 63
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -947,10 +947,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_33
       rect:
         serializedVersion: 2
-        x: 321
+        x: 192
         y: 0
-        width: 63
-        height: 63
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -969,10 +969,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_34
       rect:
         serializedVersion: 2
-        x: 322
-        y: 63
-        width: 61
-        height: 63
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -991,10 +991,10 @@ TextureImporter:
       name: Eclair-Idle-Sheet_35
       rect:
         serializedVersion: 2
-        x: 194
+        x: 320
         y: 0
-        width: 61
-        height: 62
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1013,7 +1013,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 86fbfaa7e40d8444f81d998394378a61
     internalID: 0
     vertices: []
     indices: 

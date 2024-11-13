@@ -8,7 +8,7 @@ public abstract class State : MonoBehaviour
 
     float time => Time.time - startTime;
 
-    public StateMachine machine = new StateMachine();
+    public StateMachine machine;
 
     private State parent;
 
@@ -29,15 +29,18 @@ public abstract class State : MonoBehaviour
         state?.FixedDoBranch();
     }
 
-    public virtual void Enter() {
-        isComplete = false;
-        startTime = Time.time;
-    }
+    public virtual void Enter() { }
 
-    public virtual void Exit() {
-    }
+    public virtual void Exit() { }
 
     public virtual void Do() { }
 
     public virtual void FixedDo() { }
+
+    public void Initalize()
+    {
+        isComplete = false;
+        startTime = Time.time;
+        machine = new StateMachine();
+    }
 }

@@ -162,6 +162,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1099452963108933854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 604933000776716075}
+  m_Layer: 0
+  m_Name: StateMachine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &604933000776716075
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099452963108933854}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.5600003, y: -0.07399979, z: 0}
+  m_LocalScale: {x: 4.329026, y: 2.0639281, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 655998705393084836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2081397956535458002
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,6 +1027,7 @@ Transform:
   - {fileID: 6671503700818929307}
   - {fileID: 6873114308896749093}
   - {fileID: 122556580992896807}
+  - {fileID: 604933000776716075}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8244933035045849207
@@ -1138,6 +1170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ad80a26689e69478dff03324277d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manaCount: 0
   initialMana: 5
   maxMana: 5
   manaBar: {fileID: 5911668243046705771}
@@ -1146,23 +1179,28 @@ MonoBehaviour:
     runAcceleration: 1
     dashSpeed: 24
     jumpSpeed: 12
+    gravityScale: 5
   speeds:
   - runSpeed: 7
     runAcceleration: 0.9
     dashSpeed: 23
     jumpSpeed: 11
+    gravityScale: 0
   - runSpeed: 6
     runAcceleration: 0.8
     dashSpeed: 23
     jumpSpeed: 10
+    gravityScale: 0
   - runSpeed: 5
     runAcceleration: 0.6
     dashSpeed: 22
     jumpSpeed: 9
+    gravityScale: 0
   - runSpeed: 4
     runAcceleration: 0.5
     dashSpeed: 22
     jumpSpeed: 8
+    gravityScale: 0
 --- !u!114 &5760775419829762638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1178,16 +1216,15 @@ MonoBehaviour:
   rb: {fileID: 3717535288156296826}
   hitBoxCollider: {fileID: 6906514570679647444}
   dashingHitBox: {fileID: 2081397956535458002}
-  feetCollider: {fileID: 6999267672961774656}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 128
   manaStore: {fileID: 7800301222543547798}
   maxJumps: 1
   forceJumpMana: 1
   dashManaCost: 1
   groundDrag: 0.5
   dashingDrag: 0.9
+  groundSensor: {fileID: 0}
+  coyoteTime: 0.1
+  jumpBufferTime: 0.03
 --- !u!114 &2056365986826022802
 MonoBehaviour:
   m_ObjectHideFlags: 0

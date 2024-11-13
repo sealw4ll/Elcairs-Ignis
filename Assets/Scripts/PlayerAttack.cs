@@ -4,7 +4,7 @@ public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] private GameObject attackArea = default;
 
-    private bool attacking = false;
+    public bool attacking { get; protected set; } = false;
 
     private float timeToAttack = 0.25f;
     private float timer = 0f;

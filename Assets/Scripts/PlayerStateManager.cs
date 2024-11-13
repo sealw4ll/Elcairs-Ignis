@@ -56,8 +56,8 @@ public class PlayerStateManager : MonoBehaviour
         {
             Debug.Log("not supposed to happen");
         }
-        List<State> states = stateMachine.GetActiveStateBranch();
-        Debug.Log("Active States: " + string.Join(" > ", states));
+        // List<State> states = stateMachine.GetActiveStateBranch();
+        // Debug.Log("Active States: " + string.Join(" > ", states));
         SelectState();
         currentState.DoBranch();
     }

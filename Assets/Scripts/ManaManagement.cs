@@ -18,7 +18,7 @@ public class ManaManagement : MonoBehaviour
     public int initialMana;
     public int maxMana;
 
-    [SerializeField] private healthBar manaBar;
+    [SerializeField] private showManaBalls manaBar;
 
     public Speed defaultSpeed = new Speed() { runSpeed = 8f, runAcceleration = 1f, dashSpeed = 24f, jumpSpeed = 10f, gravityScale = 5f};
 
@@ -32,7 +32,7 @@ public class ManaManagement : MonoBehaviour
     public void setMana(int mana)
     {
         manaCount = Math.Clamp(mana, 0, maxMana);
-        manaBar.UpdateHealthBar(manaCount, maxMana);
+        manaBar.UpdateHealthBar(manaCount);
     }
 
     public void increaseMana(int count)

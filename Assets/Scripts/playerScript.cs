@@ -30,6 +30,7 @@ public class playerScript : MonoBehaviour
     private float jumpBufferTimeCounter = 0f;
 
     public bool damaged { get; protected set; }
+    public float doubleJumpPenality = 0.5f; 
 
     public bool isIdle()
     {
@@ -172,10 +173,12 @@ public class playerScript : MonoBehaviour
         //     jumpBufferTimeCounter = 0f;
         // }
 
+        bool doubleJump = false;
         if (jumpBufferTimeCounter > 0f && (coyoteTimeCounter > 0f || grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)))
         {
             if (!grounded)
             {
+                doubleJump = true;
                 if (jumps <= 0)
                     manaStore.decreaseMana(forceJumpMana);
                 else if (coyoteTimeCounter <= 0f)
@@ -183,7 +186,7 @@ public class playerScript : MonoBehaviour
             }
             coyoteTimeCounter = 0f;
             jumpBufferTimeCounter = 0f;
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, manaStore.getJumpSpeed());
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x,  ( manaStore.getJumpSpeed() * (doubleJump ? doubleJumpPenality : 1f) ) );
         }
     }
 

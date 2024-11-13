@@ -2,7 +2,14 @@ using UnityEngine;
 
 public class AttackState: PlayerState
 {
+    public Animator slashAnimation;
     public PlayerAttack playerAtkStatus;
+
+    public override void Enter()
+    {
+        base.Enter();
+        slashAnimation.Play("Slash");
+    }
 
     public override void Do()
     {

@@ -4,11 +4,14 @@ public class CheckpointScript : MonoBehaviour
 {
     private RespawnScript respawn;
     private BoxCollider2D checkpoint;
+    private SpriteRenderer icon;
+    public Sprite passive, active;
 
     void Awake()
     {
         checkpoint = GetComponent<BoxCollider2D>();
         respawn = GameObject.FindGameObjectWithTag("Respawn").GetComponent<RespawnScript>();
+        icon = GetComponent<SpriteRenderer>();
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,6 +30,7 @@ public class CheckpointScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             respawn.respawnPoint = this.gameObject;
+            icon.sprite = active;
             checkpoint.enabled = false;
         }
     }

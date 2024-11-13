@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     [SerializeField] private healthBar hpBar = null;
     [SerializeField] private damagedBehaviour damaged = null;
     [SerializeField] private ManaManagement mana = null;
+    [SerializeField] private OnDeath deathManager = null;
 
     private void Awake()
     {
@@ -18,36 +19,33 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void dealDmg(int dmgCount)
+    public void dealDmg(int dmgCount, Rigidbody2D collided)
     {
-        int manaCount = 0;
         int remainder = dmgCount;
         if (mana != null)
         {
-            manaCount = mana.getCount();
+            int manaCount = mana.getCount();
             remainder = dmgCount - manaCount;
             mana.decreaseMana(dmgCount);
-
-            if (remainder <= 0)
-                return;
         }
 
-        if (hp > 0)
+        if (hp > 0 && remainder > 0)
         {
             hp = Math.Clamp(hp - remainder, 0, maxHp);
             if (hpBar != null)
             {
                 hpBar.UpdateHealthBar(hp, maxHp);
             }
-            if (damaged != null)
-            {
-                damaged.playDamaged();
-            }
         }
 
-        if (isDead())
+        if (damaged != null)
         {
-            Debug.Log("You died bozo");
+            damaged.playDamaged(collided);
+        }
+
+        if (isDead() && deathManager != null)
+        {
+            deathManager.killEntity();
         }
     }
 

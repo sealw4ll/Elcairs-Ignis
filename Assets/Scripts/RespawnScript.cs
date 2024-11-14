@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class RespawnScript : MonoBehaviour
@@ -21,15 +22,6 @@ public class RespawnScript : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            playerOnDeath player = other.gameObject.GetComponent<playerOnDeath>();
-            player.killEntity();
-        }
-    }
-
     public void TriggerRespawn()
     {
         StartCoroutine(CountdownRespawn());
@@ -45,9 +37,42 @@ public class RespawnScript : MonoBehaviour
     {
         Vector3 newPosition = respawnPoint.transform.position;
         newPosition.z = 0;
+        ResetScene();
         player.transform.position = newPosition;
         PlayerScript.resetPlayer();
         ManaManagement manaManagement = player.GetComponent<ManaManagement>();
         manaManagement.setMana(savedMana);
+    }
+
+    public regenAllIgnis manaOrbs;
+    public RegenAllEnemies enemies;
+
+    public void ResetScene()
+    {
+        manaOrbs.regen();
+        enemies.regen();
+
+        /*
+        Debug.Log("Regenerating Scene");
+
+        GameObject []enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        List<GameObject> collectibles = GetChildrenWithTag(manaOrbs, "Collectibles");
+
+        Debug.Log(enemies);
+        Debug.Log(collectibles);
+
+        foreach (GameObject enemy in enemies)
+        {
+            enemyReset reseter = enemy.GetComponent<enemyReset>();
+            if (reseter != null)
+                reseter.EnemyReset();
+        }
+
+        foreach (GameObject collect in collectibles) {
+            CollectibleRegen reseter = collect.GetComponent<CollectibleRegen>();
+            if (reseter != null)
+                reseter.regenPickup();
+        }
+        */
     }
 }

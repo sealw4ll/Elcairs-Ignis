@@ -10,12 +10,6 @@ public class manaBallPickup : MonoBehaviour
         playerMana = GameObject.FindGameObjectWithTag("Player").GetComponent<ManaManagement>();
     }
 
-    void regenPickup()
-    {
-        // nice regen bro
-        this.gameObject.SetActive(true);
-    }
-
     void deactivateSelf()
     {
         playerMana.increaseMana(1);

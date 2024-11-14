@@ -3,7 +3,7 @@ using UnityEngine;
 public class CheckpointScript : MonoBehaviour
 {
     public GameObject point;
-    private RespawnScript respawn;
+    public RespawnScript respawn;
     private BoxCollider2D checkpoint;
     private SpriteRenderer icon;
     private ManaManagement playerMana;

@@ -4,7 +4,12 @@ public class playerOnDeath : OnDeath
 {
     public GameObject playerObj;
     public playerScript player;
-    public RespawnScript respawner = null;
+    public RespawnScript respawner;
+
+    private void Awake()
+    {
+        respawner = GameObject.FindGameObjectWithTag("Respawn").GetComponent<RespawnScript>();
+    }
 
     private void Reset()
     {
@@ -18,10 +23,7 @@ public class playerOnDeath : OnDeath
     {
         player.dead = true;
         playerObj.SetActive(false);
-        if (respawner != null)
-        {
-            respawner.TriggerRespawn();
-        }
+        respawner.TriggerRespawn();
     }
 
     public override void killEntity()

@@ -11,6 +11,7 @@ TagManager:
   - PlayerDashing
   - PlayerHitBox
   - Checkpoint
+  - Collectibles
   layers:
   - Default
   - TransparentFX

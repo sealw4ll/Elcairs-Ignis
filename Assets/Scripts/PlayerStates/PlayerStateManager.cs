@@ -10,6 +10,7 @@ public class PlayerStateManager : MonoBehaviour
     public GroundState groundState;
     public AirState airState;
     public HurtState hurtState;
+    public DeadState deadState;
 
     private StateMachine stateMachine = new StateMachine();
     private State currentState => stateMachine.state;
@@ -34,6 +35,11 @@ public class PlayerStateManager : MonoBehaviour
         if (player.damaged)
         {
             Set(hurtState);
+            return;
+        }
+
+        if (player.dying || player.dead) {
+            Set(deadState);
             return;
         }
 

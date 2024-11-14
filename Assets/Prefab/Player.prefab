@@ -197,15 +197,20 @@ GameObject:
   - component: {fileID: 1693199031401822532}
   - component: {fileID: 2035565362444691271}
   - component: {fileID: 7283735580219798676}
+  - component: {fileID: 899582114212264751}
   - component: {fileID: 4196634577646852150}
   - component: {fileID: 3002907109150966510}
   - component: {fileID: 6889313298565914780}
   - component: {fileID: 7621137630547730607}
   - component: {fileID: 7222966429733407785}
   - component: {fileID: 1774752608774166075}
+  - component: {fileID: 1115915817289997523}
+  - component: {fileID: 62116913607518010}
+  - component: {fileID: 3743083689461389537}
   - component: {fileID: 4004562626971186978}
   - component: {fileID: 527770883420712493}
   - component: {fileID: 4325588069862278199}
+  - component: {fileID: 684206816787114399}
   m_Layer: 6
   m_Name: StateMachine
   m_TagString: Untagged
@@ -240,11 +245,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7915891d4ae54d948ac8e3c9f18e4ce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAnim: {fileID: 1677761998720167045}
+  playerAnim: {fileID: 6102295846456096794}
   player: {fileID: 3185728706339094184}
   groundState: {fileID: 6889313298565914780}
   airState: {fileID: 7283735580219798676}
   hurtState: {fileID: 7621137630547730607}
+  deadState: {fileID: 684206816787114399}
 --- !u!114 &7283735580219798676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,6 +266,21 @@ MonoBehaviour:
   isComplete: 0
   jumpState: {fileID: 1774752608774166075}
   dashState: {fileID: 3002907109150966510}
+  landGenerator: {fileID: 899582114212264751}
+--- !u!114 &899582114212264751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4115931622302925626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c61a99ce5901f49baf3145938203c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpEffect: {fileID: 1899205466104016169, guid: 1fbe384b9ba19bd48880e7c6173ac517, type: 3}
+  loc: {fileID: 6370574484783867249}
 --- !u!114 &4196634577646852150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,6 +366,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isComplete: 0
+  velocityThreshold: 0.1
+  jumpLeftState: {fileID: 62116913607518010}
+  jumpRightState: {fileID: 3743083689461389537}
+  jumpIdleState: {fileID: 1115915817289997523}
+--- !u!114 &1115915817289997523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4115931622302925626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6073d85c2e2bd7d43b4e2c77f00ff0a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isComplete: 0
+--- !u!114 &62116913607518010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4115931622302925626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24cf410d1ce9aae41b277019793ed446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isComplete: 0
+--- !u!114 &3743083689461389537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4115931622302925626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5727c793c74b3d941bcc99cd383fff9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isComplete: 0
 --- !u!114 &4004562626971186978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,6 +453,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isComplete: 0
   runningThreshold: 0.1
+--- !u!114 &684206816787114399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4115931622302925626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0336301aa5131bf4baf8e9b75efc9463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isComplete: 0
 --- !u!1 &5973189392518859954
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,7 +689,8 @@ GameObject:
   - component: {fileID: 1281863009334594932}
   - component: {fileID: 8827545439152400434}
   - component: {fileID: 4214223806531646895}
-  - component: {fileID: 1677761998720167045}
+  - component: {fileID: 6102295846456096794}
+  - component: {fileID: 2282522973941644489}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -629,8 +707,8 @@ Transform:
   m_GameObject: {fileID: 7306159096753131177}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.956, y: -4.257, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6370574484783867249}
@@ -689,7 +767,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -761,7 +839,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -781,7 +859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manaCount: 0
-  initialMana: 5
+  initialMana: 1
   maxMana: 5
   manaBar: {fileID: 5363331969164418539}
   defaultSpeed:
@@ -790,32 +868,38 @@ MonoBehaviour:
     dashSpeed: 22
     jumpSpeed: 18
     gravityScale: 3
+    maxAirSpeed: 8
   speeds:
   - runSpeed: 7
     runAcceleration: 3
     dashSpeed: 22
     jumpSpeed: 18
     gravityScale: 3
+    maxAirSpeed: 7
   - runSpeed: 6
     runAcceleration: 2.5
     dashSpeed: 19
     jumpSpeed: 16.5
     gravityScale: 3
+    maxAirSpeed: 6
   - runSpeed: 5
     runAcceleration: 2
     dashSpeed: 18
     jumpSpeed: 16
     gravityScale: 3.5
+    maxAirSpeed: 5
   - runSpeed: 4
     runAcceleration: 1.5
     dashSpeed: 20
     jumpSpeed: 15
     gravityScale: 4.5
+    maxAirSpeed: 4
   - runSpeed: 4
     runAcceleration: 1
     dashSpeed: 20
     jumpSpeed: 12
     gravityScale: 5
+    maxAirSpeed: 4
 --- !u!114 &3185728706339094184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -828,6 +912,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3efcf8f08d094ac4c9e3dd74a74a1297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastX: 1
+  horizontalInput: 0
+  verticalInput: 0
+  dying: 0
+  jumpEffect: {fileID: 2282522973941644489}
+  playerObj: {fileID: 7306159096753131177}
   rb: {fileID: 7012159652732248255}
   hitBoxCollider: {fileID: 4386419663685758505}
   dashingHitBox: {fileID: 7220035802766845315}
@@ -840,7 +930,13 @@ MonoBehaviour:
   groundSensor: {fileID: 4214223806531646895}
   coyoteTime: 0.1
   jumpBufferTime: 0.03
-  doubleJumpPenality: 0.85
+  doubleJumpPenality: 0.65
+  dashTimer: 0
+  maxDashTimer: 0.5
+  pAtk: {fileID: 5224965004768791427}
+  dead: 0
+  health: {fileID: 2520417323953276602}
+  jumpCut: 0.5
 --- !u!114 &5224965004768791427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -855,6 +951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   atkCenter: {fileID: 6170180281575200884}
   attackArea: {fileID: 2750308828202707159}
+  curDir: {x: 1, y: 0}
 --- !u!114 &2520417323953276602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -900,6 +997,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57ec20655a609924caf1243282e151cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerObj: {fileID: 7306159096753131177}
+  player: {fileID: 3185728706339094184}
 --- !u!114 &4214223806531646895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -917,7 +1016,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   isGrounded: 0
---- !u!95 &1677761998720167045
+--- !u!95 &6102295846456096794
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -939,6 +1038,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2282522973941644489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7306159096753131177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c61a99ce5901f49baf3145938203c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpEffect: {fileID: 1899205466104016169, guid: 3855b77fbbe171844b15dbd60c2585e2, type: 3}
+  loc: {fileID: 6370574484783867249}
 --- !u!1 &7688279467657981125
 GameObject:
   m_ObjectHideFlags: 0

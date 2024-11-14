@@ -2,9 +2,15 @@ using UnityEngine;
 
 public class playerScript : MonoBehaviour
 {
-    public float horizontalInput { get; protected set; }
-    public float verticalInput { get; protected set; }
+    public float lastX = 1;
+    public float horizontalInput;
+    public float verticalInput;
 
+    public bool dying = false;
+
+    public EffectGenerator jumpEffect;
+
+    public GameObject playerObj;
     public Rigidbody2D rb;
     [SerializeField] private BoxCollider2D hitBoxCollider;
     [SerializeField] private GameObject dashingHitBox;
@@ -30,11 +36,42 @@ public class playerScript : MonoBehaviour
     private float jumpBufferTimeCounter = 0f;
 
     public bool damaged { get; protected set; }
-    public float doubleJumpPenality = 0.5f; 
+    public float doubleJumpPenality = 0.5f;
+
+    public float dashTimer = 0f;
+    public float maxDashTimer = 0.5f;
+
+    public PlayerAttack pAtk;
+
+    public bool dead;
+
+    public Health health;
+
+    public float jumpCut = 0.5f;
+
 
     public bool isIdle()
     {
         return (Mathf.Abs(rb.linearVelocityX) < 0.1f && groundSensor.isGrounded);
+    }
+
+    public void resetPlayer()
+    {
+        rb.linearVelocity = Vector2.zero;
+        playerObj.SetActive(true);
+
+        jumps = maxJumps;
+
+        health.regen();
+
+        dying = false;
+        dead = false;
+        damaged = false;
+
+        isDashing = false;
+
+        hitBoxCollider.enabled = true;
+        dashingHitBox.SetActive(false);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -49,13 +86,15 @@ public class playerScript : MonoBehaviour
     public void getInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
+        if (horizontalInput != 0)
+            lastX = horizontalInput;
         verticalInput = Input.GetAxisRaw("Vertical");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (damaged)
+        if (damaged || dead || dying)
         {
             return;
         }
@@ -65,10 +104,6 @@ public class playerScript : MonoBehaviour
         } else {
             rb.gravityScale = manaStore.getGravityScale();
         }
-
-        getInput();
-        HandleJump();
-        HandleDash();
 
         // reset jump count
         if (groundSensor.isGrounded)
@@ -81,6 +116,11 @@ public class playerScript : MonoBehaviour
             coyoteTimeCounter -= Time.deltaTime;
         }
 
+        getInput();
+        HandleJump();
+        HandleDash();
+        HandleAtk();
+
         if (Input.GetButtonDown("Jump"))
         {
             jumpBufferTimeCounter = jumpBufferTime;
@@ -88,6 +128,35 @@ public class playerScript : MonoBehaviour
         else
         {
             jumpBufferTimeCounter -= Time.deltaTime;
+        }
+
+        if (!groundSensor.isGrounded && !isDashing)
+        {
+            float maxAirSpeed = manaStore.getMaxAirSpeed();
+            rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, -maxAirSpeed, maxAirSpeed);
+        }
+        else if (groundSensor.isGrounded && !isDashing)
+        {
+            float maxGroundSpeed = manaStore.getRunSpeed();
+            rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, -maxGroundSpeed, maxGroundSpeed);
+        }
+
+        if (isDashing)
+        {
+            dashTimer += Time.deltaTime;
+        }
+    }
+
+
+    private void HandleAtk()
+    {
+        if (Input.GetMouseButtonDown(0)) // TODO: Change Key 
+        {
+            float xInput = horizontalInput;
+            float yInput = verticalInput;
+            if (xInput == 0 && yInput == 0)
+                xInput = lastX;
+            pAtk.Attack(xInput, yInput);
         }
     }
 
@@ -103,8 +172,7 @@ public class playerScript : MonoBehaviour
             }
 
             float acc = horizontalInput * manaStore.getRunAcceleration();
-            float maxRunSpeed = manaStore.getRunSpeed();
-            float newSpeed = Mathf.Clamp(rb.linearVelocity.x + acc, -maxRunSpeed, maxRunSpeed);
+            float newSpeed = rb.linearVelocity.x + acc;
 
             rb.linearVelocity = new Vector2(
                 newSpeed,
@@ -119,6 +187,7 @@ public class playerScript : MonoBehaviour
         hitBoxCollider.enabled = false;
         dashingHitBox.SetActive(true);
         isDashing = true;
+        dashTimer = 0f;
     }
 
     public void deactivateDash()
@@ -126,6 +195,7 @@ public class playerScript : MonoBehaviour
         hitBoxCollider.enabled = true;
         dashingHitBox.SetActive(false);
         isDashing = false;
+        dashTimer = 0f;
     }
 
     public void HandleDash()
@@ -140,13 +210,13 @@ public class playerScript : MonoBehaviour
             if (newX == 0 && newY == 0)
             {
                 rb.linearVelocity = new Vector2(
-                    rb.linearVelocity.x + ( manaStore.getDashSpeed() * Mathf.Sign(transform.localScale.x)),
-                    rb.linearVelocity.y
+                    ( manaStore.getDashSpeed() * lastX ),
+                    0
                 );
             } else
             {
                 dirVec *= manaStore.getDashSpeed();
-                rb.linearVelocity = rb.linearVelocity + dirVec;
+                rb.linearVelocity = dirVec;
             }
 
 
@@ -173,19 +243,29 @@ public class playerScript : MonoBehaviour
         // }
 
         bool doubleJump = false;
-        if (jumpBufferTimeCounter > 0f && (coyoteTimeCounter > 0f || grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)))
+        if (jumpBufferTimeCounter > 0f && (coyoteTimeCounter > 0.001f || grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)))
         {
             if (!grounded)
             {
-                doubleJump = true;
                 if (jumps <= 0)
+                {
+                    doubleJump = true;
                     manaStore.decreaseMana(forceJumpMana);
+                }
                 else if (coyoteTimeCounter <= 0f)
+                {
+                    doubleJump = true;
                     jumps -= 1;
+                }
             }
             coyoteTimeCounter = 0f;
             jumpBufferTimeCounter = 0f;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x,  ( manaStore.getJumpSpeed() * (doubleJump ? doubleJumpPenality : 1f) ) );
+            jumpEffect.generate();
+        }
+
+        if (rb.linearVelocityY > 0f && !isDashing && Input.GetButtonUp("Jump")) {
+            rb.linearVelocityY *= jumpCut;
         }
     }
 
@@ -205,19 +285,26 @@ public class playerScript : MonoBehaviour
     {
         if (isDashing)
         {
-            rb.linearVelocity *= dashingDrag;
-            if (Mathf.Abs(rb.linearVelocity.x) <= manaStore.getRunSpeed() && 
-                Mathf.Abs(rb.linearVelocity.y) <= manaStore.getJumpSpeed())
+            if (dashTimer > maxDashTimer)
             {
-                if (Mathf.Abs(rb.linearVelocity.x) >= Mathf.Abs(rb.linearVelocity.y))
-                    rb.linearVelocityX = manaStore.getRunSpeed() * Mathf.Sign(rb.linearVelocityX);
                 deactivateDash();
+                // rb.linearVelocity *= dashingDrag;
             }
+            /*
+                if (Mathf.Abs(rb.linearVelocity.x) <= manaStore.getRunSpeed() && 
+                    Mathf.Abs(rb.linearVelocity.y) <= manaStore.getJumpSpeed())
+                {
+                    if (Mathf.Abs(rb.linearVelocity.x) >= Mathf.Abs(rb.linearVelocity.y))
+                        rb.linearVelocityX = manaStore.getRunSpeed() * Mathf.Sign(rb.linearVelocityX);
+                }
+            */
         }
         else
         {
-            if (groundSensor.isGrounded && horizontalInput == 0 && rb.linearVelocity.y <= 0)
+            if (groundSensor.isGrounded && horizontalInput == 0 && rb.linearVelocity.y <= 0.1f)
+            {
                 rb.linearVelocity *= groundDrag;
+            }
         }
 
     }

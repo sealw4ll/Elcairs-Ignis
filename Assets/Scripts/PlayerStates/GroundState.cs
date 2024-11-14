@@ -13,13 +13,16 @@ public class GroundState : PlayerState
     {
         if (playerAtk.attacking)
         {
-            Set(attackState);
+            Set(attackState, true);
         }
         else if (player.isDashing)
         {
             Set(dashState);
         }
-        else if (Mathf.Abs(player.rb.linearVelocityX) >= runState.runningThreshold)
+        else if (
+            Mathf.Abs(player.rb.linearVelocityX) >= runState.runningThreshold || 
+            Mathf.Abs(player.horizontalInput) > 0
+            )
         {
             Set(runState);
         }

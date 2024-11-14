@@ -10,7 +10,7 @@ public class RunState : PlayerState
     public override void Do()
     {
         // Debug.Log("Running");
-        if (player.rb.linearVelocityX < 0)
+        if (player.rb.linearVelocityX < 0 || player.horizontalInput < 0)
         {
             Set(runLeftState);
         }

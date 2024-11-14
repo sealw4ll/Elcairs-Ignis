@@ -4,6 +4,7 @@ public class RespawnScript : MonoBehaviour
 {
     public GameObject player;
     public GameObject respawnPoint;
+    public playerScript PlayerScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,5 +23,13 @@ public class RespawnScript : MonoBehaviour
         {
             player.transform.position = respawnPoint.transform.position;
         }
+    }
+
+    public void RespawnFunc()
+    {
+        Vector3 newPosition = respawnPoint.transform.position;
+        newPosition.z = 0;
+        player.transform.position = newPosition;
+        PlayerScript.resetPlayer();
     }
 }

@@ -29,7 +29,9 @@ public class dashingManaRegen : MonoBehaviour
 
             // onRush moment
             Health targetHP = collision.GetComponent<Health>();
-            targetHP.dealDmg(damage, this.GetComponent<Rigidbody2D>());
+            if (targetHP != null) { 
+                targetHP.dealDmg(damage, this.GetComponent<Rigidbody2D>());
+            }
         }
     }
 }

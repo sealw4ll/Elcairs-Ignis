@@ -150,6 +150,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -584,7 +597,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      byebyeslime_0: -6561685154044278297
+      byebyeslime_1: -9067787584973923787
+      byebyeslime_10: 8936597690478945746
+      byebyeslime_11: -2948321035708623147
+      byebyeslime_12: -7799728169185561122
+      byebyeslime_13: -6895833319116371609
+      byebyeslime_14: 8770804101564568928
+      byebyeslime_15: 8856219777671892670
+      byebyeslime_16: -6008583287293530139
+      byebyeslime_17: -7301218798420558973
+      byebyeslime_18: 197012437015521934
+      byebyeslime_2: -4473362827661942868
+      byebyeslime_3: -3182372740331500153
+      byebyeslime_4: -1665268909757654733
+      byebyeslime_5: 1385380910674834319
+      byebyeslime_6: -2161193348998004365
+      byebyeslime_7: -665939436612000433
+      byebyeslime_8: -8479929164015460263
+      byebyeslime_9: -6889056216269435207
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

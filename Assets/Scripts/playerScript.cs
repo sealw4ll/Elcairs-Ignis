@@ -49,6 +49,7 @@ public class playerScript : MonoBehaviour
     public Health health;
 
     public float jumpCut = 0.5f;
+    public float maxFallSpeed = 30f;
 
     public bool isIdle()
     {
@@ -142,6 +143,11 @@ public class playerScript : MonoBehaviour
         {
             float maxGroundSpeed = manaStore.getRunSpeed();
             rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, -maxGroundSpeed, maxGroundSpeed);
+        }
+
+        if (rb.linearVelocityY < -maxFallSpeed)
+        {
+            rb.linearVelocityY = -maxFallSpeed;
         }
 
         if (isDashing)

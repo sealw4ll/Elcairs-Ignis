@@ -45,6 +45,8 @@ public class playerScript : MonoBehaviour
 
     public Health health;
 
+    public float jumpCut = 0.5f;
+
 
     public bool isIdle()
     {
@@ -239,15 +241,24 @@ public class playerScript : MonoBehaviour
         {
             if (!grounded)
             {
-                doubleJump = true;
                 if (jumps <= 0)
+                {
+                    doubleJump = true;
                     manaStore.decreaseMana(forceJumpMana);
+                }
                 else if (coyoteTimeCounter <= 0f)
+                {
+                    doubleJump = true;
                     jumps -= 1;
+                }
             }
             coyoteTimeCounter = 0f;
             jumpBufferTimeCounter = 0f;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x,  ( manaStore.getJumpSpeed() * (doubleJump ? doubleJumpPenality : 1f) ) );
+        }
+
+        if (rb.linearVelocityY > 0f && !isDashing && Input.GetButtonUp("Jump")) {
+            rb.linearVelocityY *= jumpCut;
         }
     }
 

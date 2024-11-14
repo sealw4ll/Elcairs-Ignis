@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class playerScript : MonoBehaviour
 {
-    public float horizontalInput { get; protected set; }
-    public float verticalInput { get; protected set; }
+    public float horizontalInput;
+    public float verticalInput;
 
     public Rigidbody2D rb;
     [SerializeField] private BoxCollider2D hitBoxCollider;
@@ -216,8 +216,10 @@ public class playerScript : MonoBehaviour
         }
         else
         {
-            if (groundSensor.isGrounded && horizontalInput == 0 && rb.linearVelocity.y <= 0)
+            if (groundSensor.isGrounded && horizontalInput == 0 && rb.linearVelocity.y <= 0.1f)
+            {
                 rb.linearVelocity *= groundDrag;
+            }
         }
 
     }

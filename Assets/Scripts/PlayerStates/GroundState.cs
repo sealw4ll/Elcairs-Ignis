@@ -19,7 +19,10 @@ public class GroundState : PlayerState
         {
             Set(dashState);
         }
-        else if (Mathf.Abs(player.rb.linearVelocityX) >= runState.runningThreshold)
+        else if (
+            Mathf.Abs(player.rb.linearVelocityX) >= runState.runningThreshold || 
+            Mathf.Abs(player.horizontalInput) > 0
+            )
         {
             Set(runState);
         }

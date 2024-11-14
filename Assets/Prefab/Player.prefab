@@ -203,6 +203,9 @@ GameObject:
   - component: {fileID: 7621137630547730607}
   - component: {fileID: 7222966429733407785}
   - component: {fileID: 1774752608774166075}
+  - component: {fileID: 1115915817289997523}
+  - component: {fileID: 62116913607518010}
+  - component: {fileID: 3743083689461389537}
   - component: {fileID: 4004562626971186978}
   - component: {fileID: 527770883420712493}
   - component: {fileID: 4325588069862278199}
@@ -342,6 +345,49 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 847d1b1e66a411b4b97db6c641a9b21a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isComplete: 0
+  velocityThreshold: 0.1
+  jumpLeftState: {fileID: 62116913607518010}
+  jumpRightState: {fileID: 3743083689461389537}
+  jumpIdleState: {fileID: 1115915817289997523}
+--- !u!114 &1115915817289997523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4115931622302925626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6073d85c2e2bd7d43b4e2c77f00ff0a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isComplete: 0
+--- !u!114 &62116913607518010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4115931622302925626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24cf410d1ce9aae41b277019793ed446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isComplete: 0
+--- !u!114 &3743083689461389537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4115931622302925626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5727c793c74b3d941bcc99cd383fff9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isComplete: 0
@@ -689,7 +735,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -761,7 +807,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -828,6 +874,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3efcf8f08d094ac4c9e3dd74a74a1297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  horizontalInput: 0
+  verticalInput: 0
   rb: {fileID: 7012159652732248255}
   hitBoxCollider: {fileID: 4386419663685758505}
   dashingHitBox: {fileID: 7220035802766845315}
@@ -840,7 +888,7 @@ MonoBehaviour:
   groundSensor: {fileID: 4214223806531646895}
   coyoteTime: 0.1
   jumpBufferTime: 0.03
-  doubleJumpPenality: 0.85
+  doubleJumpPenality: 0.65
 --- !u!114 &5224965004768791427
 MonoBehaviour:
   m_ObjectHideFlags: 0

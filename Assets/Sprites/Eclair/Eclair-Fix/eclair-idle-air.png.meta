@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: fa7a3dc5b6421594694a4d54173e9cc2
+guid: a91a88ba50eaca3439a3e321f29f6d4c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8295752424191175953
-    second: Eclair_Walk_R-Sheet_0
+      213: 7249448338422122287
+    second: eclair-idle-air_0
   - first:
-      213: -4853427425301261287
-    second: Eclair_Walk_R-Sheet_1
+      213: 7766357926604500488
+    second: eclair-idle-air_1
   - first:
-      213: -2937535924408371756
-    second: Eclair_Walk_R-Sheet_2
+      213: -3603646685057495019
+    second: eclair-idle-air_2
   - first:
-      213: -3563143926882909188
-    second: Eclair_Walk_R-Sheet_3
+      213: -6349818503996582545
+    second: eclair-idle-air_3
   - first:
-      213: 67572635327695910
-    second: Eclair_Walk_R-Sheet_4
+      213: -8401206325084783745
+    second: eclair-idle-air_4
+  - first:
+      213: -1124081132471288554
+    second: eclair-idle-air_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,12 +128,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Eclair_Walk_R-Sheet_0
+      name: eclair-idle-air_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 60
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -140,19 +143,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 11d208480ee602370800000000000000
-      internalID: 8295752424191175953
+      spriteID: f274235cad63b9460800000000000000
+      internalID: 7249448338422122287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eclair_Walk_R-Sheet_1
+      name: eclair-idle-air_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 57
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -162,19 +165,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 91497c3a87925acb0800000000000000
-      internalID: -4853427425301261287
+      spriteID: 80eecc5e265a7cb60800000000000000
+      internalID: 7766357926604500488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eclair_Walk_R-Sheet_2
+      name: eclair-idle-air_2
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 57
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -184,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d5b0b6f3a6cb37d0800000000000000
-      internalID: -2937535924408371756
+      spriteID: 5105221de664dfdc0800000000000000
+      internalID: -3603646685057495019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eclair_Walk_R-Sheet_3
+      name: eclair-idle-air_3
       rect:
         serializedVersion: 2
-        x: 191
-        y: 0
-        width: 61
-        height: 64
+        x: 192
+        y: 2
+        width: 64
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf3cd821a7b2d8ec0800000000000000
-      internalID: -3563143926882909188
+      spriteID: f65d411a6b9e0e7a0800000000000000
+      internalID: -6349818503996582545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eclair_Walk_R-Sheet_4
+      name: eclair-idle-air_4
       rect:
         serializedVersion: 2
-        x: 255
-        y: 0
-        width: 63
-        height: 64
+        x: 256
+        y: 2
+        width: 64
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +231,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 62c8e3d24f010f000800000000000000
-      internalID: 67572635327695910
+      spriteID: f7b7e8cdb5be86b80800000000000000
+      internalID: -8401206325084783745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclair-idle-air_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d74586a267660f0800000000000000
+      internalID: -1124081132471288554
       vertices: []
       indices: 
       edges: []
@@ -248,11 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Eclair_Walk_R-Sheet_0: 8295752424191175953
-      Eclair_Walk_R-Sheet_1: -4853427425301261287
-      Eclair_Walk_R-Sheet_2: -2937535924408371756
-      Eclair_Walk_R-Sheet_3: -3563143926882909188
-      Eclair_Walk_R-Sheet_4: 67572635327695910
+      eclair-idle-air_0: 7249448338422122287
+      eclair-idle-air_1: 7766357926604500488
+      eclair-idle-air_2: -3603646685057495019
+      eclair-idle-air_3: -6349818503996582545
+      eclair-idle-air_4: -8401206325084783745
+      eclair-idle-air_5: -1124081132471288554
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

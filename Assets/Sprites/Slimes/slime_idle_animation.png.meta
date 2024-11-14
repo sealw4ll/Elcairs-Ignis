@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 696960db1bbe19840ac54f1570f2cc4b
+guid: 25c90621720ae8f448849f7ad849a655
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4563712208195359656
-    second: slash-Sheet_0
+      213: 8783529447861640803
+    second: slime_idle_animation_0
   - first:
-      213: 3355430407023061188
-    second: slash-Sheet_1
+      213: -3652965854586050306
+    second: slime_idle_animation_1
   - first:
-      213: 7215215457375706566
-    second: slash-Sheet_2
+      213: 7902111665645244455
+    second: slime_idle_animation_2
   - first:
-      213: 3451871067320388228
-    second: slash-Sheet_3
+      213: -927701663406724269
+    second: slime_idle_animation_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,30 +105,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: slash-Sheet_0
+      name: slime_idle_animation_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 40
-        width: 14
-        height: 11
+        x: 9
+        y: 1
+        width: 47
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 85ce66d1def6aa0c0800000000000000
-      internalID: -4563712208195359656
+      spriteID: 36ed9f5ee7d55e970800000000000000
+      internalID: 8783529447861640803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slash-Sheet_1
+      name: slime_idle_animation_1
       rect:
         serializedVersion: 2
-        x: 89
-        y: 25
-        width: 25
-        height: 26
+        x: 71
+        y: 3
+        width: 51
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c867276d22e09e20800000000000000
-      internalID: 3355430407023061188
+      spriteID: ef864c4d8ee0e4dc0800000000000000
+      internalID: -3652965854586050306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slash-Sheet_2
+      name: slime_idle_animation_2
       rect:
         serializedVersion: 2
-        x: 164
-        y: 24
-        width: 14
-        height: 22
+        x: 137
+        y: 3
+        width: 46
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6cd59ca0b38912460800000000000000
-      internalID: 7215215457375706566
+      spriteID: 720514651b0f9ad60800000000000000
+      internalID: 7902111665645244455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slash-Sheet_3
+      name: slime_idle_animation_3
       rect:
         serializedVersion: 2
-        x: 228
-        y: 24
-        width: 10
-        height: 6
+        x: 203
+        y: 3
+        width: 43
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 48a841a627287ef20800000000000000
-      internalID: 3451871067320388228
+      spriteID: 35b6a1790442023f0800000000000000
+      internalID: -927701663406724269
       vertices: []
       indices: 
       edges: []
@@ -222,11 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      slash-Sheet_0: -4563712208195359656
-      slash-Sheet_1: 3355430407023061188
-      slash-Sheet_2: 7215215457375706566
-      slash-Sheet_3: 3451871067320388228
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

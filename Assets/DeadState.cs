@@ -7,4 +7,13 @@ public class DeadState : PlayerState
         base.Enter();
         playerAnim.Play("death");
     }
+
+    public override void Do()
+    {
+        base.Do();
+        if (!player.dead)
+        {
+            isComplete = true;
+        }
+    }
 }

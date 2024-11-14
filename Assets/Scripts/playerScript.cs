@@ -264,9 +264,11 @@ public class playerScript : MonoBehaviour
             jumpEffect.generate();
         }
 
+        /*
         if (rb.linearVelocityY > 0f && !isDashing && Input.GetButtonUp("Jump")) {
             rb.linearVelocityY *= jumpCut;
         }
+        */
     }
 
     public void toggleDamaged()

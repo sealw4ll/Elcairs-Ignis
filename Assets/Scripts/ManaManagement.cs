@@ -9,6 +9,7 @@ public struct Speed {
     public float dashSpeed;
     public float jumpSpeed;
     public float gravityScale;
+    public float maxAirSpeed;
 }
 
 public class ManaManagement : MonoBehaviour
@@ -84,5 +85,10 @@ public class ManaManagement : MonoBehaviour
     public float getGravityScale()
     {
         return getSpeedData().gravityScale;
+    }
+
+    public float getMaxAirSpeed()
+    {
+        return getSpeedData().maxAirSpeed;
     }
 }

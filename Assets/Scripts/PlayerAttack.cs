@@ -24,12 +24,14 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // TODO: Change Key 
-        {
-            xDir = Input.GetAxis("Horizontal");
-            yDir = Input.GetAxis("Vertical");
-            Attack();
-        }
+        /*
+            if (Input.GetMouseButtonDown(0)) // TODO: Change Key 
+            {
+                xDir = Input.GetAxis("Horizontal");
+                yDir = Input.GetAxis("Vertical");
+                Attack();
+            }
+        */
 
         if (attacking)
         {
@@ -48,11 +50,14 @@ public class PlayerAttack : MonoBehaviour
         attackArea.SetActive(false);
     }
 
-    private void Attack()
+    public void Attack(float xDir, float yDir)
     {
         Vector2 direction = new Vector2(xDir, yDir);
         if (direction == Vector2.zero)
+        {
+            curDir = lastDir;
             atkCenter.rotation = Quaternion.FromToRotation(Vector3.up, lastDir);
+        }
         else
         {
             if (xDir != 0)
@@ -60,8 +65,8 @@ public class PlayerAttack : MonoBehaviour
                 lastDir = new Vector2(xDir, 0);
             }
             atkCenter.rotation = Quaternion.FromToRotation(Vector3.up, direction);
+            curDir = direction;
         }
-        curDir = direction;
 
         attacking = true;
         attackArea.SetActive(true);

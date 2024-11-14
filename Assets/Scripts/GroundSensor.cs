@@ -6,7 +6,7 @@ public class GroundSensor : MonoBehaviour {
 
     public bool isGrounded;
 
-    void FixedUpdate() {
+    void Update() {
         CheckGrounded();
     }
 

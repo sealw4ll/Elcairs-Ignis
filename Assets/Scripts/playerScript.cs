@@ -8,6 +8,8 @@ public class playerScript : MonoBehaviour
 
     public bool dying = false;
 
+    public EffectGenerator jumpEffect;
+
     public GameObject playerObj;
     public Rigidbody2D rb;
     [SerializeField] private BoxCollider2D hitBoxCollider;
@@ -103,11 +105,6 @@ public class playerScript : MonoBehaviour
             rb.gravityScale = manaStore.getGravityScale();
         }
 
-        getInput();
-        HandleJump();
-        HandleDash();
-        HandleAtk();
-
         // reset jump count
         if (groundSensor.isGrounded)
         {
@@ -118,6 +115,11 @@ public class playerScript : MonoBehaviour
         {
             coyoteTimeCounter -= Time.deltaTime;
         }
+
+        getInput();
+        HandleJump();
+        HandleDash();
+        HandleAtk();
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -241,7 +243,7 @@ public class playerScript : MonoBehaviour
         // }
 
         bool doubleJump = false;
-        if (jumpBufferTimeCounter > 0f && (coyoteTimeCounter > 0f || grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)))
+        if (jumpBufferTimeCounter > 0f && (coyoteTimeCounter > 0.001f || grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)))
         {
             if (!grounded)
             {
@@ -259,6 +261,7 @@ public class playerScript : MonoBehaviour
             coyoteTimeCounter = 0f;
             jumpBufferTimeCounter = 0f;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x,  ( manaStore.getJumpSpeed() * (doubleJump ? doubleJumpPenality : 1f) ) );
+            jumpEffect.generate();
         }
 
         if (rb.linearVelocityY > 0f && !isDashing && Input.GetButtonUp("Jump")) {

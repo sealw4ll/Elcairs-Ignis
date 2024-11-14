@@ -1,0 +1,1300 @@
+fileFormatVersion: 2
+guid: 80cc2095b68a1cc498f460a350735432
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4634781836255498859
+    second: Slime have face_0
+  - first:
+      213: -5140988882324169334
+    second: Slime have face_1
+  - first:
+      213: -6086310950620407273
+    second: Slime have face_2
+  - first:
+      213: -5679259346838786947
+    second: Slime have face_3
+  - first:
+      213: 9011594782900997978
+    second: Slime have face_4
+  - first:
+      213: 2835229081152748094
+    second: Slime have face_5
+  - first:
+      213: -6317861340862144289
+    second: Slime have face_6
+  - first:
+      213: -3673952286140356451
+    second: Slime have face_7
+  - first:
+      213: 4215181440319618366
+    second: Slime have face_8
+  - first:
+      213: -1183716121969271543
+    second: Slime have face_9
+  - first:
+      213: -8496275586559700252
+    second: Slime have face_10
+  - first:
+      213: 699239048689766644
+    second: Slime have face_11
+  - first:
+      213: 8683469393502105883
+    second: Slime have face_12
+  - first:
+      213: -2073022994577288746
+    second: Slime have face_13
+  - first:
+      213: -6602420089547755062
+    second: Slime have face_14
+  - first:
+      213: 7425288819499642050
+    second: Slime have face_15
+  - first:
+      213: -9107056502078795039
+    second: Slime have face_16
+  - first:
+      213: 2443408645791738464
+    second: Slime have face_17
+  - first:
+      213: 4525900021302728614
+    second: Slime have face_18
+  - first:
+      213: 736086220526222310
+    second: Slime have face_19
+  - first:
+      213: 512057149007087341
+    second: Slime have face_20
+  - first:
+      213: 4449686056735164471
+    second: Slime have face_21
+  - first:
+      213: -5302563867179798207
+    second: Slime have face_22
+  - first:
+      213: 4446594430983902666
+    second: Slime have face_23
+  - first:
+      213: -1676942843093924793
+    second: Slime have face_24
+  - first:
+      213: -7529152152415688079
+    second: Slime have face_25
+  - first:
+      213: -5523496860159961445
+    second: Slime have face_26
+  - first:
+      213: 5835091455395529042
+    second: Slime have face_27
+  - first:
+      213: -4842234074696872267
+    second: Slime have face_28
+  - first:
+      213: 3492669188458214342
+    second: Slime have face_29
+  - first:
+      213: 5573047603035044130
+    second: Slime have face_30
+  - first:
+      213: -2715177454618068711
+    second: Slime have face_31
+  - first:
+      213: -6957471800915944343
+    second: Slime have face_32
+  - first:
+      213: 8311773847860694158
+    second: Slime have face_33
+  - first:
+      213: -5153643004483793957
+    second: Slime have face_34
+  - first:
+      213: 6882277055920196439
+    second: Slime have face_35
+  - first:
+      213: 6973263153302991477
+    second: Slime have face_36
+  - first:
+      213: 6203090043933487448
+    second: Slime have face_37
+  - first:
+      213: -5494753073328529228
+    second: Slime have face_38
+  - first:
+      213: 4106934063305585801
+    second: Slime have face_39
+  - first:
+      213: 8856316366895335611
+    second: Slime have face_40
+  - first:
+      213: -1846497596348033970
+    second: Slime have face_41
+  - first:
+      213: -7457609357040149341
+    second: Slime have face_42
+  - first:
+      213: 6001704652026207455
+    second: Slime have face_43
+  - first:
+      213: 9173235457957550556
+    second: Slime have face_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Slime have face_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 279
+        width: 47
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59dee8ed972fdafb0800000000000000
+      internalID: -4634781836255498859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 281
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8dd5d289d987a8b0800000000000000
+      internalID: -5140988882324169334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 282
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a53b3ef64198ba0800000000000000
+      internalID: -6086310950620407273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 283
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c6b5cc6b73f21b0800000000000000
+      internalID: -5679259346838786947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_4
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 284
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5fc396a5bd9f0d70800000000000000
+      internalID: 9011594782900997978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_5
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 285
+        width: 51
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a77fed3d1c85720800000000000000
+      internalID: 2835229081152748094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_6
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 311
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd02dbd75927258a0800000000000000
+      internalID: -6317861340862144289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_7
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 296
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d98aed67cdf730dc0800000000000000
+      internalID: -3673952286140356451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_8
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 289
+        width: 59
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3df11edf255f7a30800000000000000
+      internalID: 4215181440319618366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_9
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 216
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d5e1b6578929fe0800000000000000
+      internalID: -1183716121969271543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_10
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 217
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e219458e5a271a80800000000000000
+      internalID: -8496275586559700252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_11
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 218
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f05c36c53234b900800000000000000
+      internalID: 699239048689766644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_12
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 219
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b117ba90861e18870800000000000000
+      internalID: 8683469393502105883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_13
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 220
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1110dd1942b33e0800000000000000
+      internalID: -2073022994577288746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_14
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 221
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac17a90e8ed7f54a0800000000000000
+      internalID: -6602420089547755062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_15
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 247
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cca4f827dceb0760800000000000000
+      internalID: 7425288819499642050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_16
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 232
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e29e24dc5c3d9180800000000000000
+      internalID: -9107056502078795039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_17
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 225
+        width: 59
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06ae885b73bb8e120800000000000000
+      internalID: 2443408645791738464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 152
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a79ea2171a3fce30800000000000000
+      internalID: 4525900021302728614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_19
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 153
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb7682848a173a00800000000000000
+      internalID: 736086220526222310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_20
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 154
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6444793413b1700800000000000000
+      internalID: 512057149007087341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_21
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 155
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73845b5a4e570cd30800000000000000
+      internalID: 4449686056735164471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_22
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 156
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1413de9c1428966b0800000000000000
+      internalID: -5302563867179798207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_23
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 157
+        width: 51
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5960f631a75bd30800000000000000
+      internalID: 4446594430983902666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_24
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 183
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 744c0c87e5d4ab8e0800000000000000
+      internalID: -1676942843093924793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_25
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 168
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a256f2204138790800000000000000
+      internalID: -7529152152415688079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_26
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 161
+        width: 59
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b961e24ded89853b0800000000000000
+      internalID: -5523496860159961445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_27
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 88
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25184c653c86af050800000000000000
+      internalID: 5835091455395529042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_28
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 89
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be866aa3cdecccb0800000000000000
+      internalID: -4842234074696872267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_29
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 90
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3f0083f14787030800000000000000
+      internalID: 3492669188458214342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_30
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 91
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229fe378441775d40800000000000000
+      internalID: 5573047603035044130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_31
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 92
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919375b9d70c15ad0800000000000000
+      internalID: -2715177454618068711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_32
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 93
+        width: 51
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c9b936248127f90800000000000000
+      internalID: -6957471800915944343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_33
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 119
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c4e17e64a595370800000000000000
+      internalID: 8311773847860694158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_34
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 104
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb019a1ef49a78b0800000000000000
+      internalID: -5153643004483793957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_35
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 97
+        width: 59
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75bc1fbb482c28f50800000000000000
+      internalID: 6882277055920196439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_36
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 24
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572f1f954e106c060800000000000000
+      internalID: 6973263153302991477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_37
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 25
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851fa62978dc51650800000000000000
+      internalID: 6203090043933487448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_38
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 26
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b064c73137beb3b0800000000000000
+      internalID: -5494753073328529228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_39
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 27
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 984f74765c2cef830800000000000000
+      internalID: 4106934063305585801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_40
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 28
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8464b10d4f7ea70800000000000000
+      internalID: 8856316366895335611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_41
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 29
+        width: 51
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e441013283cef56e0800000000000000
+      internalID: -1846497596348033970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_42
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 55
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac1ef74dcf318890800000000000000
+      internalID: -7457609357040149341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_43
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 40
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdcd4d625965a4350800000000000000
+      internalID: 6001704652026207455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime have face_44
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 33
+        width: 59
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9d3901c01ed4f70800000000000000
+      internalID: 9173235457957550556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Slime have face_0: -4634781836255498859
+      Slime have face_1: -5140988882324169334
+      Slime have face_10: -8496275586559700252
+      Slime have face_11: 699239048689766644
+      Slime have face_12: 8683469393502105883
+      Slime have face_13: -2073022994577288746
+      Slime have face_14: -6602420089547755062
+      Slime have face_15: 7425288819499642050
+      Slime have face_16: -9107056502078795039
+      Slime have face_17: 2443408645791738464
+      Slime have face_18: 4525900021302728614
+      Slime have face_19: 736086220526222310
+      Slime have face_2: -6086310950620407273
+      Slime have face_20: 512057149007087341
+      Slime have face_21: 4449686056735164471
+      Slime have face_22: -5302563867179798207
+      Slime have face_23: 4446594430983902666
+      Slime have face_24: -1676942843093924793
+      Slime have face_25: -7529152152415688079
+      Slime have face_26: -5523496860159961445
+      Slime have face_27: 5835091455395529042
+      Slime have face_28: -4842234074696872267
+      Slime have face_29: 3492669188458214342
+      Slime have face_3: -5679259346838786947
+      Slime have face_30: 5573047603035044130
+      Slime have face_31: -2715177454618068711
+      Slime have face_32: -6957471800915944343
+      Slime have face_33: 8311773847860694158
+      Slime have face_34: -5153643004483793957
+      Slime have face_35: 6882277055920196439
+      Slime have face_36: 6973263153302991477
+      Slime have face_37: 6203090043933487448
+      Slime have face_38: -5494753073328529228
+      Slime have face_39: 4106934063305585801
+      Slime have face_4: 9011594782900997978
+      Slime have face_40: 8856316366895335611
+      Slime have face_41: -1846497596348033970
+      Slime have face_42: -7457609357040149341
+      Slime have face_43: 6001704652026207455
+      Slime have face_44: 9173235457957550556
+      Slime have face_5: 2835229081152748094
+      Slime have face_6: -6317861340862144289
+      Slime have face_7: -3673952286140356451
+      Slime have face_8: 4215181440319618366
+      Slime have face_9: -1183716121969271543
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

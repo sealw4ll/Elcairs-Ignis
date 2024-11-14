@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: e172931a7a86ece40bd2c6a688365a1f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5625578240523288765
+    second: Eclair_Idle_Wink-Sheet_0
+  - first:
+      213: 2760039561861175484
+    second: Eclair_Idle_Wink-Sheet_1
+  - first:
+      213: -7854720765736449043
+    second: Eclair_Idle_Wink-Sheet_2
+  - first:
+      213: -849940023236880486
+    second: Eclair_Idle_Wink-Sheet_3
+  - first:
+      213: 3492062639450702748
+    second: Eclair_Idle_Wink-Sheet_4
+  - first:
+      213: 6463388161855469192
+    second: Eclair_Idle_Wink-Sheet_5
+  - first:
+      213: -785879676060462394
+    second: Eclair_Idle_Wink-Sheet_6
+  - first:
+      213: -929861961553813444
+    second: Eclair_Idle_Wink-Sheet_7
+  - first:
+      213: -8147840757469635881
+    second: Eclair_Idle_Wink-Sheet_8
+  - first:
+      213: 8877630965005352063
+    second: Eclair_Idle_Wink-Sheet_9
+  - first:
+      213: 3446625737210290063
+    second: Eclair_Idle_Wink-Sheet_10
+  - first:
+      213: -2546163145308060171
+    second: Eclair_Idle_Wink-Sheet_11
+  - first:
+      213: -6603105322732415333
+    second: Eclair_Idle_Wink-Sheet_12
+  - first:
+      213: 2168571559273985729
+    second: Eclair_Idle_Wink-Sheet_13
+  - first:
+      213: 5749733552414172938
+    second: Eclair_Idle_Wink-Sheet_14
+  - first:
+      213: 2909586910747374333
+    second: Eclair_Idle_Wink-Sheet_15
+  - first:
+      213: -8536567539675923042
+    second: Eclair_Idle_Wink-Sheet_16
+  - first:
+      213: 8346307773648443011
+    second: Eclair_Idle_Wink-Sheet_17
+  - first:
+      213: 5752731242369063224
+    second: Eclair_Idle_Wink-Sheet_18
+  - first:
+      213: 9015382400548261768
+    second: Eclair_Idle_Wink-Sheet_19
+  - first:
+      213: 3293578240557849182
+    second: Eclair_Idle_Wink-Sheet_20
+  - first:
+      213: -3879484275192430962
+    second: Eclair_Idle_Wink-Sheet_21
+  - first:
+      213: -9156583201422253382
+    second: Eclair_Idle_Wink-Sheet_22
+  - first:
+      213: 1811640150337726379
+    second: Eclair_Idle_Wink-Sheet_23
+  - first:
+      213: 2076390655740754245
+    second: Eclair_Idle_Wink-Sheet_24
+  - first:
+      213: 2277338223893059344
+    second: Eclair_Idle_Wink-Sheet_25
+  - first:
+      213: 5149770399701218903
+    second: Eclair_Idle_Wink-Sheet_26
+  - first:
+      213: 6593102198839483063
+    second: Eclair_Idle_Wink-Sheet_27
+  - first:
+      213: 2960541047505641732
+    second: Eclair_Idle_Wink-Sheet_28
+  - first:
+      213: -4175665924163857779
+    second: Eclair_Idle_Wink-Sheet_29
+  - first:
+      213: 5716560538267805512
+    second: Eclair_Idle_Wink-Sheet_30
+  - first:
+      213: -6968276113255971245
+    second: Eclair_Idle_Wink-Sheet_31
+  - first:
+      213: 14393254463572208
+    second: Eclair_Idle_Wink-Sheet_32
+  - first:
+      213: 8659422477662962775
+    second: Eclair_Idle_Wink-Sheet_33
+  - first:
+      213: 544528505565316150
+    second: Eclair_Idle_Wink-Sheet_34
+  - first:
+      213: -1427402798830775253
+    second: Eclair_Idle_Wink-Sheet_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 319
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0ce8aaa91121e40800000000000000
+      internalID: 5625578240523288765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 255
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb892c2bb51ad4620800000000000000
+      internalID: 2760039561861175484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 319
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb0564641d6ef290800000000000000
+      internalID: -7854720765736449043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 255
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9714925d086434f0800000000000000
+      internalID: -849940023236880486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 319
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c934fd5087c467030800000000000000
+      internalID: 3492062639450702748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 255
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8863cd8e94192b950800000000000000
+      internalID: 6463388161855469192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 319
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c29730399ef715f0800000000000000
+      internalID: -785879676060462394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 319
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30ef6bf8777813f0800000000000000
+      internalID: -929861961553813444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 319
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da929c000e0dee80800000000000000
+      internalID: -8147840757469635881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 191
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7cf624b35ea33b70800000000000000
+      internalID: 8877630965005352063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 191
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f5324d8dfd4df20800000000000000
+      internalID: 3446625737210290063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 191
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5c8b70c163aacd0800000000000000
+      internalID: -2546163145308060171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 255
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b961b0891be0d54a0800000000000000
+      internalID: -6603105322732415333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 255
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c67a84f750581e10800000000000000
+      internalID: 2168571559273985729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 255
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07aac8d3382bcf40800000000000000
+      internalID: 5749733552414172938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 127
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2393231ede06820800000000000000
+      internalID: 2909586910747374333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 127
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d7c742d05088980800000000000000
+      internalID: -8536567539675923042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 127
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386956213ba04d370800000000000000
+      internalID: 8346307773648443011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 191
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83913bde59ec5df40800000000000000
+      internalID: 5752731242369063224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 191
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88fccfa17821d1d70800000000000000
+      internalID: 9015382400548261768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 191
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a186ca5f325bd20800000000000000
+      internalID: 3293578240557849182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 63
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ef0792b9d492ac0800000000000000
+      internalID: -3879484275192430962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 63
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2eaea87184de080800000000000000
+      internalID: -9156583201422253382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 63
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba727b54e1d342910800000000000000
+      internalID: 1811640150337726379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 127
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5493e5adc42d0dc10800000000000000
+      internalID: 2076390655740754245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 127
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017909c7c0bba9f10800000000000000
+      internalID: 2277338223893059344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 127
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7563305d4e8a77740800000000000000
+      internalID: 5149770399701218903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba9ca1a4876f7b50800000000000000
+      internalID: 6593102198839483063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 63
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4016987a564f51920800000000000000
+      internalID: 2960541047505641732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 0
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82928137fd0d06c0800000000000000
+      internalID: -4175665924163857779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 63
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847e77c958d455f40800000000000000
+      internalID: 5716560538267805512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 0
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356c9846bc5bb4f90800000000000000
+      internalID: -6968276113255971245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 63
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f88673b692233000800000000000000
+      internalID: 14393254463572208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75442252dd27c2870800000000000000
+      internalID: 8659422477662962775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6348b407acd8e8700800000000000000
+      internalID: 544528505565316150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclair_Idle_Wink-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b241b4897b8d03ce0800000000000000
+      internalID: -1427402798830775253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Eclair_Idle_Wink-Sheet_0: 5625578240523288765
+      Eclair_Idle_Wink-Sheet_1: 2760039561861175484
+      Eclair_Idle_Wink-Sheet_10: 3446625737210290063
+      Eclair_Idle_Wink-Sheet_11: -2546163145308060171
+      Eclair_Idle_Wink-Sheet_12: -6603105322732415333
+      Eclair_Idle_Wink-Sheet_13: 2168571559273985729
+      Eclair_Idle_Wink-Sheet_14: 5749733552414172938
+      Eclair_Idle_Wink-Sheet_15: 2909586910747374333
+      Eclair_Idle_Wink-Sheet_16: -8536567539675923042
+      Eclair_Idle_Wink-Sheet_17: 8346307773648443011
+      Eclair_Idle_Wink-Sheet_18: 5752731242369063224
+      Eclair_Idle_Wink-Sheet_19: 9015382400548261768
+      Eclair_Idle_Wink-Sheet_2: -7854720765736449043
+      Eclair_Idle_Wink-Sheet_20: 3293578240557849182
+      Eclair_Idle_Wink-Sheet_21: -3879484275192430962
+      Eclair_Idle_Wink-Sheet_22: -9156583201422253382
+      Eclair_Idle_Wink-Sheet_23: 1811640150337726379
+      Eclair_Idle_Wink-Sheet_24: 2076390655740754245
+      Eclair_Idle_Wink-Sheet_25: 2277338223893059344
+      Eclair_Idle_Wink-Sheet_26: 5149770399701218903
+      Eclair_Idle_Wink-Sheet_27: 6593102198839483063
+      Eclair_Idle_Wink-Sheet_28: 2960541047505641732
+      Eclair_Idle_Wink-Sheet_29: -4175665924163857779
+      Eclair_Idle_Wink-Sheet_3: -849940023236880486
+      Eclair_Idle_Wink-Sheet_30: 5716560538267805512
+      Eclair_Idle_Wink-Sheet_31: -6968276113255971245
+      Eclair_Idle_Wink-Sheet_32: 14393254463572208
+      Eclair_Idle_Wink-Sheet_33: 8659422477662962775
+      Eclair_Idle_Wink-Sheet_34: 544528505565316150
+      Eclair_Idle_Wink-Sheet_35: -1427402798830775253
+      Eclair_Idle_Wink-Sheet_4: 3492062639450702748
+      Eclair_Idle_Wink-Sheet_5: 6463388161855469192
+      Eclair_Idle_Wink-Sheet_6: -785879676060462394
+      Eclair_Idle_Wink-Sheet_7: -929861961553813444
+      Eclair_Idle_Wink-Sheet_8: -8147840757469635881
+      Eclair_Idle_Wink-Sheet_9: 8877630965005352063
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -18,6 +18,7 @@ public class RespawnScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("test");
         if (other.gameObject.CompareTag("Player"))
         {
             player.transform.position = respawnPoint.transform.position;

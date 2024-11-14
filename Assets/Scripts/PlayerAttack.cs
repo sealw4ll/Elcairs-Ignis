@@ -9,10 +9,7 @@ public class PlayerAttack : MonoBehaviour
 
     private float timeToAttack = 0.25f;
     private float timer = 0f;
-    private float xDir;
-    private float yDir;
 
-    public Vector2 lastDir = new Vector2(1, 0);
     public Vector2 curDir = new Vector2(1, 0);
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -53,20 +50,8 @@ public class PlayerAttack : MonoBehaviour
     public void Attack(float xDir, float yDir)
     {
         Vector2 direction = new Vector2(xDir, yDir);
-        if (direction == Vector2.zero)
-        {
-            curDir = lastDir;
-            atkCenter.rotation = Quaternion.FromToRotation(Vector3.up, lastDir);
-        }
-        else
-        {
-            if (xDir != 0)
-            {
-                lastDir = new Vector2(xDir, 0);
-            }
-            atkCenter.rotation = Quaternion.FromToRotation(Vector3.up, direction);
-            curDir = direction;
-        }
+        atkCenter.rotation = Quaternion.FromToRotation(Vector3.up, direction);
+        curDir = direction;
 
         attacking = true;
         attackArea.SetActive(true);

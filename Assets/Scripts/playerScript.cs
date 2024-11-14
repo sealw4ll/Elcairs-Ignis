@@ -150,7 +150,11 @@ public class playerScript : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)) // TODO: Change Key 
         {
-            pAtk.Attack(horizontalInput, verticalInput);
+            float xInput = horizontalInput;
+            float yInput = verticalInput;
+            if (xInput == 0 && yInput == 0)
+                xInput = lastX;
+            pAtk.Attack(xInput, yInput);
         }
     }
 

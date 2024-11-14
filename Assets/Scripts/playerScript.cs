@@ -30,7 +30,7 @@ public class playerScript : MonoBehaviour
     private float jumpBufferTimeCounter = 0f;
 
     public bool damaged { get; protected set; }
-    public float doubleJumpPenality = 0.5f; 
+    public float doubleJumpPenality = 0.5f;
 
     public bool isIdle()
     {
@@ -105,7 +105,6 @@ public class playerScript : MonoBehaviour
             float acc = horizontalInput * manaStore.getRunAcceleration();
             float maxRunSpeed = manaStore.getRunSpeed();
             float newSpeed = Mathf.Clamp(rb.linearVelocity.x + acc, -maxRunSpeed, maxRunSpeed);
-
             rb.linearVelocity = new Vector2(
                 newSpeed,
                 rb.linearVelocity.y
@@ -206,7 +205,7 @@ public class playerScript : MonoBehaviour
         if (isDashing)
         {
             rb.linearVelocity *= dashingDrag;
-            if (Mathf.Abs(rb.linearVelocity.x) <= manaStore.getRunSpeed() && 
+            if (Mathf.Abs(rb.linearVelocity.x) <= manaStore.getRunSpeed() &&
                 Mathf.Abs(rb.linearVelocity.y) <= manaStore.getJumpSpeed())
             {
                 if (Mathf.Abs(rb.linearVelocity.x) >= Mathf.Abs(rb.linearVelocity.y))

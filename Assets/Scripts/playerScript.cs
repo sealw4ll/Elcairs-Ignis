@@ -1,10 +1,12 @@
 using UnityEngine;
+using System.Collections;
 
 public class playerScript : MonoBehaviour
 {
     public float lastX = 1;
     public float horizontalInput;
     public float verticalInput;
+    public float trailDelay;
 
     public bool dying = false;
 
@@ -188,6 +190,7 @@ public class playerScript : MonoBehaviour
         dashingHitBox.SetActive(true);
         isDashing = true;
         dashTimer = 0f;
+        this.GetComponent<TrailRenderer>().enabled = true;
     }
 
     public void deactivateDash()
@@ -196,6 +199,13 @@ public class playerScript : MonoBehaviour
         dashingHitBox.SetActive(false);
         isDashing = false;
         dashTimer = 0f;
+        StartCoroutine(disableTrail());
+    }
+
+    private IEnumerator disableTrail()
+    {
+        yield return new WaitForSeconds(trailDelay);
+        this.GetComponent<TrailRenderer>().enabled = false;
     }
 
     public void HandleDash()

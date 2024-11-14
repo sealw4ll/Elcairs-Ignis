@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7985753222682958123}
   - component: {fileID: 6866876359979468267}
   - component: {fileID: 4611235348796070731}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CinemachineCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2468850534173424156}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: startOfBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +453,6 @@ MonoBehaviour:
   playerAtk: {fileID: 5224965004768791427}
   idleState: {fileID: 7222966429733407785}
   runState: {fileID: 4004562626971186978}
-  dashState: {fileID: 3002907109150966510}
   attackState: {fileID: 4196634577646852150}
 --- !u!114 &7621137630547730607
 MonoBehaviour:
@@ -821,7 +820,7 @@ GameObject:
   - component: {fileID: 1021811664816995817}
   - component: {fileID: 6102295846456096794}
   - component: {fileID: 49102314376964244}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1070,6 +1069,7 @@ MonoBehaviour:
   dead: 0
   health: {fileID: 2520417323953276602}
   jumpCut: 0.5
+  maxFallSpeed: 30
 --- !u!114 &5224965004768791427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1211,7 +1211,7 @@ TrailRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7306159096753131177}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1374,7 +1374,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2168367264218076952}
   - component: {fileID: 6412725569916253216}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Trailpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1610,7 +1610,7 @@ GameObject:
   - component: {fileID: 951043806319033070}
   - component: {fileID: 1938797884309615071}
   - component: {fileID: 5363331969164418539}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: manaBalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}

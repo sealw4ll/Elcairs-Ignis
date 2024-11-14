@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class RespawnScript : MonoBehaviour
@@ -8,21 +9,12 @@ public class RespawnScript : MonoBehaviour
     public int savedMana = 1;
 
     public playerScript PlayerScript;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public float resTime = 3f;
 
     public void changeSavedMana(int newVal)
     {
-        newVal = savedMana;
+        savedMana = newVal;
         if (newVal <= 0)
         {
             savedMana = 1;
@@ -33,10 +25,20 @@ public class RespawnScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-           ManaManagement manaManagement = other.gameObject.GetComponent<ManaManagement>();
-            manaManagement.setMana(savedMana);
-            player.transform.position = respawnPoint.transform.position;
+            playerOnDeath player = other.gameObject.GetComponent<playerOnDeath>();
+            player.killEntity();
         }
+    }
+
+    public void TriggerRespawn()
+    {
+        StartCoroutine(CountdownRespawn());
+    }
+
+    public IEnumerator CountdownRespawn()
+    {
+        yield return new WaitForSeconds(resTime);
+        RespawnFunc();
     }
 
     public void RespawnFunc()
@@ -45,5 +47,7 @@ public class RespawnScript : MonoBehaviour
         newPosition.z = 0;
         player.transform.position = newPosition;
         PlayerScript.resetPlayer();
+        ManaManagement manaManagement = player.GetComponent<ManaManagement>();
+        manaManagement.setMana(savedMana);
     }
 }

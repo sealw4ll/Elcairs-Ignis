@@ -44,11 +44,9 @@ public class playerScript : MonoBehaviour
     public PlayerAttack pAtk;
 
     public bool dead;
-
     public Health health;
 
     public float jumpCut = 0.5f;
-
 
     public bool isIdle()
     {
@@ -57,8 +55,9 @@ public class playerScript : MonoBehaviour
 
     public void resetPlayer()
     {
+        horizontalInput = 0;
+        verticalInput = 0;
         rb.linearVelocity = Vector2.zero;
-        playerObj.SetActive(true);
 
         jumps = maxJumps;
 
@@ -72,6 +71,8 @@ public class playerScript : MonoBehaviour
 
         hitBoxCollider.enabled = true;
         dashingHitBox.SetActive(false);
+
+        playerObj.SetActive(true);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -278,7 +279,7 @@ public class playerScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (damaged)  return;
+        if (damaged || dead || dying)  return;
         moveChar();
         ApplyFiction();
     }

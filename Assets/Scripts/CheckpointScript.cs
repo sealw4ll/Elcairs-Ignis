@@ -34,7 +34,7 @@ public class CheckpointScript : MonoBehaviour
         {
             ManaManagement pMana = other.gameObject.GetComponent<ManaManagement>();
             respawn.respawnPoint = point;
-            respawn.savedMana = pMana.getCount();
+            respawn.changeSavedMana(pMana.getCount());
             icon.sprite = active;
             checkpoint.enabled = false;
         }

@@ -8,6 +8,8 @@ public class CheckpointScript : MonoBehaviour
     private SpriteRenderer icon;
     public Sprite active;
 
+    public float savedMana = 1f;
+
     void Awake()
     {
         checkpoint = GetComponent<BoxCollider2D>();
@@ -30,7 +32,13 @@ public class CheckpointScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("PlayerDashing"))
         {
+            ManaManagement pMana = other.gameObject.GetComponent<ManaManagement>();
+
             respawn.respawnPoint = point;
+            if (pMana.getCount() >= 1)
+            {
+                respawn.savedMana = pMana.getCount();
+            }
             icon.sprite = active;
             checkpoint.enabled = false;
         }

@@ -4,6 +4,9 @@ public class RespawnScript : MonoBehaviour
 {
     public GameObject player;
     public GameObject respawnPoint;
+
+    public int savedMana = 1;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,6 +23,8 @@ public class RespawnScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+           ManaManagement manaManagement = other.gameObject.GetComponent<ManaManagement>();
+            manaManagement.setMana(savedMana);
             player.transform.position = respawnPoint.transform.position;
         }
     }

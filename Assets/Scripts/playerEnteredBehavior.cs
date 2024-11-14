@@ -8,6 +8,7 @@ public class playerEnteredBehavior : MonoBehaviour
     private bool playerWithin = false;
     private bool los = false;
     public LayerMask stageMask;
+    public Transform rotTarget; 
 
     public void setTarget(Transform target)
     {
@@ -19,10 +20,10 @@ public class playerEnteredBehavior : MonoBehaviour
     {
         if (playerWithin)
         {
-            Vector2 direction = -1 * (target.position - transform.position);
-            transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
+            Vector2 direction = -1 * (target.position - rotTarget.position);
+            rotTarget.rotation = Quaternion.FromToRotation(Vector3.up, direction);
 
-            if (Physics2D.Linecast(target.position, transform.position, stageMask))
+            if (Physics2D.Linecast(target.position, rotTarget.position, stageMask))
                 noLOS();
             else
                 HaveLOS();

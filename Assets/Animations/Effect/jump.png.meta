@@ -1,31 +1,46 @@
 fileFormatVersion: 2
-guid: 4b12c91985e77604ea0b4ec49b29cc48
+guid: 3d101c5d050d1294d82623f818301e83
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6259191790562003309
-    second: Ignis-Sheet_0
+      213: 4281637774074219296
+    second: jump_0
   - first:
-      213: -4022974424091094296
-    second: Ignis-Sheet_1
+      213: -7862396843884538191
+    second: jump_1
   - first:
-      213: -1903506510344063654
-    second: Ignis-Sheet_2
+      213: 8276514422256456541
+    second: jump_2
   - first:
-      213: -8626978859135834152
-    second: Ignis-Sheet_3
+      213: -3697937850672776721
+    second: jump_3
   - first:
-      213: -433674647676189369
-    second: Ignis-Sheet_4
+      213: 4987614716155920338
+    second: jump_4
   - first:
-      213: -6053213599676790353
-    second: Ignis-Sheet_5
+      213: -1184746109927277663
+    second: jump_5
   - first:
-      213: 6531424166973524758
-    second: Ignis-Sheet_6
+      213: -4845626741048118468
+    second: jump_6
   - first:
-      213: -958690237704294712
-    second: Ignis-Sheet_7
+      213: 7014594740173477433
+    second: jump_7
+  - first:
+      213: 1578323387413840467
+    second: jump_8
+  - first:
+      213: 7655840988501763603
+    second: jump_9
+  - first:
+      213: -9197958414588387290
+    second: jump_10
+  - first:
+      213: -5086767228222736262
+    second: jump_11
+  - first:
+      213: 6181903233876262169
+    second: jump_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +73,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +87,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +111,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ignis-Sheet_0
+      name: jump_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e74062c6f4965c24498c5ba72760c1c7
-      internalID: -857101057
+      spriteID: 43d5334ec72f6be428faea930186b554
+      internalID: 180985634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_1
+      name: jump_1
       rect:
         serializedVersion: 2
-        x: 24
+        x: 64
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d3755bffff500d4d814a9e02f4632d4
-      internalID: -867437587
+      spriteID: b9cc52280e5ceb142a23c2af8d23fa26
+      internalID: 314208517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_2
+      name: jump_2
       rect:
         serializedVersion: 2
-        x: 48
+        x: 128
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e4a8b3264446a64f9cf2dfb558f9623
-      internalID: -949180766
+      spriteID: 258192fb7df282348bd207923a9a2c41
+      internalID: -421016498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_3
+      name: jump_3
       rect:
         serializedVersion: 2
-        x: 72
+        x: 192
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +230,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dcee4e474cfeca4aab88f8ba02f53ca
-      internalID: 625968207
+      spriteID: befe0690c31c8d44881743c641c9d939
+      internalID: -1167515481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_4
+      name: jump_4
       rect:
         serializedVersion: 2
-        x: 96
+        x: 256
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +252,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f1ab685d08b79e4493f5e402825555c
-      internalID: -653593268
+      spriteID: 9f2413b7bb7254a40a9180474a26f8cd
+      internalID: 1338681546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_5
+      name: jump_5
       rect:
         serializedVersion: 2
-        x: 120
+        x: 320
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +274,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cab5a7e9ee1105449b0f1c7c5a0c29f3
-      internalID: -945611182
+      spriteID: edfd80534be50944f9b83bf5a8c787b6
+      internalID: 1066970587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_6
+      name: jump_6
       rect:
         serializedVersion: 2
-        x: 144
+        x: 384
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,20 +296,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60c0814d27dfd4b458d74c266e4bc81f
-      internalID: -1903368045
+      spriteID: a640eb3c7d0a1e445860279593114624
+      internalID: 735453085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_7
+      name: jump_7
       rect:
         serializedVersion: 2
-        x: 168
+        x: 448
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,8 +318,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fd02bcd8f436124780ee73dbfcfefca
-      internalID: -348572367
+      spriteID: cce1d1f52e4c7a441a9345a99fc8051a
+      internalID: -1645412574
       vertices: []
       indices: 
       edges: []
@@ -313,7 +328,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 94ad82450072a8f409d8a560a6213bc5
+    spriteID: 9acc6d63547f30245bbf887046110e85
     internalID: 0
     vertices: []
     indices: 
@@ -323,14 +338,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ignis-Sheet_0: -857101057
-      Ignis-Sheet_1: -867437587
-      Ignis-Sheet_2: -949180766
-      Ignis-Sheet_3: 625968207
-      Ignis-Sheet_4: -653593268
-      Ignis-Sheet_5: -945611182
-      Ignis-Sheet_6: -1903368045
-      Ignis-Sheet_7: -348572367
+      jump_0: 180985634
+      jump_1: 314208517
+      jump_2: -421016498
+      jump_3: -1167515481
+      jump_4: 1338681546
+      jump_5: 1066970587
+      jump_6: 735453085
+      jump_7: -1645412574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

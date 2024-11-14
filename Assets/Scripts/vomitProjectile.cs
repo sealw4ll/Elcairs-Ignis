@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class vomitProjectile : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class vomitProjectile : MonoBehaviour
     public Transform bulletPos;
     public Transform centerPos;
     public Transform rotation;
+    public Animator anim;
 
     public bool started = false;
 
@@ -32,8 +34,17 @@ public class vomitProjectile : MonoBehaviour
 
     void Shoot()
     {
+        anim.Play("slime_attack");
         GameObject bulletChild = Instantiate(bullet, bulletPos.position, rotation.rotation);
         bulletBehavior bulletBehavior = bulletChild.GetComponent<bulletBehavior>();
         bulletBehavior.setDirection(bulletPos.position - centerPos.position);
+
+        StartCoroutine(PlayIdleAfterDelay(0.3f));
+    }
+
+    private IEnumerator PlayIdleAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        anim.Play("slime_idle");
     }
 }

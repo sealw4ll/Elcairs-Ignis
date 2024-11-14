@@ -2,10 +2,13 @@ using UnityEngine;
 
 public class CheckpointScript : MonoBehaviour
 {
+    public GameObject point;
     private RespawnScript respawn;
     private BoxCollider2D checkpoint;
     private SpriteRenderer icon;
-    public Sprite passive, active;
+    public Sprite active;
+
+    public float savedMana = 1f;
 
     void Awake()
     {
@@ -27,9 +30,11 @@ public class CheckpointScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("PlayerDashing"))
         {
-            respawn.respawnPoint = this.gameObject;
+            ManaManagement pMana = other.gameObject.GetComponent<ManaManagement>();
+            respawn.respawnPoint = point;
+            respawn.changeSavedMana(pMana.getCount());
             icon.sprite = active;
             checkpoint.enabled = false;
         }

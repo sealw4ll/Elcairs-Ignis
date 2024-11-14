@@ -4,6 +4,10 @@ public class RespawnScript : MonoBehaviour
 {
     public GameObject player;
     public GameObject respawnPoint;
+
+    public int savedMana = 1;
+
+    public playerScript PlayerScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,12 +20,30 @@ public class RespawnScript : MonoBehaviour
 
     }
 
+    public void changeSavedMana(int newVal)
+    {
+        newVal = savedMana;
+        if (newVal <= 0)
+        {
+            savedMana = 1;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("test");
         if (other.gameObject.CompareTag("Player"))
         {
+           ManaManagement manaManagement = other.gameObject.GetComponent<ManaManagement>();
+            manaManagement.setMana(savedMana);
             player.transform.position = respawnPoint.transform.position;
         }
+    }
+
+    public void RespawnFunc()
+    {
+        Vector3 newPosition = respawnPoint.transform.position;
+        newPosition.z = 0;
+        player.transform.position = newPosition;
+        PlayerScript.resetPlayer();
     }
 }

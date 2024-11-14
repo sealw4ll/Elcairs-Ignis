@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 4b12c91985e77604ea0b4ec49b29cc48
+guid: 25c90621720ae8f448849f7ad849a655
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6259191790562003309
-    second: Ignis-Sheet_0
+      213: 8783529447861640803
+    second: slime_idle_animation_0
   - first:
-      213: -4022974424091094296
-    second: Ignis-Sheet_1
+      213: -3652965854586050306
+    second: slime_idle_animation_1
   - first:
-      213: -1903506510344063654
-    second: Ignis-Sheet_2
+      213: 7902111665645244455
+    second: slime_idle_animation_2
   - first:
-      213: -8626978859135834152
-    second: Ignis-Sheet_3
-  - first:
-      213: -433674647676189369
-    second: Ignis-Sheet_4
-  - first:
-      213: -6053213599676790353
-    second: Ignis-Sheet_5
-  - first:
-      213: 6531424166973524758
-    second: Ignis-Sheet_6
-  - first:
-      213: -958690237704294712
-    second: Ignis-Sheet_7
+      213: -927701663406724269
+    second: slime_idle_animation_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,177 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ignis-Sheet_0
+      name: slime_idle_animation_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 24
-        height: 24
+        x: 9
+        y: 1
+        width: 47
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e74062c6f4965c24498c5ba72760c1c7
-      internalID: -857101057
+      spriteID: 36ed9f5ee7d55e970800000000000000
+      internalID: 8783529447861640803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_1
+      name: slime_idle_animation_1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 0
-        width: 24
-        height: 24
+        x: 71
+        y: 3
+        width: 51
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5d3755bffff500d4d814a9e02f4632d4
-      internalID: -867437587
+      spriteID: ef864c4d8ee0e4dc0800000000000000
+      internalID: -3652965854586050306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_2
+      name: slime_idle_animation_2
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 24
-        height: 24
+        x: 137
+        y: 3
+        width: 46
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2e4a8b3264446a64f9cf2dfb558f9623
-      internalID: -949180766
+      spriteID: 720514651b0f9ad60800000000000000
+      internalID: 7902111665645244455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_3
+      name: slime_idle_animation_3
       rect:
         serializedVersion: 2
-        x: 72
-        y: 0
-        width: 24
-        height: 24
+        x: 203
+        y: 3
+        width: 43
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8dcee4e474cfeca4aab88f8ba02f53ca
-      internalID: 625968207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ignis-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f1ab685d08b79e4493f5e402825555c
-      internalID: -653593268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ignis-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cab5a7e9ee1105449b0f1c7c5a0c29f3
-      internalID: -945611182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ignis-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60c0814d27dfd4b458d74c266e4bc81f
-      internalID: -1903368045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ignis-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 168
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fd02bcd8f436124780ee73dbfcfefca
-      internalID: -348572367
+      spriteID: 35b6a1790442023f0800000000000000
+      internalID: -927701663406724269
       vertices: []
       indices: 
       edges: []
@@ -313,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 94ad82450072a8f409d8a560a6213bc5
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -323,14 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ignis-Sheet_0: -857101057
-      Ignis-Sheet_1: -867437587
-      Ignis-Sheet_2: -949180766
-      Ignis-Sheet_3: 625968207
-      Ignis-Sheet_4: -653593268
-      Ignis-Sheet_5: -945611182
-      Ignis-Sheet_6: -1903368045
-      Ignis-Sheet_7: -348572367
+      slime_idle_animation_0: 8783529447861640803
+      slime_idle_animation_1: -3652965854586050306
+      slime_idle_animation_2: 7902111665645244455
+      slime_idle_animation_3: -927701663406724269
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

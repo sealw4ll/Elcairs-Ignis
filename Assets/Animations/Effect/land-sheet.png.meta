@@ -1,31 +1,43 @@
 fileFormatVersion: 2
-guid: 4b12c91985e77604ea0b4ec49b29cc48
+guid: f56431440b40c204e9b514a2da9ea4db
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6259191790562003309
-    second: Ignis-Sheet_0
+      213: -6901093081602261383
+    second: land-sheet_0
   - first:
-      213: -4022974424091094296
-    second: Ignis-Sheet_1
+      213: -7038576505017180663
+    second: land-sheet_1
   - first:
-      213: -1903506510344063654
-    second: Ignis-Sheet_2
+      213: -4704535355675416166
+    second: land-sheet_2
   - first:
-      213: -8626978859135834152
-    second: Ignis-Sheet_3
+      213: 3928136972862901377
+    second: land-sheet_3
   - first:
-      213: -433674647676189369
-    second: Ignis-Sheet_4
+      213: -6071024215347377411
+    second: land-sheet_4
   - first:
-      213: -6053213599676790353
-    second: Ignis-Sheet_5
+      213: 792509432603123720
+    second: land-sheet_5
   - first:
-      213: 6531424166973524758
-    second: Ignis-Sheet_6
+      213: 8698610938114590436
+    second: land-sheet_6
   - first:
-      213: -958690237704294712
-    second: Ignis-Sheet_7
+      213: 3190382890490172123
+    second: land-sheet_7
+  - first:
+      213: 2732973811431497799
+    second: land-sheet_8
+  - first:
+      213: 1554063154273824300
+    second: land-sheet_9
+  - first:
+      213: -8608639741302584359
+    second: land-sheet_10
+  - first:
+      213: 651332734954466276
+    second: land-sheet_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +108,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,13 +146,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ignis-Sheet_0
+      name: land-sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e74062c6f4965c24498c5ba72760c1c7
-      internalID: -857101057
+      spriteID: 4a58310c17b113643a2e7cd65c007c29
+      internalID: -1839149281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_1
+      name: land-sheet_1
       rect:
         serializedVersion: 2
-        x: 24
+        x: 64
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d3755bffff500d4d814a9e02f4632d4
-      internalID: -867437587
+      spriteID: a8773bbcd910c65418a91c89297fa0f3
+      internalID: -1990262664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_2
+      name: land-sheet_2
       rect:
         serializedVersion: 2
-        x: 48
+        x: 128
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e4a8b3264446a64f9cf2dfb558f9623
-      internalID: -949180766
+      spriteID: e468e229c63777940bd42bb888c8dd73
+      internalID: -2046538382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_3
+      name: land-sheet_3
       rect:
         serializedVersion: 2
-        x: 72
+        x: 192
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dcee4e474cfeca4aab88f8ba02f53ca
-      internalID: 625968207
+      spriteID: 798d963e4c1f3cb45b43c9db57b9d638
+      internalID: 1924808811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_4
+      name: land-sheet_4
       rect:
         serializedVersion: 2
-        x: 96
+        x: 256
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f1ab685d08b79e4493f5e402825555c
-      internalID: -653593268
+      spriteID: d8ffbdddaff904443b5f4bfa3367767f
+      internalID: 536981255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_5
+      name: land-sheet_5
       rect:
         serializedVersion: 2
-        x: 120
+        x: 320
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cab5a7e9ee1105449b0f1c7c5a0c29f3
-      internalID: -945611182
+      spriteID: d67b50917fd6f354ca4480eeb022e575
+      internalID: -655370551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_6
+      name: land-sheet_6
       rect:
         serializedVersion: 2
-        x: 144
+        x: 384
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,20 +293,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60c0814d27dfd4b458d74c266e4bc81f
-      internalID: -1903368045
+      spriteID: cbc9b1eb7f05f3f4da90816141346a09
+      internalID: 138416382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ignis-Sheet_7
+      name: land-sheet_7
       rect:
         serializedVersion: 2
-        x: 168
+        x: 448
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,8 +315,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fd02bcd8f436124780ee73dbfcfefca
-      internalID: -348572367
+      spriteID: 7cf0abd3368d82b468b6d4df687e133d
+      internalID: -643829504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: land-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c060d8b4861df47b7fad328a686cb6
+      internalID: 168364623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: land-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a5c28600c492b41982096b109c1061
+      internalID: -389098808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: land-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717e1ce6ec71c9240aef63020b4eaeac
+      internalID: 665321533
       vertices: []
       indices: 
       edges: []
@@ -313,7 +391,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 94ad82450072a8f409d8a560a6213bc5
+    spriteID: 02a3308606432b74e9debbb84271753f
     internalID: 0
     vertices: []
     indices: 
@@ -323,14 +401,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ignis-Sheet_0: -857101057
-      Ignis-Sheet_1: -867437587
-      Ignis-Sheet_2: -949180766
-      Ignis-Sheet_3: 625968207
-      Ignis-Sheet_4: -653593268
-      Ignis-Sheet_5: -945611182
-      Ignis-Sheet_6: -1903368045
-      Ignis-Sheet_7: -348572367
+      land-sheet_0: -1839149281
+      land-sheet_1: -1990262664
+      land-sheet_10: 665321533
+      land-sheet_2: -2046538382
+      land-sheet_3: 1924808811
+      land-sheet_4: 536981255
+      land-sheet_5: -655370551
+      land-sheet_6: 138416382
+      land-sheet_7: -643829504
+      land-sheet_8: 168364623
+      land-sheet_9: -389098808
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

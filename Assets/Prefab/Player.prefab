@@ -817,18 +817,17 @@ GameObject:
   - component: {fileID: 1281863009334594932}
   - component: {fileID: 8827545439152400434}
   - component: {fileID: 4214223806531646895}
-  - component: {fileID: 1677761998720167045}
   - component: {fileID: 992087952132901023}
   - component: {fileID: 1021811664816995817}
   - component: {fileID: 6102295846456096794}
-  - component: {fileID: 2282522973941644489
-  m_Layer: 6
+  - component: {fileID: 49102314376964244}
+  m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2054758403649210512
 Transform:
   m_ObjectHideFlags: 0
@@ -1049,7 +1048,7 @@ MonoBehaviour:
   horizontalInput: 0
   verticalInput: 0
   dying: 0
-  jumpEffect: {fileID: 2282522973941644489}
+  jumpEffect: {fileID: 49102314376964244}
   playerObj: {fileID: 7306159096753131177}
   rb: {fileID: 7012159652732248255}
   hitBoxCollider: {fileID: 4386419663685758505}
@@ -1150,28 +1149,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   isGrounded: 0
---- !u!95 &6102295846456096794
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7306159096753131177}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3bd47bccbf878834b9472bb4f186f78c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &992087952132901023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1350,6 +1327,42 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!95 &6102295846456096794
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7306159096753131177}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3bd47bccbf878834b9472bb4f186f78c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &49102314376964244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7306159096753131177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c61a99ce5901f49baf3145938203c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpEffect: {fileID: 1899205466104016169, guid: 3855b77fbbe171844b15dbd60c2585e2, type: 3}
+  loc: {fileID: 6370574484783867249}
 --- !u!1 &7329145725805820205
 GameObject:
   m_ObjectHideFlags: 0

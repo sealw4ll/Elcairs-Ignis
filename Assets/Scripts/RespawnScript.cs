@@ -19,6 +19,15 @@ public class RespawnScript : MonoBehaviour
 
     }
 
+    public void changeSavedMana(int newVal)
+    {
+        newVal = savedMana;
+        if (newVal <= 0)
+        {
+            savedMana = 1;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))

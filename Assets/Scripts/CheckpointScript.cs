@@ -33,12 +33,8 @@ public class CheckpointScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("PlayerDashing"))
         {
             ManaManagement pMana = other.gameObject.GetComponent<ManaManagement>();
-
             respawn.respawnPoint = point;
-            if (pMana.getCount() >= 1)
-            {
-                respawn.savedMana = pMana.getCount();
-            }
+            respawn.savedMana = pMana.getCount();
             icon.sprite = active;
             checkpoint.enabled = false;
         }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1664200482811489580}
   - component: {fileID: 1121667340393045627}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: ignisSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -6,7 +6,6 @@ public class GroundState : PlayerState
 
     public IdleState idleState;
     public RunState runState;
-    public DashState dashState;
     public AttackState attackState;
 
     public override void Do()
@@ -14,10 +13,6 @@ public class GroundState : PlayerState
         if (playerAtk.attacking)
         {
             Set(attackState, true);
-        }
-        else if (player.isDashing)
-        {
-            Set(dashState);
         }
         else if (
             Mathf.Abs(player.rb.linearVelocityX) >= runState.runningThreshold || 

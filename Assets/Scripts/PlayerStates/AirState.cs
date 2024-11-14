@@ -9,14 +9,7 @@ public class AirState : PlayerState
 
     public override void Do()
     {
-        if (player.isDashing)
-        {
-            Set(dashState);
-        }
-        else
-        {
-            Set(jumpState);
-        }
+        Set(jumpState);
 
         if (groundSens.isGrounded) {
             isComplete = true;

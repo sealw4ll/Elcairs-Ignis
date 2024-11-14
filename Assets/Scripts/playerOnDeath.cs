@@ -6,6 +6,11 @@ public class playerOnDeath : OnDeath
     public playerScript player;
     public RespawnScript respawner;
 
+    private void Awake()
+    {
+        respawner = GameObject.FindGameObjectWithTag("Respawn").GetComponent<RespawnScript>();
+    }
+
     private void Reset()
     {
     }
@@ -18,13 +23,14 @@ public class playerOnDeath : OnDeath
     {
         player.dead = true;
         playerObj.SetActive(false);
-        Debug.Log("SomethingSomething");
-        respawner.RespawnFunc();
+        respawner.TriggerRespawn();
     }
 
     public override void killEntity()
     {
         Debug.Log("You Died!");
         player.dying = true;
+        player.rb.linearVelocity = new Vector2(0, 0);
+        player.rb.gravityScale = 0;
     }
 }

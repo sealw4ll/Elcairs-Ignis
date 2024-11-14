@@ -787,35 +787,35 @@ MonoBehaviour:
   defaultSpeed:
     runSpeed: 8
     runAcceleration: 3.5
-    dashSpeed: 24
-    jumpSpeed: 12
-    gravityScale: 5
+    dashSpeed: 22
+    jumpSpeed: 18
+    gravityScale: 3
   speeds:
   - runSpeed: 7
     runAcceleration: 3
-    dashSpeed: 23
-    jumpSpeed: 12
-    gravityScale: 6
+    dashSpeed: 22
+    jumpSpeed: 18
+    gravityScale: 3
   - runSpeed: 6
     runAcceleration: 2.5
-    dashSpeed: 23
-    jumpSpeed: 12
-    gravityScale: 7
+    dashSpeed: 19
+    jumpSpeed: 16.5
+    gravityScale: 3
   - runSpeed: 5
     runAcceleration: 2
-    dashSpeed: 22
-    jumpSpeed: 12
-    gravityScale: 8
+    dashSpeed: 18
+    jumpSpeed: 16
+    gravityScale: 3.5
   - runSpeed: 4
     runAcceleration: 1.5
-    dashSpeed: 22
-    jumpSpeed: 12
-    gravityScale: 9
+    dashSpeed: 20
+    jumpSpeed: 15
+    gravityScale: 4.5
   - runSpeed: 4
     runAcceleration: 1
-    dashSpeed: 22
+    dashSpeed: 20
     jumpSpeed: 12
-    gravityScale: 10
+    gravityScale: 5
 --- !u!114 &3185728706339094184
 MonoBehaviour:
   m_ObjectHideFlags: 0

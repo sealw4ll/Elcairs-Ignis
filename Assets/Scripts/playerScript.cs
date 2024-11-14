@@ -150,7 +150,7 @@ public class playerScript : MonoBehaviour
 
     private void HandleAtk()
     {
-        if (Input.GetMouseButtonDown(0)) // TODO: Change Key 
+        if (Input.GetMouseButtonDown(0)) // TODO: Change Key
         {
             float xInput = horizontalInput;
             float yInput = verticalInput;
@@ -291,7 +291,7 @@ public class playerScript : MonoBehaviour
                 // rb.linearVelocity *= dashingDrag;
             }
             /*
-                if (Mathf.Abs(rb.linearVelocity.x) <= manaStore.getRunSpeed() && 
+                if (Mathf.Abs(rb.linearVelocity.x) <= manaStore.getRunSpeed() &&
                     Mathf.Abs(rb.linearVelocity.y) <= manaStore.getJumpSpeed())
                 {
                     if (Mathf.Abs(rb.linearVelocity.x) >= Mathf.Abs(rb.linearVelocity.y))

@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class RespawnScript : MonoBehaviour
+public class BreakScript : MonoBehaviour
 {
     public GameObject player;
-    public GameObject respawnPoint;
+    public GameObject breakable;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,7 +21,7 @@ public class RespawnScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            player.transform.position = respawnPoint.transform.position;
+            breakable.SetActive(false);
         }
     }
 }

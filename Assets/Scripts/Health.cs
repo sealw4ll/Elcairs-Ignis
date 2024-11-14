@@ -26,6 +26,11 @@ public class Health : MonoBehaviour
 
     public void dealDmg(int dmgCount, Rigidbody2D collided)
     {
+        if (isDead())
+        {
+            return;
+        }
+
         int remainder = dmgCount;
         if (mana != null)
         {

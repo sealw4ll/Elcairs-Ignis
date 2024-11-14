@@ -13,7 +13,7 @@ public class GroundState : PlayerState
     {
         if (playerAtk.attacking)
         {
-            Set(attackState);
+            Set(attackState, true);
         }
         else if (player.isDashing)
         {

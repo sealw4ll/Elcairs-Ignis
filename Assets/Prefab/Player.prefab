@@ -292,7 +292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2468850534173424156}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: startOfBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1624,7 +1624,7 @@ GameObject:
   - component: {fileID: 951043806319033070}
   - component: {fileID: 1938797884309615071}
   - component: {fileID: 5363331969164418539}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: manaBalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}

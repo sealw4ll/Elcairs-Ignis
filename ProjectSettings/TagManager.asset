@@ -12,6 +12,7 @@ TagManager:
   - PlayerHitBox
   - Checkpoint
   - Collectibles
+  - PlayerAttack
   layers:
   - Default
   - TransparentFX

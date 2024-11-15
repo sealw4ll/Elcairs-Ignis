@@ -8,6 +8,8 @@ public class playerScript : MonoBehaviour
     public float verticalInput;
     public float trailDelay;
 
+    public float oppositeDirAcc = 3f;
+
     public bool dying = false;
 
     public EffectGenerator jumpEffect;
@@ -173,14 +175,14 @@ public class playerScript : MonoBehaviour
     {
         if (Mathf.Abs(horizontalInput) > 0 && !isDashing)
         {
+            float acc = horizontalInput * manaStore.getRunAcceleration();
 
             if (Mathf.Sign(horizontalInput) != Mathf.Sign(rb.linearVelocity.x))
             {
-                // immediately change direction
-                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+                Debug.Log("Swtich!");
+                acc = horizontalInput * oppositeDirAcc;
             }
 
-            float acc = horizontalInput * manaStore.getRunAcceleration();
             float newSpeed = rb.linearVelocity.x + acc;
 
             rb.linearVelocity = new Vector2(

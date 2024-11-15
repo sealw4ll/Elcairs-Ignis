@@ -7,9 +7,9 @@ public class bulletBehavior : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 8) // Enemy
-            return;
-        Destroy(this.gameObject);
+        // player HITBOX and walls
+        if (collision.gameObject.tag == "Player" || collision.gameObject.layer == 7)
+            Destroy(this.gameObject);
     }
 
     private void Start()

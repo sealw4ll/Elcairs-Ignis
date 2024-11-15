@@ -33,13 +33,13 @@ public class playerEnteredBehavior : MonoBehaviour
     public void HaveLOS()
     {
         this.los = true;
-        gun.started = true;
+        gun.StartGun();
     }
 
     public void noLOS()
     {
         this.los = false;
-        gun.started = false;
+        gun.StopGun();
     }
 
     public void playerEntered()

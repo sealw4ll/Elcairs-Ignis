@@ -19,6 +19,23 @@ public class vomitProjectile : MonoBehaviour
         
     }
 
+    public void StartGun()
+    {
+        if (!started)
+        {
+            started = true;
+            timer = cooldown;
+        }
+    }
+
+    public void StopGun()
+    {
+        if (started)
+        {
+            started = false;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {

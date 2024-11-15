@@ -6,6 +6,7 @@ public class enemyReset : MonoBehaviour
     public void EnemyReset()
     {
         this.gameObject.SetActive(true);
+        this.gameObject.GetComponent<CapsuleCollider2D>().enabled = true;
         enemyHealth.regen();
     }
 }

@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4617144181507211859}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.107, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 3634548878189722259}
   - component: {fileID: 7390900563515556119}
   - component: {fileID: 7658059566856046394}
+  - component: {fileID: 6308688561688612979}
   m_Layer: 0
   m_Name: manaOrb
   m_TagString: Collectibles
@@ -218,3 +219,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a281d816fde6ad4bb1b35af09f87408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6308688561688612979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4620174175801480682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 1
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.38
+  m_Color: {r: 0.5333334, g: 1, b: 0.8909092, a: 1}
+  m_Intensity: 2.03
+  m_LightVolumeIntensity: 0.18
+  m_LightVolumeEnabled: 1
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: -971950518, guid: 8191a19336edb1847ae0ce9f27d15065, type: 3}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: -0.011249989, y: 0.023299992, z: 0}
+    m_Extent: {x: 0.85225, y: 0.9074, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.79
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.021585822, y: -0.09464425, z: 0}
+  - {x: 0.052223146, y: -0.06872028, z: 0}
+  - {x: 0.044971287, y: 0.073813975, z: 0}
+  - {x: -0.016121745, y: 0.14177859, z: 0}
+  - {x: -0.075790405, y: -0.0066947937, z: 0}

@@ -6,10 +6,6 @@ public class playerOnDeath : OnDeath
     public playerScript player;
     public RespawnScript respawner;
 
-    private void Awake()
-    {
-        respawner = GameObject.FindGameObjectWithTag("Respawn").GetComponent<RespawnScript>();
-    }
 
     private void Reset()
     {

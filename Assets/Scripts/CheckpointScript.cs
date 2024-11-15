@@ -8,13 +8,14 @@ public class CheckpointScript : MonoBehaviour
     private SpriteRenderer icon;
     private ManaManagement playerMana;
     public Sprite active;
+    public GameObject lightObject;
+    public GameObject particlesObject;
 
     public float savedMana = 1f;
 
     void Awake()
     {
         checkpoint = GetComponent<BoxCollider2D>();
-        respawn = GameObject.FindGameObjectWithTag("Respawn").GetComponent<RespawnScript>();
         icon = GetComponent<SpriteRenderer>();
         playerMana = GameObject.FindGameObjectWithTag("Player").GetComponent<ManaManagement>();
     }
@@ -26,6 +27,8 @@ public class CheckpointScript : MonoBehaviour
             respawn.respawnPoint = point;
             respawn.changeSavedMana(playerMana.getCount());
             icon.sprite = active;
+            lightObject.SetActive(true);
+            particlesObject.SetActive(true);
             checkpoint.enabled = false;
         }
     }

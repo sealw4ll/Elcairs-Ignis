@@ -10,14 +10,14 @@ public class AudioManager : MonoBehaviour
     public AudioClip background;
     public AudioClip sword_swing; //
     public AudioClip projectile_clash;
-    public AudioClip get_hit;
+    public AudioClip get_hit; 
     public AudioClip dash; //
     public AudioClip jump; //
     public AudioClip land; //
     public AudioClip air_jump; //
     public AudioClip footsteps;
     public AudioClip enemy_die; //
-    public AudioClip player_die;
+    public AudioClip player_die; //
     public AudioClip player_die_lava;
     public AudioClip enemy_shot; // 
 

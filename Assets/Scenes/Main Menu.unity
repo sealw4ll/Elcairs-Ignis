@@ -1471,17 +1471,17 @@ MonoBehaviour:
   background: {fileID: 8300000, guid: 5dbfe9ef472a9e64a90e918afc713848, type: 3}
   sword_swing: {fileID: 8300000, guid: 1456c2cfa574ced469b4a8e61b5869fc, type: 3}
   projectile_clash: {fileID: 8300000, guid: c3cb6af50cdef0240a72dc1e906e65d6, type: 3}
-  get_hit: {fileID: 0}
-  dash: {fileID: 0}
-  jump: {fileID: 0}
-  land: {fileID: 0}
-  air_jump: {fileID: 0}
-  footsteps: {fileID: 0}
+  get_hit: {fileID: 8300000, guid: 6c96ef004e67c2140aefabde49e8c0a6, type: 3}
+  dash: {fileID: 8300000, guid: 306a189c6eaa66340a30ab6e4a643f21, type: 3}
+  jump: {fileID: 8300000, guid: 49fb9557aebac104297e1e7eb3645105, type: 3}
+  land: {fileID: 8300000, guid: 222c2d4cc5d11944b8eef6be0de5719b, type: 3}
+  air_jump: {fileID: 8300000, guid: 50a4651ca4a2b4a4b8e48efcacfb9a97, type: 3}
+  footsteps: {fileID: 8300000, guid: feed700aa09251945898170ea8e4c3f6, type: 3}
   enemy_die: {fileID: 8300000, guid: 5794f97afbca52540a5e4008cfa2598f, type: 3}
-  player_die: {fileID: 0}
-  player_die_lava: {fileID: 0}
-  enemy_shot: {fileID: 0}
---- !u!1 &977066909
+  player_die: {fileID: 8300000, guid: 28ef9ff841c0c8d48b271652d91afba2, type: 3}
+  player_die_lava: {fileID: 8300000, guid: 4bb966b9fe103904dab924bd721a036f, type: 3}
+  enemy_shot: {fileID: 8300000, guid: 6922f8f475e3e8c41a11566205e04ce0, type: 3}
+--- !u!1 &1018622058
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -19,7 +19,7 @@ public class TotalTE : MonoBehaviour
 
     public void GetTTime()
     {
-        float timeGot = timer.GetRecordTime();
+        float timeGot = SceneController.instance.GetTime();
         int minutes = Mathf.FloorToInt(timeGot / 60);
         int seconds = Mathf.FloorToInt(timeGot % 60);
         int milisec = Mathf.FloorToInt((timeGot * 100) % 100);

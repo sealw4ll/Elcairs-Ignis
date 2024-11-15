@@ -33,7 +33,10 @@ public class ManaManagement : MonoBehaviour
     public void setMana(int mana)
     {
         manaCount = Math.Clamp(mana, 0, maxMana);
-        manaBar.UpdateHealthBar(manaCount);
+        if (manaBar != null)
+        {
+            manaBar.UpdateHealthBar(manaCount);
+        }
     }
 
     public void increaseMana(int count)

@@ -820,6 +820,7 @@ GameObject:
   - component: {fileID: 1021811664816995817}
   - component: {fileID: 6102295846456096794}
   - component: {fileID: 49102314376964244}
+  - component: {fileID: 1421808214878611470}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -1365,6 +1366,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpEffect: {fileID: 1899205466104016169, guid: 3855b77fbbe171844b15dbd60c2585e2, type: 3}
   loc: {fileID: 6370574484783867249}
+--- !u!114 &1421808214878611470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7306159096753131177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b70a513dbdeb8c847aeefc69313e52a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7329145725805820205
 GameObject:
   m_ObjectHideFlags: 0

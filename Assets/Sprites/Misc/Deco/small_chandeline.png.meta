@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      small_chandeline_0: 8250260140525689611
+      small_chandeline_1: -5655816783631606870
+      small_chandeline_2: 7380025990802936096
+      small_chandeline_3: 6938285759378805580
+      small_chandeline_4: -8996448492753976050
+      small_chandeline_5: 7699570808470807296
+      small_chandeline_6: 7919410518203555859
+      small_chandeline_7: -7953733287612316768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -34,6 +34,7 @@ public class vomitProjectile : MonoBehaviour
 
     void Shoot()
     {
+        SceneController.instance.AudioManager.PlaySFX(SceneController.instance.AudioManager.enemy_shot);
         anim.Play("slime_attack");
         GameObject bulletChild = Instantiate(bullet, bulletPos.position, rotation.rotation);
         bulletBehavior bulletBehavior = bulletChild.GetComponent<bulletBehavior>();

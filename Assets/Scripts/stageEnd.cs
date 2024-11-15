@@ -4,6 +4,8 @@ public class stageEnd : MonoBehaviour
 {
     [SerializeField] private string playerTag;
 
+    public NextScene nextScene;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == playerTag)
@@ -14,6 +16,6 @@ public class stageEnd : MonoBehaviour
 
     private void endStage()
     {
-        Debug.Log("Stage has ended");
+        nextScene.Result();
     }
 }

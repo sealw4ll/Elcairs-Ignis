@@ -19,4 +19,9 @@ public class TimeElapsed : MonoBehaviour
         int milisec = Mathf.FloorToInt((timeGot * 100) % 100);
         timerTextElapsed.text = string.Format("{0:00}:{1:00}:{2:00}", minutes, seconds, milisec);
     }
+
+    public float FinalTime()
+    {
+        return (timer.GetPassedTime());
+    }
 }

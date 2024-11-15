@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
+        SceneController.instance.ResetTimer();
         transitionAnim.SetTrigger("End");
         // SceneController.instance.NextLevel();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

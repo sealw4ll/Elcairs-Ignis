@@ -11,6 +11,7 @@ public class NextScene : MonoBehaviour
     {
         nextScene.SetActive(true);
         Time.timeScale = 0;
+        SceneController.instance.AddTime( this.gameObject.GetComponent<TimeElapsed>().FinalTime() );
     }
 
     public void Home()

@@ -9,15 +9,20 @@ public class showManaBalls : MonoBehaviour
     public GameObject manaBalls;
     private GameObject[] balls;
 
-    private void Start()
+    private void Awake()
     {
         balls = new GameObject[mana.maxMana];
     }
 
     public void UpdateHealthBar(int cur)
     {
+        Debug.Log("In balls: ");
+        Debug.Log(balls);
+        Debug.Log("Clearing array");
         foreach (GameObject b in balls) {
-            Destroy(b);
+            if (b != null) { 
+                Destroy(b);
+            }
         }
 
         float distance = area.size.x / (cur - 1 + 2);

@@ -20,6 +20,7 @@ public class AirState : PlayerState
     public override void Exit()
     {
         base.Exit();
+        SceneController.instance.AudioManager.PlaySFX(SceneController.instance.AudioManager.land);
         landGenerator.generate();
     }
 }

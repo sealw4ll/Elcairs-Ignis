@@ -192,6 +192,7 @@ public class playerScript : MonoBehaviour
 
     public void activateDash()
     {
+        SceneController.instance.AudioManager.PlaySFX(SceneController.instance.AudioManager.dash);
         manaStore.decreaseMana(dashManaCost);
         hitBoxCollider.enabled = false;
         dashingHitBox.SetActive(true);
@@ -260,6 +261,8 @@ public class playerScript : MonoBehaviour
         // }
 
         bool doubleJump = false;
+        float test = SceneController.instance.GetTime();
+        AudioClip jumpingclip = SceneController.instance.AudioManager.jump;
         if (jumpBufferTimeCounter > 0f && (coyoteTimeCounter > 0.001f || grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)))
         {
             if (!grounded)
@@ -267,17 +270,23 @@ public class playerScript : MonoBehaviour
                 if (jumps <= 0)
                 {
                     doubleJump = true;
+                    jumpingclip = SceneController.instance.AudioManager.air_jump;
                     manaStore.decreaseMana(forceJumpMana);
                 }
                 else if (coyoteTimeCounter <= 0f)
                 {
                     doubleJump = true;
+                    jumpingclip = SceneController.instance.AudioManager.air_jump;
                     jumps -= 1;
                 }
             }
             coyoteTimeCounter = 0f;
             jumpBufferTimeCounter = 0f;
+
             rb.linearVelocity = new Vector2(rb.linearVelocity.x,  ( manaStore.getJumpSpeed() * (doubleJump ? doubleJumpPenality : 1f) ) );
+
+
+            SceneController.instance.AudioManager.PlaySFX(jumpingclip);
             jumpEffect.generate();
         }
 

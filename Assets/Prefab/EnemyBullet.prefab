@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.414, y: 2.458, z: 0}
-  m_LocalScale: {x: 0.06672, y: 0.078364, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -199,9 +199,9 @@ MonoBehaviour:
   m_ComponentVersion: 2
   m_LightType: 1
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.19
+  m_FalloffIntensity: 0.25
   m_Color: {r: 0.3962264, g: 0, b: 0.029966678, a: 1}
-  m_Intensity: 6.04
+  m_Intensity: 5
   m_LightVolumeIntensity: 0.09
   m_LightVolumeEnabled: 1
   m_ApplyToSortingLayers: 00000000
@@ -220,8 +220,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0011000037, y: 0.014299989, z: 0}
-    m_Extent: {x: 0.9925, y: 1.6184, z: 0}
+    m_Center: {x: -0.004999995, y: 0.00910002, z: 0}
+    m_Extent: {x: 0.707, y: 1.2091999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.1
@@ -232,11 +232,19 @@ MonoBehaviour:
   m_ShapeLightFalloffSize: 0.2
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: 0.05604123, y: 1.1539147, z: 0}
-  - {x: -0.45792398, y: 1.1373391, z: 0}
+  - {x: -0.00706625, y: 1.0198116, z: 0}
+  - {x: -0.23704863, y: 0.96379375, z: 0}
+  - {x: -0.40012932, y: 0.82172775, z: 0}
+  - {x: -0.50662327, y: 0.6008525, z: 0}
   - {x: -0.51265246, y: -0.056560032, z: 0}
-  - {x: -0.5129332, y: -1.115817, z: 0}
-  - {x: 0.02038437, y: -1.1114234, z: 0}
-  - {x: 0.49402937, y: -1.1246871, z: 0}
+  - {x: -0.5105672, y: -0.60015726, z: 0}
+  - {x: -0.3669982, y: -0.8357787, z: 0}
+  - {x: -0.17136574, y: -0.9788008, z: 0}
+  - {x: 0.07560301, y: -1.0009861, z: 0}
+  - {x: 0.25066423, y: -0.94724727, z: 0}
+  - {x: 0.39148045, y: -0.8367605, z: 0}
+  - {x: 0.50309324, y: -0.6277671, z: 0}
   - {x: 0.48722342, y: -0.06429969, z: 0}
-  - {x: 0.51137084, y: 1.1186832, z: 0}
+  - {x: 0.49914885, y: 0.6126852, z: 0}
+  - {x: 0.3887124, y: 0.83750486, z: 0}
+  - {x: 0.21555519, y: 0.964859, z: 0}

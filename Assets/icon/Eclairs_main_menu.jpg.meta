@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Eclairs_main_menu_0: 7187078846066357897
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

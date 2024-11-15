@@ -261,7 +261,6 @@ public class playerScript : MonoBehaviour
         // }
 
         bool doubleJump = false;
-        float test = SceneController.instance.GetTime();
         AudioClip jumpingclip = SceneController.instance.AudioManager.jump;
         if (jumpBufferTimeCounter > 0f && (coyoteTimeCounter > 0.001f || grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)))
         {

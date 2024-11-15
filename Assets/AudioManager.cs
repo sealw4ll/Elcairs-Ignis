@@ -7,9 +7,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource SFXSource;
 
     [Header("--------Audio Clip------------")]
-    public AudioClip background;
+    public AudioClip background; // 
     public AudioClip sword_swing; //
-    public AudioClip projectile_clash;
+    public AudioClip projectile_clash; //
     public AudioClip get_hit; 
     public AudioClip dash; //
     public AudioClip jump; //
@@ -18,7 +18,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip footsteps;
     public AudioClip enemy_die; //
     public AudioClip player_die; //
-    public AudioClip player_die_lava;
+    public AudioClip player_die_lava; //
     public AudioClip enemy_shot; // 
 
     public static AudioManager instance;

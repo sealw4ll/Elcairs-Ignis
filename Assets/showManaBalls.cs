@@ -16,9 +16,6 @@ public class showManaBalls : MonoBehaviour
 
     public void UpdateHealthBar(int cur)
     {
-        Debug.Log("In balls: ");
-        Debug.Log(balls);
-        Debug.Log("Clearing array");
         foreach (GameObject b in balls) {
             if (b != null) { 
                 Destroy(b);

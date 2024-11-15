@@ -22,6 +22,7 @@ public class damagedBehaviour : MonoBehaviour
         }
 
         SceneController.instance.AudioManager.PlaySFX(SceneController.instance.AudioManager.get_hit);
+
         rb.linearVelocity = dir.normalized * -knockback;
         StartCoroutine(waiter());
     }

@@ -205,10 +205,6 @@ public class playerScript : MonoBehaviour
 
     public void deactivateDash()
     {
-        hitBoxCollider.enabled = true;
-        dashingHitBox.SetActive(false);
-        isDashing = false;
-        dashTimer = 0f;
         StartCoroutine(disableTrail());
     }
 
@@ -216,11 +212,19 @@ public class playerScript : MonoBehaviour
     {
         yield return new WaitForSeconds(trailDelay);
         this.GetComponent<TrailRenderer>().enabled = false;
+        dashingHitBox.SetActive(false);
+        hitBoxCollider.enabled = true;
+        isDashing = false;
+        dashTimer = 0f;
     }
 
     public void HandleDash()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && manaStore.enoughMana(dashManaCost)) // TODO: Change this
+        if (
+            (
+                Input.GetKeyDown(KeyCode.LeftShift) || Input.GetMouseButtonDown(1)
+            ) 
+            && manaStore.enoughMana(dashManaCost)) // TODO: Change this
         {
             float newY = (verticalInput != 0) ? manaStore.getDashSpeed() * Mathf.Sign(verticalInput) : 0f;
             float newX = (horizontalInput != 0) ? manaStore.getDashSpeed() * Mathf.Sign(horizontalInput) : 0f;

@@ -28,7 +28,7 @@ public class playerOnDeath : OnDeath
 
     public override void killEntity()
     {
-        Debug.Log("You Died!");
+        SceneController.instance.AudioManager.PlaySFX(SceneController.instance.AudioManager.player_die);
         player.dying = true;
         player.rb.linearVelocity = new Vector2(0, 0);
         player.rb.gravityScale = 0;

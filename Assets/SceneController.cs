@@ -6,7 +6,7 @@ public class SceneController : MonoBehaviour
 {
     public static SceneController instance;
 
-    public AudioBehaviour AudioBehaviour;
+    public AudioManager AudioManager;
 
     private float totalTime;
 
@@ -15,7 +15,7 @@ public class SceneController : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            AudioBehaviour = GetComponentInChildren<AudioBehaviour>();
+            AudioManager = GetComponentInChildren<AudioManager>();
 
             DontDestroyOnLoad(gameObject);
         }

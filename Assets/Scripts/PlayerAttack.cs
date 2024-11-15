@@ -55,5 +55,6 @@ public class PlayerAttack : MonoBehaviour
 
         attacking = true;
         attackArea.SetActive(true);
+        SceneController.instance.AudioManager.PlaySFX(SceneController.instance.AudioManager.sword_swing);
     }
 }

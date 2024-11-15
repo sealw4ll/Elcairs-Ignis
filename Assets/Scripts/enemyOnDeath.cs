@@ -9,6 +9,7 @@ public class enemyOnDeath : OnDeath
     {
         this.GetComponent<CapsuleCollider2D>().enabled = false;
         anim.Play("slime_death");
+        SceneController.instance.AudioManager.PlaySFX(SceneController.instance.AudioManager.enemy_die);
         StartCoroutine(PlayIdleAfterDelay(0.4f));
     }
 

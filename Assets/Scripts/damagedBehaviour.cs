@@ -21,6 +21,7 @@ public class damagedBehaviour : MonoBehaviour
                 dir.x = (Mathf.Sign(transform.localScale.x));
         }
 
+        SceneController.instance.AudioManager.PlaySFX(SceneController.instance.AudioManager.get_hit);
         rb.linearVelocity = dir.normalized * -knockback;
         StartCoroutine(waiter());
     }

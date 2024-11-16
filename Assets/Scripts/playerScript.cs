@@ -17,7 +17,9 @@ public class playerScript : MonoBehaviour
     public GameObject playerObj;
     public Rigidbody2D rb;
     [SerializeField] private BoxCollider2D hitBoxCollider;
+
     [SerializeField] private GameObject dashingHitBox;
+    [SerializeField] private GameObject damageCollider;
 
     public ManaManagement manaStore;
 
@@ -76,6 +78,7 @@ public class playerScript : MonoBehaviour
 
         hitBoxCollider.enabled = true;
         dashingHitBox.SetActive(false);
+        damageCollider.SetActive(false);
 
         playerObj.SetActive(true);
     }
@@ -83,10 +86,7 @@ public class playerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        jumps = maxJumps;
-        damaged = false;
-        hitBoxCollider.enabled = true;
-        dashingHitBox.SetActive(false);
+        resetPlayer();
     }
 
     public void getInput()
@@ -100,7 +100,7 @@ public class playerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (damaged || dead || dying)
+        if (dead || dying)
         {
             return;
         }
@@ -302,9 +302,14 @@ public class playerScript : MonoBehaviour
         */
     }
 
-    public void toggleDamaged()
+    public void setDamaged()
     {
-        damaged = !damaged;
+        damaged = true;
+    }
+
+    public void resetDamaged()
+    {
+        damaged = false;
     }
 
     void FixedUpdate()

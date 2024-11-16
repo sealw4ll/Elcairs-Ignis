@@ -5,7 +5,10 @@ using UnityEngine;
 public class damagedBehaviour : MonoBehaviour
 {
     [SerializeField] playerScript player;
-    public float duration = 0.2f;
+    public Collider2D playerCollider;
+    public GameObject hurtCollider;
+    public Animator playerAnim;
+    public float duration = 0.1f;
 
     public void playDamaged(Rigidbody2D rbTarget)
     {
@@ -15,8 +18,12 @@ public class damagedBehaviour : MonoBehaviour
 
     IEnumerator waiter()
     {
-        player.toggleDamaged();
+        player.setDamaged();
+        playerCollider.enabled = false;
+        hurtCollider.SetActive(true);
         yield return new WaitForSeconds(duration);
-        player.toggleDamaged();
+        playerCollider.enabled = true;
+        hurtCollider.SetActive(false);
+        player.resetDamaged();
     }
 }

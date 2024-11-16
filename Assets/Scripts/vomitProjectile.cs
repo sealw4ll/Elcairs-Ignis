@@ -16,7 +16,7 @@ public class vomitProjectile : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        timer = cooldown;
     }
 
     public void StartGun()
@@ -24,7 +24,6 @@ public class vomitProjectile : MonoBehaviour
         if (!started)
         {
             started = true;
-            timer = cooldown;
         }
     }
 
@@ -39,9 +38,9 @@ public class vomitProjectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timer += Time.deltaTime;
         if (!started) return;
 
-        timer += Time.deltaTime;
         if (timer > cooldown)
         {
             timer = 0;

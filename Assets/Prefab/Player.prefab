@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1410275341320007337}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
   m_LocalScale: {x: 1.94806, y: 1.94806, z: 1.298712}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1013,7 +1013,7 @@ MonoBehaviour:
   groundSensor: {fileID: 4214223806531646895}
   coyoteTime: 0.1
   jumpBufferTime: 0.03
-  doubleJumpPenality: 0.65
+  doubleJumpPenality: 0.75
   dashTimer: 0
   maxDashTimer: 0.5
   pAtk: {fileID: 5224965004768791427}

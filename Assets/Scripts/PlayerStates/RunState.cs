@@ -10,7 +10,7 @@ public class RunState : PlayerState
     public override void Do()
     {
         // Debug.Log("Running");
-        if (player.rb.linearVelocityX < 0 || player.horizontalInput < 0)
+        if (player.horizontalInput < 0)
         {
             Set(runLeftState);
         }
@@ -19,7 +19,7 @@ public class RunState : PlayerState
             Set(runRightState);
         }
 
-        if (!groundSens.isGrounded || Mathf.Abs(player.rb.linearVelocityX) < runningThreshold )
+        if (!groundSens.isGrounded || Mathf.Abs(player.rb.linearVelocityX) < runningThreshold || player.horizontalInput == 0)
         {
             isComplete = true;
         }

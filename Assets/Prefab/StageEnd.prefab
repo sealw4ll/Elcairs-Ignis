@@ -93,6 +93,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTag: Player
+  playerDashTag: PlayerDashing
+  nextScene: {fileID: 0}
 --- !u!114 &-8936240351476198854
 MonoBehaviour:
   m_ObjectHideFlags: 0

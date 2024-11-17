@@ -223,7 +223,7 @@ public class playerScript : MonoBehaviour
         if (
             (
                 Input.GetKeyDown(KeyCode.LeftShift) || Input.GetMouseButtonDown(1)
-            ) 
+            )
             && manaStore.enoughMana(dashManaCost)) // TODO: Change this
         {
             float newY = (verticalInput != 0) ? manaStore.getDashSpeed() * Mathf.Sign(verticalInput) : 0f;
@@ -314,7 +314,7 @@ public class playerScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (damaged || dead || dying)  return;
+        if ( dead || dying)  return;
         moveChar();
         ApplyFiction();
     }

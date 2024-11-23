@@ -1,8 +1,10 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class vomitProjectile : MonoBehaviour
 {
+    public List<GameObject> bullets;
     public GameObject bullet;
     public Transform bulletPos;
     public Transform centerPos;
@@ -25,6 +27,18 @@ public class vomitProjectile : MonoBehaviour
         {
             started = true;
         }
+    }
+
+    public void removeBullets()
+    {
+        foreach (GameObject bullet in bullets)
+        {
+            if (bullet != null)
+            {
+                Destroy(bullet);
+            }
+        }
+        bullets.Clear();
     }
 
     public void StopGun()
@@ -53,6 +67,7 @@ public class vomitProjectile : MonoBehaviour
         SceneController.instance.AudioManager.PlaySFX(SceneController.instance.AudioManager.enemy_shot);
         anim.Play("slime_attack");
         GameObject bulletChild = Instantiate(bullet, bulletPos.position, rotation.rotation);
+        bullets.Add(bulletChild);
         bulletBehavior bulletBehavior = bulletChild.GetComponent<bulletBehavior>();
         bulletBehavior.setDirection(bulletPos.position - centerPos.position);
 

@@ -1093,6 +1093,8 @@ MonoBehaviour:
   groundSensor: {fileID: 4214223806531646895}
   coyoteTime: 0.1
   jumpBufferTime: 0.03
+  forbidJumping: 0.2
+  forbidJumpingCounter: 0
   doubleJumpPenality: 0.75
   dashTimer: 0
   maxDashTimer: 0.5

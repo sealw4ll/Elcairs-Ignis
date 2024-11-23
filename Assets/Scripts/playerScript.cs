@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.InputSystem;
 
 public class playerScript : MonoBehaviour
 {
@@ -40,6 +41,9 @@ public class playerScript : MonoBehaviour
 
     public float jumpBufferTime = 0.03f;
     private float jumpBufferTimeCounter = 0f;
+
+    public float forbidJumping = 0.1f;
+    public float forbidJumpingCounter = 0f;
 
     public bool damaged { get; protected set; }
     public float doubleJumpPenality = 0.5f;
@@ -83,10 +87,17 @@ public class playerScript : MonoBehaviour
         playerObj.SetActive(true);
     }
 
+    InputAction jumpAction;
+    InputAction dashAction;
+    InputAction attackAction;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         resetPlayer();
+        jumpAction = InputSystem.actions.FindAction("Jump");
+        dashAction = InputSystem.actions.FindAction("Dash");
+        attackAction = InputSystem.actions.FindAction("Attack");
     }
 
     public void getInput()
@@ -114,12 +125,14 @@ public class playerScript : MonoBehaviour
         // reset jump count
         if (groundSensor.isGrounded)
         {
+            forbidJumpingCounter = 0;
             coyoteTimeCounter = coyoteTime;
             jumps = maxJumps;
         }
         else
         {
             coyoteTimeCounter -= Time.deltaTime;
+            forbidJumpingCounter -= Time.deltaTime;
         }
 
         getInput();
@@ -127,7 +140,7 @@ public class playerScript : MonoBehaviour
         HandleDash();
         HandleAtk();
 
-        if (Input.GetButtonDown("Jump"))
+        if (jumpAction.WasPressedThisFrame())
         {
             jumpBufferTimeCounter = jumpBufferTime;
         }
@@ -161,7 +174,7 @@ public class playerScript : MonoBehaviour
 
     private void HandleAtk()
     {
-        if (Input.GetMouseButtonDown(0)) // TODO: Change Key
+        if (attackAction.WasPressedThisFrame()) // TODO: Change Key
         {
             float xInput = horizontalInput;
             float yInput = verticalInput;
@@ -221,9 +234,7 @@ public class playerScript : MonoBehaviour
     public void HandleDash()
     {
         if (
-            (
-                Input.GetKeyDown(KeyCode.LeftShift) || Input.GetMouseButtonDown(1)
-            )
+            dashAction.WasPressedThisFrame()
             && manaStore.enoughMana(dashManaCost)) // TODO: Change this
         {
             float newY = (verticalInput != 0) ? manaStore.getDashSpeed() * Mathf.Sign(verticalInput) : 0f;
@@ -268,8 +279,14 @@ public class playerScript : MonoBehaviour
 
         bool doubleJump = false;
         AudioClip jumpingclip = SceneController.instance.AudioManager.jump;
-        if (jumpBufferTimeCounter > 0f && (coyoteTimeCounter > 0.001f || grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)))
+
+        if (
+            jumpBufferTimeCounter > 0f && 
+            (coyoteTimeCounter > 0.001f || grounded || jumps > 0 || manaStore.enoughMana(forceJumpMana)) && 
+            forbidJumpingCounter <= 0
+            )
         {
+            forbidJumpingCounter = forbidJumping;
             if (!grounded)
             {
                 if (jumps <= 0)

@@ -10,6 +10,7 @@ public class enemyReset : MonoBehaviour
         this.gameObject.SetActive(true);
         // tf, did i type this?
         this.GetComponent<playerEnteredBehavior>().enabled = true;
+        // this.GetComponent<AttackArea>().targetWithin = false;
         this.gameObject.GetComponent<CapsuleCollider2D>().enabled = true;
 
         if (vomitProjectile)

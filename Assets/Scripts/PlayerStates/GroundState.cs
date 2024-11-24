@@ -15,7 +15,6 @@ public class GroundState : PlayerState
             Set(attackState, true);
         }
         else if (
-            Mathf.Abs(player.rb.linearVelocityX) >= runState.runningThreshold || 
             Mathf.Abs(player.horizontalInput) > 0
             )
         {

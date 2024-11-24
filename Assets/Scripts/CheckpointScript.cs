@@ -12,6 +12,7 @@ public class CheckpointScript : MonoBehaviour
     public GameObject particlesObject;
 
     public float savedMana = 1f;
+    public int addMana = 1;
 
     void Awake()
     {
@@ -26,6 +27,10 @@ public class CheckpointScript : MonoBehaviour
         {
             respawn.respawnPoint = point;
             respawn.changeSavedMana(playerMana.getCount());
+
+            // this what u mean?
+            playerMana.increaseMana(addMana);
+
             icon.sprite = active;
             lightObject.SetActive(true);
             particlesObject.SetActive(true);

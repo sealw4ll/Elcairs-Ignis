@@ -403,6 +403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   targetTag: Player
+  targetWithin: 0
 --- !u!114 &4096555586637711465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,6 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a259d35f7576a4e48a476885ef582faa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullets: []
   bullet: {fileID: 3900235122874132167, guid: 2dd849adf00b83942b0b7ad05b5786c2, type: 3}
   bulletPos: {fileID: 2736188617901701750}
   centerPos: {fileID: 5212608338794219548}
@@ -465,6 +467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: {fileID: 1757750516522396571}
+  vomitProjectile: {fileID: 4225978690548560549}
 --- !u!70 &3286924086028690658
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

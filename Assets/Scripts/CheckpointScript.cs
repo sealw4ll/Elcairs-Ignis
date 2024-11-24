@@ -26,10 +26,11 @@ public class CheckpointScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("PlayerDashing"))
         {
             respawn.respawnPoint = point;
-            respawn.changeSavedMana(playerMana.getCount());
-
             // this what u mean?
             playerMana.increaseMana(addMana);
+            respawn.changeSavedMana(playerMana.getCount());
+
+
 
             icon.sprite = active;
             lightObject.SetActive(true);

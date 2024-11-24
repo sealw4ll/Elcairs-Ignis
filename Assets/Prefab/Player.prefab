@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1410275341320007337}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1.94806, y: 1.94806, z: 1.298712}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -578,6 +578,7 @@ GameObject:
   - component: {fileID: 880472074701311942}
   - component: {fileID: 4062308760875183323}
   - component: {fileID: 1210728565260125332}
+  - component: {fileID: 1726384798811318304}
   m_Layer: 6
   m_Name: Slash
   m_TagString: PlayerAttack
@@ -730,6 +731,21 @@ PolygonCollider2D:
       - {x: 0.020209352, y: -0.22868595}
       - {x: 0.14499314, y: -0.19486247}
   m_UseDelaunayMesh: 0
+--- !u!114 &1726384798811318304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5973189392518859954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ab936839cb9dec4091325fc35aacfa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  targetTag: Enemy
+  targetWithin: 0
 --- !u!1 &7220035802766845315
 GameObject:
   m_ObjectHideFlags: 0

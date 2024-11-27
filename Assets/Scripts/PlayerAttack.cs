@@ -10,6 +10,9 @@ public class PlayerAttack : MonoBehaviour
     private float timeToAttack = 0.25f;
     private float timer = 0f;
 
+    public float cooldownTimer = 0f;
+    public float cooldown = 1f;
+
     public Vector2 curDir = new Vector2(1, 0);
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,6 +33,8 @@ public class PlayerAttack : MonoBehaviour
             }
         */
 
+        cooldownTimer -= Time.deltaTime;
+
         if (attacking)
         {
             timer += Time.deltaTime;
@@ -49,11 +54,13 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack(float xDir, float yDir)
     {
+        if (cooldownTimer > 0f) return;
+
         Vector2 direction = new Vector2(xDir, yDir);
         atkCenter.rotation = Quaternion.FromToRotation(Vector3.up, direction);
         curDir = direction;
-
         attacking = true;
+        cooldownTimer = cooldown;
         attackArea.SetActive(true);
         SceneController.instance.AudioManager.PlaySFX(SceneController.instance.AudioManager.sword_swing);
     }

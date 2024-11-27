@@ -1,9 +1,22 @@
+using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
+
+    public void togglePause()
+    {
+        if (pauseMenu.activeSelf)
+        {
+            Resume();
+        } else
+        {
+            Pause();
+        }
+    }
 
     public void Pause()
     {

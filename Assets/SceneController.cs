@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.InputSystem;
 
 public class SceneController : MonoBehaviour
 {
@@ -9,6 +10,22 @@ public class SceneController : MonoBehaviour
     public AudioManager AudioManager;
 
     private float totalTime;
+
+    public PauseMenu pauseMenu;
+
+    InputAction pause;
+    private void Start()
+    {
+        pause = InputSystem.actions.FindAction("Pause");
+    }
+
+    public void Update()
+    {
+        if (pause.WasPressedThisFrame() && pauseMenu)
+        {
+            pauseMenu.togglePause();
+        }
+    }
 
     private void Awake()
     {

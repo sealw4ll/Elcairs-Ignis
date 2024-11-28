@@ -231,21 +231,24 @@ public class playerScript : MonoBehaviour
         dashTimer = 0f;
     }
 
+    public float XdeadZone = 0.2f;
+    public float YdeadZone = 0.2f;
+
     public void HandleDash()
     {
         if (
             dashAction.WasPressedThisFrame()
             && manaStore.enoughMana(dashManaCost)) // TODO: Change this
         {
-            float newY = (verticalInput != 0) ? manaStore.getDashSpeed() * Mathf.Sign(verticalInput) : 0f;
-            float newX = (horizontalInput != 0) ? manaStore.getDashSpeed() * Mathf.Sign(horizontalInput) : 0f;
+            float newY = (Mathf.Abs(verticalInput) >= YdeadZone) ? Mathf.Sign(verticalInput) : 0f;
+            float newX = (Mathf.Abs(horizontalInput) >= XdeadZone) ? Mathf.Sign(horizontalInput) : 0f;
             Vector2 dirVec = new Vector2(newX, newY);
             dirVec.Normalize();
 
             if (newX == 0 && newY == 0)
             {
                 rb.linearVelocity = new Vector2(
-                    ( manaStore.getDashSpeed() * lastX ),
+                    ( manaStore.getDashSpeed() * Mathf.Sign(lastX) ),
                     0
                 );
             } else
